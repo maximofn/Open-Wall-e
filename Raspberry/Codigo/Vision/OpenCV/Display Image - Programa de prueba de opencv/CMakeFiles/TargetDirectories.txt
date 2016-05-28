@@ -1,0 +1,3 @@
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/OpenCV/Display Image - Programa de prueba de opencv/CMakeFiles/edit_cache.dir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/OpenCV/Display Image - Programa de prueba de opencv/CMakeFiles/rebuild_cache.dir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/OpenCV/Display Image - Programa de prueba de opencv/CMakeFiles/DisplayImage.dir
