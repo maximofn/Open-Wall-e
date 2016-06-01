@@ -1,0 +1,19 @@
+/*
+ * Defines.h
+ *
+ *  Created on: 31/05/2016
+ *      Author: maximofn
+ */
+
+#ifndef SRC_DEFINES_H_
+#define SRC_DEFINES_H_
+
+#define SHOW
+#ifdef SHOW
+	#define INFORMATION
+#endif
+
+
+
+
+#endif /* SRC_DEFINES_H_ */

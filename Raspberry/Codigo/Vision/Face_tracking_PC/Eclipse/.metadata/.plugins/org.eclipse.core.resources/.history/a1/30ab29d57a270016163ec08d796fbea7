@@ -1,0 +1,35 @@
+/*
+ * Defines.h
+ *
+ *  Created on: 31/05/2016
+ *      Author: maximofn
+ */
+
+#ifndef SRC_DEFINES_H_
+#define SRC_DEFINES_H_
+
+#define SHOW
+#ifdef SHOW
+	#define INFORMATION
+#endif
+
+// for debug and trace
+#define TRACE 1
+#define DEBUG_MODE 0
+#ifdef DEBUG_MODE
+	#define DEBUG
+#endif
+
+// for device mode
+#define RASPBERRY 		1
+#define UBUNTU 			2
+#define MAQUINA_VIRTUAL		3
+extern int DEVICE_MODE;
+#define RASPBERRY_MODE 			if (DEVICE_MODE==1)
+#define UBUNTU_MODE 			if (DEVICE_MODE==2)
+#define MAQUINA_VIRTUAL_MODE		if (DEVICE_MODE==3)
+
+
+
+
+#endif /* SRC_DEFINES_H_ */

@@ -1,0 +1,1187 @@
+23:13:20 **** Clean-only build of configuration Debug for project FaceTracking ****
+make clean 
+rm -rf  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o  ./src/FaceTracking.d ./src/Librerias_Reconocimiento.d  FaceTracking
+ 
+23:13:23 **** Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+Finished building: ../src/FaceTracking.cpp
+ 
+Building file: ../src/Librerias_Reconocimiento.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Librerias_Reconocimiento.d" -MT"src/Librerias_Reconocimiento.d" -o "src/Librerias_Reconocimiento.o" "../src/Librerias_Reconocimiento.cpp"
+In file included from ../src/Librerias_Reconocimiento.h:24:0,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/include/opencv2/contrib/contrib.hpp:852:22: error: redefinition of ‘class cv::LDA’
+     class CV_EXPORTS LDA
+                      ^
+In file included from /usr/local/include/opencv2/core/types_c.h:101:0,
+                 from /usr/local/include/opencv2/core/core_c.h:48,
+                 from /usr/local/include/opencv/cv.h:63,
+                 from ../src/Librerias_Reconocimiento.h:18,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/local/include/opencv2/core.hpp:2422:18: error: previous definition of ‘class cv::LDA’
+ class CV_EXPORTS LDA
+                  ^
+In file included from ../src/Librerias_Reconocimiento.h:24:0,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/include/opencv2/contrib/contrib.hpp:960:27: error: redeclaration of ‘COLORMAP_AUTUMN’
+         COLORMAP_AUTUMN = 0,
+                           ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/local/include/opencv2/imgproc.hpp:3782:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_AUTUMN’
+     COLORMAP_AUTUMN = 0, //!< ![autumn](pics/colormaps/colorscale_autumn.jpg)
+     ^
+In file included from ../src/Librerias_Reconocimiento.h:24:0,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/include/opencv2/contrib/contrib.hpp:961:25: error: redeclaration of ‘COLORMAP_BONE’
+         COLORMAP_BONE = 1,
+                         ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/local/include/opencv2/imgproc.hpp:3783:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_BONE’
+     COLORMAP_BONE = 1, //!< ![bone](pics/colormaps/colorscale_bone.jpg)
+     ^
+In file included from ../src/Librerias_Reconocimiento.h:24:0,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/include/opencv2/contrib/contrib.hpp:962:24: error: redeclaration of ‘COLORMAP_JET’
+         COLORMAP_JET = 2,
+                        ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/local/include/opencv2/imgproc.hpp:3784:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_JET’
+     COLORMAP_JET = 2, //!< ![jet](pics/colormaps/colorscale_jet.jpg)
+     ^
+In file included from ../src/Librerias_Reconocimiento.h:24:0,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/include/opencv2/contrib/contrib.hpp:963:27: error: redeclaration of ‘COLORMAP_WINTER’
+         COLORMAP_WINTER = 3,
+                           ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/local/include/opencv2/imgproc.hpp:3785:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_WINTER’
+     COLORMAP_WINTER = 3, //!< ![winter](pics/colormaps/colorscale_winter.jpg)
+     ^
+In file included from ../src/Librerias_Reconocimiento.h:24:0,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/include/opencv2/contrib/contrib.hpp:964:28: error: redeclaration of ‘COLORMAP_RAINBOW’
+         COLORMAP_RAINBOW = 4,
+                            ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/local/include/opencv2/imgproc.hpp:3786:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_RAINBOW’
+     COLORMAP_RAINBOW = 4, //!< ![rainbow](pics/colormaps/colorscale_rainbow.jpg)
+     ^
+In file included from ../src/Librerias_Reconocimiento.h:24:0,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/include/opencv2/contrib/contrib.hpp:965:26: error: redeclaration of ‘COLORMAP_OCEAN’
+         COLORMAP_OCEAN = 5,
+                          ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/local/include/opencv2/imgproc.hpp:3787:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_OCEAN’
+     COLORMAP_OCEAN = 5, //!< ![ocean](pics/colormaps/colorscale_ocean.jpg)
+     ^
+In file included from ../src/Librerias_Reconocimiento.h:24:0,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/include/opencv2/contrib/contrib.hpp:966:27: error: redeclaration of ‘COLORMAP_SUMMER’
+         COLORMAP_SUMMER = 6,
+                           ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/local/include/opencv2/imgproc.hpp:3788:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_SUMMER’
+     COLORMAP_SUMMER = 6, //!< ![summer](pics/colormaps/colorscale_summer.jpg)
+     ^
+In file included from ../src/Librerias_Reconocimiento.h:24:0,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/include/opencv2/contrib/contrib.hpp:967:27: error: redeclaration of ‘COLORMAP_SPRING’
+         COLORMAP_SPRING = 7,
+                           ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/local/include/opencv2/imgproc.hpp:3789:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_SPRING’
+     COLORMAP_SPRING = 7, //!< ![spring](pics/colormaps/colorscale_spring.jpg)
+     ^
+In file included from ../src/Librerias_Reconocimiento.h:24:0,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/include/opencv2/contrib/contrib.hpp:968:25: error: redeclaration of ‘COLORMAP_COOL’
+         COLORMAP_COOL = 8,
+                         ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/local/include/opencv2/imgproc.hpp:3790:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_COOL’
+     COLORMAP_COOL = 8, //!< ![cool](pics/colormaps/colorscale_cool.jpg)
+     ^
+In file included from ../src/Librerias_Reconocimiento.h:24:0,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/include/opencv2/contrib/contrib.hpp:969:24: error: redeclaration of ‘COLORMAP_HSV’
+         COLORMAP_HSV = 9,
+                        ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/local/include/opencv2/imgproc.hpp:3791:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_HSV’
+     COLORMAP_HSV = 9, //!< ![HSV](pics/colormaps/colorscale_hsv.jpg)
+     ^
+In file included from ../src/Librerias_Reconocimiento.h:24:0,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/include/opencv2/contrib/contrib.hpp:970:25: error: redeclaration of ‘COLORMAP_PINK’
+         COLORMAP_PINK = 10,
+                         ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/local/include/opencv2/imgproc.hpp:3792:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_PINK’
+     COLORMAP_PINK = 10, //!< ![pink](pics/colormaps/colorscale_pink.jpg)
+     ^
+In file included from ../src/Librerias_Reconocimiento.h:24:0,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/include/opencv2/contrib/contrib.hpp:971:24: error: redeclaration of ‘COLORMAP_HOT’
+         COLORMAP_HOT = 11
+                        ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/local/include/opencv2/imgproc.hpp:3793:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_HOT’
+     COLORMAP_HOT = 11, //!< ![hot](pics/colormaps/colorscale_hot.jpg)
+     ^
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/Librerias_Reconocimiento.o'
+make: *** [src/Librerias_Reconocimiento.o] Error 1
+23:13:33 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+Finished building: ../src/FaceTracking.cpp
+ 
+Building file: ../src/Librerias_Reconocimiento.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Librerias_Reconocimiento.d" -MT"src/Librerias_Reconocimiento.d" -o "src/Librerias_Reconocimiento.o" "../src/Librerias_Reconocimiento.cpp"
+In file included from ../src/Librerias_Reconocimiento.h:24:0,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/include/opencv2/contrib/contrib.hpp:852:22: error: redefinition of ‘class cv::LDA’
+     class CV_EXPORTS LDA
+                      ^
+In file included from /usr/local/include/opencv2/core/types_c.h:101:0,
+                 from /usr/local/include/opencv2/core/core_c.h:48,
+                 from /usr/local/include/opencv/cv.h:63,
+                 from ../src/Librerias_Reconocimiento.h:18,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/local/include/opencv2/core.hpp:2422:18: error: previous definition of ‘class cv::LDA’
+ class CV_EXPORTS LDA
+                  ^
+In file included from ../src/Librerias_Reconocimiento.h:24:0,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/include/opencv2/contrib/contrib.hpp:960:27: error: redeclaration of ‘COLORMAP_AUTUMN’
+         COLORMAP_AUTUMN = 0,
+                           ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/local/include/opencv2/imgproc.hpp:3782:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_AUTUMN’
+     COLORMAP_AUTUMN = 0, //!< ![autumn](pics/colormaps/colorscale_autumn.jpg)
+     ^
+In file included from ../src/Librerias_Reconocimiento.h:24:0,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/include/opencv2/contrib/contrib.hpp:961:25: error: redeclaration of ‘COLORMAP_BONE’
+         COLORMAP_BONE = 1,
+                         ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/local/include/opencv2/imgproc.hpp:3783:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_BONE’
+     COLORMAP_BONE = 1, //!< ![bone](pics/colormaps/colorscale_bone.jpg)
+     ^
+In file included from ../src/Librerias_Reconocimiento.h:24:0,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/include/opencv2/contrib/contrib.hpp:962:24: error: redeclaration of ‘COLORMAP_JET’
+         COLORMAP_JET = 2,
+                        ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/local/include/opencv2/imgproc.hpp:3784:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_JET’
+     COLORMAP_JET = 2, //!< ![jet](pics/colormaps/colorscale_jet.jpg)
+     ^
+In file included from ../src/Librerias_Reconocimiento.h:24:0,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/include/opencv2/contrib/contrib.hpp:963:27: error: redeclaration of ‘COLORMAP_WINTER’
+         COLORMAP_WINTER = 3,
+                           ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/local/include/opencv2/imgproc.hpp:3785:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_WINTER’
+     COLORMAP_WINTER = 3, //!< ![winter](pics/colormaps/colorscale_winter.jpg)
+     ^
+In file included from ../src/Librerias_Reconocimiento.h:24:0,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/include/opencv2/contrib/contrib.hpp:964:28: error: redeclaration of ‘COLORMAP_RAINBOW’
+         COLORMAP_RAINBOW = 4,
+                            ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/local/include/opencv2/imgproc.hpp:3786:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_RAINBOW’
+     COLORMAP_RAINBOW = 4, //!< ![rainbow](pics/colormaps/colorscale_rainbow.jpg)
+     ^
+In file included from ../src/Librerias_Reconocimiento.h:24:0,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/include/opencv2/contrib/contrib.hpp:965:26: error: redeclaration of ‘COLORMAP_OCEAN’
+         COLORMAP_OCEAN = 5,
+                          ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/local/include/opencv2/imgproc.hpp:3787:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_OCEAN’
+     COLORMAP_OCEAN = 5, //!< ![ocean](pics/colormaps/colorscale_ocean.jpg)
+     ^
+In file included from ../src/Librerias_Reconocimiento.h:24:0,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/include/opencv2/contrib/contrib.hpp:966:27: error: redeclaration of ‘COLORMAP_SUMMER’
+         COLORMAP_SUMMER = 6,
+                           ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/local/include/opencv2/imgproc.hpp:3788:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_SUMMER’
+     COLORMAP_SUMMER = 6, //!< ![summer](pics/colormaps/colorscale_summer.jpg)
+     ^
+In file included from ../src/Librerias_Reconocimiento.h:24:0,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/include/opencv2/contrib/contrib.hpp:967:27: error: redeclaration of ‘COLORMAP_SPRING’
+         COLORMAP_SPRING = 7,
+                           ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/local/include/opencv2/imgproc.hpp:3789:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_SPRING’
+     COLORMAP_SPRING = 7, //!< ![spring](pics/colormaps/colorscale_spring.jpg)
+     ^
+In file included from ../src/Librerias_Reconocimiento.h:24:0,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/include/opencv2/contrib/contrib.hpp:968:25: error: redeclaration of ‘COLORMAP_COOL’
+         COLORMAP_COOL = 8,
+                         ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/local/include/opencv2/imgproc.hpp:3790:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_COOL’
+     COLORMAP_COOL = 8, //!< ![cool](pics/colormaps/colorscale_cool.jpg)
+     ^
+In file included from ../src/Librerias_Reconocimiento.h:24:0,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/include/opencv2/contrib/contrib.hpp:969:24: error: redeclaration of ‘COLORMAP_HSV’
+         COLORMAP_HSV = 9,
+                        ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/local/include/opencv2/imgproc.hpp:3791:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_HSV’
+     COLORMAP_HSV = 9, //!< ![HSV](pics/colormaps/colorscale_hsv.jpg)
+     ^
+In file included from ../src/Librerias_Reconocimiento.h:24:0,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/include/opencv2/contrib/contrib.hpp:970:25: error: redeclaration of ‘COLORMAP_PINK’
+         COLORMAP_PINK = 10,
+                         ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/local/include/opencv2/imgproc.hpp:3792:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_PINK’
+     COLORMAP_PINK = 10, //!< ![pink](pics/colormaps/colorscale_pink.jpg)
+     ^
+In file included from ../src/Librerias_Reconocimiento.h:24:0,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/include/opencv2/contrib/contrib.hpp:971:24: error: redeclaration of ‘COLORMAP_HOT’
+         COLORMAP_HOT = 11
+                        ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/local/include/opencv2/imgproc.hpp:3793:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_HOT’
+     COLORMAP_HOT = 11, //!< ![hot](pics/colormaps/colorscale_hot.jpg)
+     ^
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/Librerias_Reconocimiento.o'
+make: *** [src/Librerias_Reconocimiento.o] Error 1
+23:14:21 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/Librerias_Reconocimiento.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Librerias_Reconocimiento.d" -MT"src/Librerias_Reconocimiento.d" -o "src/Librerias_Reconocimiento.o" "../src/Librerias_Reconocimiento.cpp"
+In file included from ../src/Librerias_Reconocimiento.h:24:0,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/include/opencv2/contrib/contrib.hpp:852:22: error: redefinition of ‘class cv::LDA’
+     class CV_EXPORTS LDA
+                      ^
+In file included from /usr/local/include/opencv2/core/types_c.h:101:0,
+                 from /usr/local/include/opencv2/core/core_c.h:48,
+                 from /usr/local/include/opencv/cv.h:63,
+                 from ../src/Librerias_Reconocimiento.h:18,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/local/include/opencv2/core.hpp:2422:18: error: previous definition of ‘class cv::LDA’
+ class CV_EXPORTS LDA
+                  ^
+In file included from ../src/Librerias_Reconocimiento.h:24:0,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/include/opencv2/contrib/contrib.hpp:960:27: error: redeclaration of ‘COLORMAP_AUTUMN’
+         COLORMAP_AUTUMN = 0,
+                           ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/local/include/opencv2/imgproc.hpp:3782:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_AUTUMN’
+     COLORMAP_AUTUMN = 0, //!< ![autumn](pics/colormaps/colorscale_autumn.jpg)
+     ^
+In file included from ../src/Librerias_Reconocimiento.h:24:0,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/include/opencv2/contrib/contrib.hpp:961:25: error: redeclaration of ‘COLORMAP_BONE’
+         COLORMAP_BONE = 1,
+                         ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/local/include/opencv2/imgproc.hpp:3783:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_BONE’
+     COLORMAP_BONE = 1, //!< ![bone](pics/colormaps/colorscale_bone.jpg)
+     ^
+In file included from ../src/Librerias_Reconocimiento.h:24:0,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/include/opencv2/contrib/contrib.hpp:962:24: error: redeclaration of ‘COLORMAP_JET’
+         COLORMAP_JET = 2,
+                        ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/local/include/opencv2/imgproc.hpp:3784:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_JET’
+     COLORMAP_JET = 2, //!< ![jet](pics/colormaps/colorscale_jet.jpg)
+     ^
+In file included from ../src/Librerias_Reconocimiento.h:24:0,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/include/opencv2/contrib/contrib.hpp:963:27: error: redeclaration of ‘COLORMAP_WINTER’
+         COLORMAP_WINTER = 3,
+                           ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/local/include/opencv2/imgproc.hpp:3785:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_WINTER’
+     COLORMAP_WINTER = 3, //!< ![winter](pics/colormaps/colorscale_winter.jpg)
+     ^
+In file included from ../src/Librerias_Reconocimiento.h:24:0,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/include/opencv2/contrib/contrib.hpp:964:28: error: redeclaration of ‘COLORMAP_RAINBOW’
+         COLORMAP_RAINBOW = 4,
+                            ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/local/include/opencv2/imgproc.hpp:3786:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_RAINBOW’
+     COLORMAP_RAINBOW = 4, //!< ![rainbow](pics/colormaps/colorscale_rainbow.jpg)
+     ^
+In file included from ../src/Librerias_Reconocimiento.h:24:0,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/include/opencv2/contrib/contrib.hpp:965:26: error: redeclaration of ‘COLORMAP_OCEAN’
+         COLORMAP_OCEAN = 5,
+                          ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/local/include/opencv2/imgproc.hpp:3787:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_OCEAN’
+     COLORMAP_OCEAN = 5, //!< ![ocean](pics/colormaps/colorscale_ocean.jpg)
+     ^
+In file included from ../src/Librerias_Reconocimiento.h:24:0,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/include/opencv2/contrib/contrib.hpp:966:27: error: redeclaration of ‘COLORMAP_SUMMER’
+         COLORMAP_SUMMER = 6,
+                           ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/local/include/opencv2/imgproc.hpp:3788:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_SUMMER’
+     COLORMAP_SUMMER = 6, //!< ![summer](pics/colormaps/colorscale_summer.jpg)
+     ^
+In file included from ../src/Librerias_Reconocimiento.h:24:0,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/include/opencv2/contrib/contrib.hpp:967:27: error: redeclaration of ‘COLORMAP_SPRING’
+         COLORMAP_SPRING = 7,
+                           ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/local/include/opencv2/imgproc.hpp:3789:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_SPRING’
+     COLORMAP_SPRING = 7, //!< ![spring](pics/colormaps/colorscale_spring.jpg)
+     ^
+In file included from ../src/Librerias_Reconocimiento.h:24:0,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/include/opencv2/contrib/contrib.hpp:968:25: error: redeclaration of ‘COLORMAP_COOL’
+         COLORMAP_COOL = 8,
+                         ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/local/include/opencv2/imgproc.hpp:3790:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_COOL’
+     COLORMAP_COOL = 8, //!< ![cool](pics/colormaps/colorscale_cool.jpg)
+     ^
+In file included from ../src/Librerias_Reconocimiento.h:24:0,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/include/opencv2/contrib/contrib.hpp:969:24: error: redeclaration of ‘COLORMAP_HSV’
+         COLORMAP_HSV = 9,
+                        ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/local/include/opencv2/imgproc.hpp:3791:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_HSV’
+     COLORMAP_HSV = 9, //!< ![HSV](pics/colormaps/colorscale_hsv.jpg)
+     ^
+In file included from ../src/Librerias_Reconocimiento.h:24:0,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/include/opencv2/contrib/contrib.hpp:970:25: error: redeclaration of ‘COLORMAP_PINK’
+         COLORMAP_PINK = 10,
+                         ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/local/include/opencv2/imgproc.hpp:3792:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_PINK’
+     COLORMAP_PINK = 10, //!< ![pink](pics/colormaps/colorscale_pink.jpg)
+     ^
+In file included from ../src/Librerias_Reconocimiento.h:24:0,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/include/opencv2/contrib/contrib.hpp:971:24: error: redeclaration of ‘COLORMAP_HOT’
+         COLORMAP_HOT = 11
+                        ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/Librerias_Reconocimiento.cpp:9:
+/usr/local/include/opencv2/imgproc.hpp:3793:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_HOT’
+     COLORMAP_HOT = 11, //!< ![hot](pics/colormaps/colorscale_hot.jpg)
+     ^
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/Librerias_Reconocimiento.o'
+make: *** [src/Librerias_Reconocimiento.o] Error 1
+23:16:13 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:36:6: warning: unused variable ‘nPictureById’ [-Wunused-variable]
+  int nPictureById[MAX_PEOPLE];     // Id of each person of the model of face recognition
+      ^
+../src/FaceTracking.cpp:37:6: warning: unused variable ‘im_width’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+      ^
+../src/FaceTracking.cpp:37:16: warning: unused variable ‘im_height’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+                ^
+../src/FaceTracking.cpp:43:9: warning: unused variable ‘x_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+         ^
+../src/FaceTracking.cpp:43:21: warning: unused variable ‘y_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                     ^
+../src/FaceTracking.cpp:43:33: warning: unused variable ‘area_face’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                                 ^
+../src/FaceTracking.cpp:46:6: warning: variable ‘PREDICTION_SEUIL’ set but not used [-Wunused-but-set-variable]
+  int PREDICTION_SEUIL;      // Prediction limit
+      ^
+Finished building: ../src/FaceTracking.cpp
+ 
+Building file: ../src/Librerias_Reconocimiento.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Librerias_Reconocimiento.d" -MT"src/Librerias_Reconocimiento.d" -o "src/Librerias_Reconocimiento.o" "../src/Librerias_Reconocimiento.cpp"
+Finished building: ../src/Librerias_Reconocimiento.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o   -lopencv_shape -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core
+Finished building target: FaceTracking
+ 
+23:16:18 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+23:16:34 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+23:17:06 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:852:22: error: redefinition of ‘class cv::LDA’
+     class CV_EXPORTS LDA
+                      ^
+In file included from /usr/local/include/opencv2/core/types_c.h:101:0,
+                 from /usr/local/include/opencv2/core/core_c.h:48,
+                 from /usr/local/include/opencv/cv.h:63,
+                 from ../src/Librerias_Reconocimiento.h:18,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core.hpp:2422:18: error: previous definition of ‘class cv::LDA’
+ class CV_EXPORTS LDA
+                  ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:960:27: error: redeclaration of ‘COLORMAP_AUTUMN’
+         COLORMAP_AUTUMN = 0,
+                           ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3782:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_AUTUMN’
+     COLORMAP_AUTUMN = 0, //!< ![autumn](pics/colormaps/colorscale_autumn.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:961:25: error: redeclaration of ‘COLORMAP_BONE’
+         COLORMAP_BONE = 1,
+                         ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3783:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_BONE’
+     COLORMAP_BONE = 1, //!< ![bone](pics/colormaps/colorscale_bone.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:962:24: error: redeclaration of ‘COLORMAP_JET’
+         COLORMAP_JET = 2,
+                        ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3784:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_JET’
+     COLORMAP_JET = 2, //!< ![jet](pics/colormaps/colorscale_jet.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:963:27: error: redeclaration of ‘COLORMAP_WINTER’
+         COLORMAP_WINTER = 3,
+                           ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3785:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_WINTER’
+     COLORMAP_WINTER = 3, //!< ![winter](pics/colormaps/colorscale_winter.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:964:28: error: redeclaration of ‘COLORMAP_RAINBOW’
+         COLORMAP_RAINBOW = 4,
+                            ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3786:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_RAINBOW’
+     COLORMAP_RAINBOW = 4, //!< ![rainbow](pics/colormaps/colorscale_rainbow.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:965:26: error: redeclaration of ‘COLORMAP_OCEAN’
+         COLORMAP_OCEAN = 5,
+                          ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3787:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_OCEAN’
+     COLORMAP_OCEAN = 5, //!< ![ocean](pics/colormaps/colorscale_ocean.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:966:27: error: redeclaration of ‘COLORMAP_SUMMER’
+         COLORMAP_SUMMER = 6,
+                           ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3788:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_SUMMER’
+     COLORMAP_SUMMER = 6, //!< ![summer](pics/colormaps/colorscale_summer.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:967:27: error: redeclaration of ‘COLORMAP_SPRING’
+         COLORMAP_SPRING = 7,
+                           ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3789:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_SPRING’
+     COLORMAP_SPRING = 7, //!< ![spring](pics/colormaps/colorscale_spring.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:968:25: error: redeclaration of ‘COLORMAP_COOL’
+         COLORMAP_COOL = 8,
+                         ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3790:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_COOL’
+     COLORMAP_COOL = 8, //!< ![cool](pics/colormaps/colorscale_cool.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:969:24: error: redeclaration of ‘COLORMAP_HSV’
+         COLORMAP_HSV = 9,
+                        ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3791:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_HSV’
+     COLORMAP_HSV = 9, //!< ![HSV](pics/colormaps/colorscale_hsv.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:970:25: error: redeclaration of ‘COLORMAP_PINK’
+         COLORMAP_PINK = 10,
+                         ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3792:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_PINK’
+     COLORMAP_PINK = 10, //!< ![pink](pics/colormaps/colorscale_pink.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:971:24: error: redeclaration of ‘COLORMAP_HOT’
+         COLORMAP_HOT = 11
+                        ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3793:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_HOT’
+     COLORMAP_HOT = 11, //!< ![hot](pics/colormaps/colorscale_hot.jpg)
+     ^
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:36:6: warning: unused variable ‘nPictureById’ [-Wunused-variable]
+  int nPictureById[MAX_PEOPLE];     // Id of each person of the model of face recognition
+      ^
+../src/FaceTracking.cpp:37:6: warning: unused variable ‘im_width’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+      ^
+../src/FaceTracking.cpp:37:16: warning: unused variable ‘im_height’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+                ^
+../src/FaceTracking.cpp:43:9: warning: unused variable ‘x_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+         ^
+../src/FaceTracking.cpp:43:21: warning: unused variable ‘y_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                     ^
+../src/FaceTracking.cpp:43:33: warning: unused variable ‘area_face’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                                 ^
+make: *** [src/FaceTracking.o] Error 1
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+23:17:11 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:852:22: error: redefinition of ‘class cv::LDA’
+     class CV_EXPORTS LDA
+                      ^
+In file included from /usr/local/include/opencv2/core/types_c.h:101:0,
+                 from /usr/local/include/opencv2/core/core_c.h:48,
+                 from /usr/local/include/opencv/cv.h:63,
+                 from ../src/Librerias_Reconocimiento.h:18,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core.hpp:2422:18: error: previous definition of ‘class cv::LDA’
+ class CV_EXPORTS LDA
+                  ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:960:27: error: redeclaration of ‘COLORMAP_AUTUMN’
+         COLORMAP_AUTUMN = 0,
+                           ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3782:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_AUTUMN’
+     COLORMAP_AUTUMN = 0, //!< ![autumn](pics/colormaps/colorscale_autumn.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:961:25: error: redeclaration of ‘COLORMAP_BONE’
+         COLORMAP_BONE = 1,
+                         ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3783:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_BONE’
+     COLORMAP_BONE = 1, //!< ![bone](pics/colormaps/colorscale_bone.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:962:24: error: redeclaration of ‘COLORMAP_JET’
+         COLORMAP_JET = 2,
+                        ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3784:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_JET’
+     COLORMAP_JET = 2, //!< ![jet](pics/colormaps/colorscale_jet.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:963:27: error: redeclaration of ‘COLORMAP_WINTER’
+         COLORMAP_WINTER = 3,
+                           ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3785:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_WINTER’
+     COLORMAP_WINTER = 3, //!< ![winter](pics/colormaps/colorscale_winter.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:964:28: error: redeclaration of ‘COLORMAP_RAINBOW’
+         COLORMAP_RAINBOW = 4,
+                            ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3786:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_RAINBOW’
+     COLORMAP_RAINBOW = 4, //!< ![rainbow](pics/colormaps/colorscale_rainbow.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:965:26: error: redeclaration of ‘COLORMAP_OCEAN’
+         COLORMAP_OCEAN = 5,
+                          ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3787:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_OCEAN’
+     COLORMAP_OCEAN = 5, //!< ![ocean](pics/colormaps/colorscale_ocean.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:966:27: error: redeclaration of ‘COLORMAP_SUMMER’
+         COLORMAP_SUMMER = 6,
+                           ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3788:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_SUMMER’
+     COLORMAP_SUMMER = 6, //!< ![summer](pics/colormaps/colorscale_summer.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:967:27: error: redeclaration of ‘COLORMAP_SPRING’
+         COLORMAP_SPRING = 7,
+                           ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3789:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_SPRING’
+     COLORMAP_SPRING = 7, //!< ![spring](pics/colormaps/colorscale_spring.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:968:25: error: redeclaration of ‘COLORMAP_COOL’
+         COLORMAP_COOL = 8,
+                         ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3790:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_COOL’
+     COLORMAP_COOL = 8, //!< ![cool](pics/colormaps/colorscale_cool.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:969:24: error: redeclaration of ‘COLORMAP_HSV’
+         COLORMAP_HSV = 9,
+                        ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3791:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_HSV’
+     COLORMAP_HSV = 9, //!< ![HSV](pics/colormaps/colorscale_hsv.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:970:25: error: redeclaration of ‘COLORMAP_PINK’
+         COLORMAP_PINK = 10,
+                         ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3792:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_PINK’
+     COLORMAP_PINK = 10, //!< ![pink](pics/colormaps/colorscale_pink.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:971:24: error: redeclaration of ‘COLORMAP_HOT’
+         COLORMAP_HOT = 11
+                        ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3793:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_HOT’
+     COLORMAP_HOT = 11, //!< ![hot](pics/colormaps/colorscale_hot.jpg)
+     ^
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:36:6: warning: unused variable ‘nPictureById’ [-Wunused-variable]
+  int nPictureById[MAX_PEOPLE];     // Id of each person of the model of face recognition
+      ^
+../src/FaceTracking.cpp:37:6: warning: unused variable ‘im_width’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+      ^
+../src/FaceTracking.cpp:37:16: warning: unused variable ‘im_height’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+                ^
+../src/FaceTracking.cpp:43:9: warning: unused variable ‘x_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+         ^
+../src/FaceTracking.cpp:43:21: warning: unused variable ‘y_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                     ^
+../src/FaceTracking.cpp:43:33: warning: unused variable ‘area_face’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                                 ^
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+make: *** [src/FaceTracking.o] Error 1
+23:17:26 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:852:22: error: redefinition of ‘class cv::LDA’
+     class CV_EXPORTS LDA
+                      ^
+In file included from /usr/local/include/opencv2/core/types_c.h:101:0,
+                 from /usr/local/include/opencv2/core/core_c.h:48,
+                 from /usr/local/include/opencv/cv.h:63,
+                 from ../src/Librerias_Reconocimiento.h:18,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core.hpp:2422:18: error: previous definition of ‘class cv::LDA’
+ class CV_EXPORTS LDA
+                  ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:960:27: error: redeclaration of ‘COLORMAP_AUTUMN’
+         COLORMAP_AUTUMN = 0,
+                           ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3782:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_AUTUMN’
+     COLORMAP_AUTUMN = 0, //!< ![autumn](pics/colormaps/colorscale_autumn.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:961:25: error: redeclaration of ‘COLORMAP_BONE’
+         COLORMAP_BONE = 1,
+                         ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3783:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_BONE’
+     COLORMAP_BONE = 1, //!< ![bone](pics/colormaps/colorscale_bone.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:962:24: error: redeclaration of ‘COLORMAP_JET’
+         COLORMAP_JET = 2,
+                        ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3784:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_JET’
+     COLORMAP_JET = 2, //!< ![jet](pics/colormaps/colorscale_jet.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:963:27: error: redeclaration of ‘COLORMAP_WINTER’
+         COLORMAP_WINTER = 3,
+                           ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3785:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_WINTER’
+     COLORMAP_WINTER = 3, //!< ![winter](pics/colormaps/colorscale_winter.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:964:28: error: redeclaration of ‘COLORMAP_RAINBOW’
+         COLORMAP_RAINBOW = 4,
+                            ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3786:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_RAINBOW’
+     COLORMAP_RAINBOW = 4, //!< ![rainbow](pics/colormaps/colorscale_rainbow.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:965:26: error: redeclaration of ‘COLORMAP_OCEAN’
+         COLORMAP_OCEAN = 5,
+                          ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3787:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_OCEAN’
+     COLORMAP_OCEAN = 5, //!< ![ocean](pics/colormaps/colorscale_ocean.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:966:27: error: redeclaration of ‘COLORMAP_SUMMER’
+         COLORMAP_SUMMER = 6,
+                           ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3788:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_SUMMER’
+     COLORMAP_SUMMER = 6, //!< ![summer](pics/colormaps/colorscale_summer.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:967:27: error: redeclaration of ‘COLORMAP_SPRING’
+         COLORMAP_SPRING = 7,
+                           ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3789:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_SPRING’
+     COLORMAP_SPRING = 7, //!< ![spring](pics/colormaps/colorscale_spring.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:968:25: error: redeclaration of ‘COLORMAP_COOL’
+         COLORMAP_COOL = 8,
+                         ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3790:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_COOL’
+     COLORMAP_COOL = 8, //!< ![cool](pics/colormaps/colorscale_cool.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:969:24: error: redeclaration of ‘COLORMAP_HSV’
+         COLORMAP_HSV = 9,
+                        ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3791:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_HSV’
+     COLORMAP_HSV = 9, //!< ![HSV](pics/colormaps/colorscale_hsv.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:970:25: error: redeclaration of ‘COLORMAP_PINK’
+         COLORMAP_PINK = 10,
+                         ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3792:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_PINK’
+     COLORMAP_PINK = 10, //!< ![pink](pics/colormaps/colorscale_pink.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:971:24: error: redeclaration of ‘COLORMAP_HOT’
+         COLORMAP_HOT = 11
+                        ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3793:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_HOT’
+     COLORMAP_HOT = 11, //!< ![hot](pics/colormaps/colorscale_hot.jpg)
+     ^
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:36:6: warning: unused variable ‘nPictureById’ [-Wunused-variable]
+  int nPictureById[MAX_PEOPLE];     // Id of each person of the model of face recognition
+      ^
+../src/FaceTracking.cpp:37:6: warning: unused variable ‘im_width’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+      ^
+../src/FaceTracking.cpp:37:16: warning: unused variable ‘im_height’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+                ^
+../src/FaceTracking.cpp:43:9: warning: unused variable ‘x_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+         ^
+../src/FaceTracking.cpp:43:21: warning: unused variable ‘y_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                     ^
+../src/FaceTracking.cpp:43:33: warning: unused variable ‘area_face’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                                 ^
+make: *** [src/FaceTracking.o] Error 1
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+23:17:36 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:852:22: error: redefinition of ‘class cv::LDA’
+     class CV_EXPORTS LDA
+                      ^
+In file included from /usr/local/include/opencv2/core/types_c.h:101:0,
+                 from /usr/local/include/opencv2/core/core_c.h:48,
+                 from /usr/local/include/opencv/cv.h:63,
+                 from ../src/Librerias_Reconocimiento.h:18,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core.hpp:2422:18: error: previous definition of ‘class cv::LDA’
+ class CV_EXPORTS LDA
+                  ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:960:27: error: redeclaration of ‘COLORMAP_AUTUMN’
+         COLORMAP_AUTUMN = 0,
+                           ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3782:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_AUTUMN’
+     COLORMAP_AUTUMN = 0, //!< ![autumn](pics/colormaps/colorscale_autumn.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:961:25: error: redeclaration of ‘COLORMAP_BONE’
+         COLORMAP_BONE = 1,
+                         ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3783:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_BONE’
+     COLORMAP_BONE = 1, //!< ![bone](pics/colormaps/colorscale_bone.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:962:24: error: redeclaration of ‘COLORMAP_JET’
+         COLORMAP_JET = 2,
+                        ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3784:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_JET’
+     COLORMAP_JET = 2, //!< ![jet](pics/colormaps/colorscale_jet.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:963:27: error: redeclaration of ‘COLORMAP_WINTER’
+         COLORMAP_WINTER = 3,
+                           ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3785:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_WINTER’
+     COLORMAP_WINTER = 3, //!< ![winter](pics/colormaps/colorscale_winter.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:964:28: error: redeclaration of ‘COLORMAP_RAINBOW’
+         COLORMAP_RAINBOW = 4,
+                            ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3786:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_RAINBOW’
+     COLORMAP_RAINBOW = 4, //!< ![rainbow](pics/colormaps/colorscale_rainbow.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:965:26: error: redeclaration of ‘COLORMAP_OCEAN’
+         COLORMAP_OCEAN = 5,
+                          ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3787:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_OCEAN’
+     COLORMAP_OCEAN = 5, //!< ![ocean](pics/colormaps/colorscale_ocean.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:966:27: error: redeclaration of ‘COLORMAP_SUMMER’
+         COLORMAP_SUMMER = 6,
+                           ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3788:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_SUMMER’
+     COLORMAP_SUMMER = 6, //!< ![summer](pics/colormaps/colorscale_summer.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:967:27: error: redeclaration of ‘COLORMAP_SPRING’
+         COLORMAP_SPRING = 7,
+                           ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3789:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_SPRING’
+     COLORMAP_SPRING = 7, //!< ![spring](pics/colormaps/colorscale_spring.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:968:25: error: redeclaration of ‘COLORMAP_COOL’
+         COLORMAP_COOL = 8,
+                         ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3790:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_COOL’
+     COLORMAP_COOL = 8, //!< ![cool](pics/colormaps/colorscale_cool.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:969:24: error: redeclaration of ‘COLORMAP_HSV’
+         COLORMAP_HSV = 9,
+                        ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3791:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_HSV’
+     COLORMAP_HSV = 9, //!< ![HSV](pics/colormaps/colorscale_hsv.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:970:25: error: redeclaration of ‘COLORMAP_PINK’
+         COLORMAP_PINK = 10,
+                         ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3792:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_PINK’
+     COLORMAP_PINK = 10, //!< ![pink](pics/colormaps/colorscale_pink.jpg)
+     ^
+In file included from ../src/FaceTracking.cpp:20:0:
+/usr/include/opencv2/contrib/contrib.hpp:971:24: error: redeclaration of ‘COLORMAP_HOT’
+         COLORMAP_HOT = 11
+                        ^
+In file included from /usr/local/include/opencv2/imgproc/imgproc.hpp:48:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/imgproc.hpp:3793:5: note: previous declaration ‘cv::ColormapTypes COLORMAP_HOT’
+     COLORMAP_HOT = 11, //!< ![hot](pics/colormaps/colorscale_hot.jpg)
+     ^
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:36:6: warning: unused variable ‘nPictureById’ [-Wunused-variable]
+  int nPictureById[MAX_PEOPLE];     // Id of each person of the model of face recognition
+      ^
+../src/FaceTracking.cpp:37:6: warning: unused variable ‘im_width’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+      ^
+../src/FaceTracking.cpp:37:16: warning: unused variable ‘im_height’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+                ^
+../src/FaceTracking.cpp:43:9: warning: unused variable ‘x_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+         ^
+../src/FaceTracking.cpp:43:21: warning: unused variable ‘y_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                     ^
+../src/FaceTracking.cpp:43:33: warning: unused variable ‘area_face’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                                 ^
+make: *** [src/FaceTracking.o] Error 1
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+23:17:45 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:36:6: warning: unused variable ‘nPictureById’ [-Wunused-variable]
+  int nPictureById[MAX_PEOPLE];     // Id of each person of the model of face recognition
+      ^
+../src/FaceTracking.cpp:37:6: warning: unused variable ‘im_width’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+      ^
+../src/FaceTracking.cpp:37:16: warning: unused variable ‘im_height’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+                ^
+../src/FaceTracking.cpp:43:9: warning: unused variable ‘x_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+         ^
+../src/FaceTracking.cpp:43:21: warning: unused variable ‘y_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                     ^
+../src/FaceTracking.cpp:43:33: warning: unused variable ‘area_face’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                                 ^
+../src/FaceTracking.cpp:46:6: warning: variable ‘PREDICTION_SEUIL’ set but not used [-Wunused-but-set-variable]
+  int PREDICTION_SEUIL;      // Prediction limit
+      ^
+Finished building: ../src/FaceTracking.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o   -lopencv_shape -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core
+Finished building target: FaceTracking
+ 
+23:24:52 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+23:24:56 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
