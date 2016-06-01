@@ -1185,3 +1185,982 @@ make: No se hace nada para 'all'.
 23:24:56 **** Incremental Build of configuration Debug for project FaceTracking ****
 make all 
 make: No se hace nada para 'all'.
+23:32:51 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp:9:69: fatal error: /home/maximofn/Escritorio/opencv_contrib/modules/face.hpp: No existe el archivo o el directorio
+compilation terminated.
+make: *** [src/FaceTracking.o] Error 1
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+23:33:01 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp:9:69: fatal error: /home/maximofn/Escritorio/opencv_contrib/modules/face.hpp: No existe el archivo o el directorio
+compilation terminated.
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+make: *** [src/FaceTracking.o] Error 1
+23:34:08 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+In file included from ../src/FaceTracking.cpp:9:0:
+/home/maximofn/Escritorio/opencv_contrib/modules/face/include/opencv2/face.hpp:371:36: fatal error: opencv2/face/facerec.hpp: No existe el archivo o el directorio
+compilation terminated.
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+make: *** [src/FaceTracking.o] Error 1
+23:36:22 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+In file included from ../src/FaceTracking.cpp:9:0:
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/opencv_contrib/modules/face/include/opencv2/face.hpp:371:36: fatal error: opencv2/face/facerec.hpp: No existe el archivo o el directorio
+compilation terminated.
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+make: *** [src/FaceTracking.o] Error 1
+23:37:26 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+In file included from ../src/FaceTracking.cpp:9:0:
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/opencv_contrib/modules/face/include/opencv2/face.hpp:371:36: fatal error: opencv2/face/facerec.hpp: No existe el archivo o el directorio
+compilation terminated.
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+make: *** [src/FaceTracking.o] Error 1
+23:38:51 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+In file included from ../src/FaceTracking.cpp:9:0:
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/opencv_contrib/modules/face/include/opencv2/face.hpp:371:36: fatal error: opencv2/face/facerec.hpp: No existe el archivo o el directorio
+compilation terminated.
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+make: *** [src/FaceTracking.o] Error 1
+23:40:53 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp:12:28: fatal error: opencv2/face.hpp: No existe el archivo o el directorio
+compilation terminated.
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+make: *** [src/FaceTracking.o] Error 1
+23:41:08 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+In file included from ../src/FaceTracking.cpp:12:0:
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/opencv_contrib/modules/face/include/opencv2/face.hpp:371:36: fatal error: opencv2/face/facerec.hpp: No existe el archivo o el directorio
+compilation terminated.
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+make: *** [src/FaceTracking.o] Error 1
+23:41:31 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+In file included from ../src/FaceTracking.cpp:12:0:
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/opencv_contrib/modules/face/include/opencv2/face.hpp:371:36: fatal error: opencv2/face/facerec.hpp: No existe el archivo o el directorio
+compilation terminated.
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+make: *** [src/FaceTracking.o] Error 1
+23:41:40 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+In file included from ../src/FaceTracking.cpp:12:0:
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/opencv_contrib/modules/face/include/opencv2/face.hpp:371:36: fatal error: opencv2/face/facerec.hpp: No existe el archivo o el directorio
+compilation terminated.
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+make: *** [src/FaceTracking.o] Error 1
+23:41:44 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+In file included from ../src/FaceTracking.cpp:12:0:
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/opencv_contrib/modules/face/include/opencv2/face.hpp:371:36: fatal error: opencv2/face/facerec.hpp: No existe el archivo o el directorio
+compilation terminated.
+make: *** [src/FaceTracking.o] Error 1
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+23:42:35 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+In file included from ../src/FaceTracking.cpp:12:0:
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/opencv_contrib/modules/face/include/opencv2/face.hpp:371:36: fatal error: opencv2/face/facerec.hpp: No existe el archivo o el directorio
+compilation terminated.
+make: *** [src/FaceTracking.o] Error 1
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+23:43:13 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+In file included from ../src/FaceTracking.cpp:12:0:
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/opencv_contrib/modules/face/include/opencv2/face.hpp:371:36: fatal error: opencv2/face/facerec.hpp: No existe el archivo o el directorio
+compilation terminated.
+make: *** [src/FaceTracking.o] Error 1
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+23:43:25 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+In file included from ../src/FaceTracking.cpp:12:0:
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/opencv_contrib/modules/face/include/opencv2/face.hpp:371:36: fatal error: opencv2/face/facerec.hpp: No existe el archivo o el directorio
+compilation terminated.
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+make: *** [src/FaceTracking.o] Error 1
+23:45:06 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+In file included from ../src/FaceTracking.cpp:12:0:
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/opencv_contrib/modules/face/include/opencv2/face.hpp:371:36: fatal error: opencv2/face/facerec.hpp: No existe el archivo o el directorio
+compilation terminated.
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+make: *** [src/FaceTracking.o] Error 1
+23:46:23 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+In file included from ../src/FaceTracking.cpp:12:0:
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/opencv_contrib/modules/face/include/opencv2/face.hpp:371:36: fatal error: opencv2/face/facerec.hpp: No existe el archivo o el directorio
+compilation terminated.
+make: *** [src/FaceTracking.o] Error 1
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+23:46:37 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+In file included from ../src/FaceTracking.cpp:12:0:
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/opencv_contrib/modules/face/include/opencv2/face.hpp:371:36: fatal error: opencv2/face/facerec.hpp: No existe el archivo o el directorio
+compilation terminated.
+make: *** [src/FaceTracking.o] Error 1
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+23:48:30 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp:12:28: fatal error: opencv2/face.hpp: No existe el archivo o el directorio
+compilation terminated.
+make: *** [src/FaceTracking.o] Error 1
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+00:17:51 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:32:6: warning: unused variable ‘nPictureById’ [-Wunused-variable]
+  int nPictureById[MAX_PEOPLE];     // Id of each person of the model of face recognition
+      ^
+../src/FaceTracking.cpp:33:6: warning: unused variable ‘im_width’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+      ^
+../src/FaceTracking.cpp:33:16: warning: unused variable ‘im_height’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+                ^
+../src/FaceTracking.cpp:39:9: warning: unused variable ‘x_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+         ^
+../src/FaceTracking.cpp:39:21: warning: unused variable ‘y_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                     ^
+../src/FaceTracking.cpp:39:33: warning: unused variable ‘area_face’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                                 ^
+../src/FaceTracking.cpp:42:6: warning: variable ‘PREDICTION_SEUIL’ set but not used [-Wunused-but-set-variable]
+  int PREDICTION_SEUIL;      // Prediction limit
+      ^
+Finished building: ../src/FaceTracking.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o   -lopencv_shape -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core
+Finished building target: FaceTracking
+ 
+00:18:01 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+00:18:08 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:32:6: warning: unused variable ‘nPictureById’ [-Wunused-variable]
+  int nPictureById[MAX_PEOPLE];     // Id of each person of the model of face recognition
+      ^
+../src/FaceTracking.cpp:33:6: warning: unused variable ‘im_width’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+      ^
+../src/FaceTracking.cpp:33:16: warning: unused variable ‘im_height’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+                ^
+../src/FaceTracking.cpp:39:9: warning: unused variable ‘x_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+         ^
+../src/FaceTracking.cpp:39:21: warning: unused variable ‘y_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                     ^
+../src/FaceTracking.cpp:39:33: warning: unused variable ‘area_face’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                                 ^
+../src/FaceTracking.cpp:42:6: warning: variable ‘PREDICTION_SEUIL’ set but not used [-Wunused-but-set-variable]
+  int PREDICTION_SEUIL;      // Prediction limit
+      ^
+Finished building: ../src/FaceTracking.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o   -lopencv_shape -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core
+Finished building target: FaceTracking
+ 
+00:18:13 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+00:19:21 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:83:151: error: ‘face_recognition’ was not declared in this scope
+   face_recognition(people, face_cascade, grayscaleFrame, captureFrame, im_width, im_height, model, PREDICTION_SEUIL, x_face_pos, y_face_pos, area_face);
+                                                                                                                                                       ^
+../src/FaceTracking.cpp:32:6: warning: unused variable ‘nPictureById’ [-Wunused-variable]
+  int nPictureById[MAX_PEOPLE];     // Id of each person of the model of face recognition
+      ^
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+make: *** [src/FaceTracking.o] Error 1
+00:20:00 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:83:151: error: ‘face_recognition’ was not declared in this scope
+   face_recognition(people, face_cascade, grayscaleFrame, captureFrame, im_width, im_height, model, PREDICTION_SEUIL, x_face_pos, y_face_pos, area_face);
+                                                                                                                                                       ^
+../src/FaceTracking.cpp:32:6: warning: unused variable ‘nPictureById’ [-Wunused-variable]
+  int nPictureById[MAX_PEOPLE];     // Id of each person of the model of face recognition
+      ^
+make: *** [src/FaceTracking.o] Error 1
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+00:20:39 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+In file included from ../src/FaceTracking.cpp:8:0:
+../src/Librerias_Reconocimiento.h:65:142: error: ‘Eigenfaces’ has not been declared
+ void face_recognition(string people[MAX_PEOPLE], CascadeClassifier& face_cascade, Mat& gray, Mat& captureFrame, int im_width, int im_height, Eigenfaces model, int PREDICTION_SEUIL, double& x_face_pos, double& y_face_pos, double& area_face);
+                                                                                                                                              ^
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:83:151: error: invalid user-defined conversion from ‘cv::Ptr<cv::face::FaceRecognizer>’ to ‘int’ [-fpermissive]
+   face_recognition(people, face_cascade, grayscaleFrame, captureFrame, im_width, im_height, model, PREDICTION_SEUIL, x_face_pos, y_face_pos, area_face);
+                                                                                                                                                       ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:1067:0,
+                 from /usr/local/include/opencv2/core/base.hpp:56,
+                 from /usr/local/include/opencv2/core.hpp:54,
+                 from /usr/local/include/opencv2/core/types_c.h:101,
+                 from /usr/local/include/opencv2/core/core_c.h:48,
+                 from /usr/local/include/opencv/cv.h:63,
+                 from ../src/Librerias_Reconocimiento.h:18,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/ptr.inl.hpp:222:1: note: candidate is: cv::Ptr<T>::operator T*() const [with T = cv::face::FaceRecognizer] <near match>
+ Ptr<T>::operator T* () const
+ ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:222:1: note:   no known conversion from ‘cv::face::FaceRecognizer*’ to ‘int’
+In file included from ../src/FaceTracking.cpp:8:0:
+../src/Librerias_Reconocimiento.h:65:6: note:   initializing argument 7 of ‘void face_recognition(std::__cxx11::string*, cv::CascadeClassifier&, cv::Mat&, cv::Mat&, int, int, int, int, double&, double&, double&)’
+ void face_recognition(string people[MAX_PEOPLE], CascadeClassifier& face_cascade, Mat& gray, Mat& captureFrame, int im_width, int im_height, Eigenfaces model, int PREDICTION_SEUIL, double& x_face_pos, double& y_face_pos, double& area_face);
+      ^
+../src/FaceTracking.cpp:32:6: warning: unused variable ‘nPictureById’ [-Wunused-variable]
+  int nPictureById[MAX_PEOPLE];     // Id of each person of the model of face recognition
+      ^
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+make: *** [src/FaceTracking.o] Error 1
+00:20:54 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+In file included from ../src/FaceTracking.cpp:8:0:
+../src/Librerias_Reconocimiento.h:65:142: error: ‘Eigenfaces’ has not been declared
+ void face_recognition(string people[MAX_PEOPLE], CascadeClassifier& face_cascade, Mat& gray, Mat& captureFrame, int im_width, int im_height, Eigenfaces model, int PREDICTION_SEUIL, double& x_face_pos, double& y_face_pos, double& area_face);
+                                                                                                                                              ^
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:32:6: warning: unused variable ‘nPictureById’ [-Wunused-variable]
+  int nPictureById[MAX_PEOPLE];     // Id of each person of the model of face recognition
+      ^
+../src/FaceTracking.cpp:33:6: warning: unused variable ‘im_width’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+      ^
+../src/FaceTracking.cpp:33:16: warning: unused variable ‘im_height’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+                ^
+../src/FaceTracking.cpp:39:9: warning: unused variable ‘x_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+         ^
+../src/FaceTracking.cpp:39:21: warning: unused variable ‘y_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                     ^
+../src/FaceTracking.cpp:39:33: warning: unused variable ‘area_face’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                                 ^
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+make: *** [src/FaceTracking.o] Error 1
+00:21:17 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+In file included from ../src/FaceTracking.cpp:8:0:
+../src/Librerias_Reconocimiento.h:64:146: error: ‘FaceRecognizer’ was not declared in this scope
+ void face_recognition(string people[MAX_PEOPLE], CascadeClassifier& face_cascade, Mat& gray, Mat& captureFrame, int im_width, int im_height, Ptr<FaceRecognizer> model, int PREDICTION_SEUIL, double& x_face_pos, double& y_face_pos, double& area_face);
+                                                                                                                                                  ^
+../src/Librerias_Reconocimiento.h:64:160: error: template argument 1 is invalid
+ void face_recognition(string people[MAX_PEOPLE], CascadeClassifier& face_cascade, Mat& gray, Mat& captureFrame, int im_width, int im_height, Ptr<FaceRecognizer> model, int PREDICTION_SEUIL, double& x_face_pos, double& y_face_pos, double& area_face);
+                                                                                                                                                                ^
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:32:6: warning: unused variable ‘nPictureById’ [-Wunused-variable]
+  int nPictureById[MAX_PEOPLE];     // Id of each person of the model of face recognition
+      ^
+../src/FaceTracking.cpp:33:6: warning: unused variable ‘im_width’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+      ^
+../src/FaceTracking.cpp:33:16: warning: unused variable ‘im_height’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+                ^
+../src/FaceTracking.cpp:39:9: warning: unused variable ‘x_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+         ^
+../src/FaceTracking.cpp:39:21: warning: unused variable ‘y_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                     ^
+../src/FaceTracking.cpp:39:33: warning: unused variable ‘area_face’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                                 ^
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+make: *** [src/FaceTracking.o] Error 1
+00:22:02 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+In file included from ../src/FaceTracking.cpp:8:0:
+../src/Librerias_Reconocimiento.h:64:24: error: ‘CascadeClassifier’ was not declared in this scope
+ bool load_haar_cascade(CascadeClassifier& face_cascade);
+                        ^
+../src/Librerias_Reconocimiento.h:64:43: error: ‘face_cascade’ was not declared in this scope
+ bool load_haar_cascade(CascadeClassifier& face_cascade);
+                                           ^
+../src/Librerias_Reconocimiento.h:66:50: error: ‘CascadeClassifier’ has not been declared
+ void face_recognition(string people[MAX_PEOPLE], CascadeClassifier& face_cascade, Mat& gray, Mat& captureFrame, int im_width, int im_height, Ptr<FaceRecognizer> model, int PREDICTION_SEUIL, double& x_face_pos, double& y_face_pos, double& area_face);
+                                                  ^
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:37:2: error: ‘CascadeClassifier’ was not declared in this scope
+  CascadeClassifier face_cascade;   // Cascade Classifier
+  ^
+../src/FaceTracking.cpp:32:6: warning: unused variable ‘nPictureById’ [-Wunused-variable]
+  int nPictureById[MAX_PEOPLE];     // Id of each person of the model of face recognition
+      ^
+../src/FaceTracking.cpp:33:6: warning: unused variable ‘im_width’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+      ^
+../src/FaceTracking.cpp:33:16: warning: unused variable ‘im_height’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+                ^
+../src/FaceTracking.cpp:39:9: warning: unused variable ‘x_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+         ^
+../src/FaceTracking.cpp:39:21: warning: unused variable ‘y_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                     ^
+../src/FaceTracking.cpp:39:33: warning: unused variable ‘area_face’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                                 ^
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+make: *** [src/FaceTracking.o] Error 1
+00:22:49 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:32:6: warning: unused variable ‘nPictureById’ [-Wunused-variable]
+  int nPictureById[MAX_PEOPLE];     // Id of each person of the model of face recognition
+      ^
+../src/FaceTracking.cpp:33:6: warning: unused variable ‘im_width’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+      ^
+../src/FaceTracking.cpp:33:16: warning: unused variable ‘im_height’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+                ^
+../src/FaceTracking.cpp:39:9: warning: unused variable ‘x_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+         ^
+../src/FaceTracking.cpp:39:21: warning: unused variable ‘y_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                     ^
+../src/FaceTracking.cpp:39:33: warning: unused variable ‘area_face’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                                 ^
+../src/FaceTracking.cpp:42:6: warning: variable ‘PREDICTION_SEUIL’ set but not used [-Wunused-but-set-variable]
+  int PREDICTION_SEUIL;      // Prediction limit
+      ^
+Finished building: ../src/FaceTracking.cpp
+ 
+Building file: ../src/Librerias_Reconocimiento.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Librerias_Reconocimiento.d" -MT"src/Librerias_Reconocimiento.d" -o "src/Librerias_Reconocimiento.o" "../src/Librerias_Reconocimiento.cpp"
+Finished building: ../src/Librerias_Reconocimiento.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o   -lopencv_shape -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core
+Finished building target: FaceTracking
+ 
+00:23:04 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:32:6: warning: unused variable ‘nPictureById’ [-Wunused-variable]
+  int nPictureById[MAX_PEOPLE];     // Id of each person of the model of face recognition
+      ^
+../src/FaceTracking.cpp:33:6: warning: unused variable ‘im_width’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+      ^
+../src/FaceTracking.cpp:33:16: warning: unused variable ‘im_height’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+                ^
+../src/FaceTracking.cpp:39:9: warning: unused variable ‘x_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+         ^
+../src/FaceTracking.cpp:39:21: warning: unused variable ‘y_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                     ^
+../src/FaceTracking.cpp:39:33: warning: unused variable ‘area_face’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                                 ^
+../src/FaceTracking.cpp:42:6: warning: variable ‘PREDICTION_SEUIL’ set but not used [-Wunused-but-set-variable]
+  int PREDICTION_SEUIL;      // Prediction limit
+      ^
+Finished building: ../src/FaceTracking.cpp
+ 
+Building file: ../src/Librerias_Reconocimiento.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Librerias_Reconocimiento.d" -MT"src/Librerias_Reconocimiento.d" -o "src/Librerias_Reconocimiento.o" "../src/Librerias_Reconocimiento.cpp"
+Finished building: ../src/Librerias_Reconocimiento.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o   -lopencv_shape -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core
+Finished building target: FaceTracking
+ 
+00:23:44 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/Librerias_Reconocimiento.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Librerias_Reconocimiento.d" -MT"src/Librerias_Reconocimiento.d" -o "src/Librerias_Reconocimiento.o" "../src/Librerias_Reconocimiento.cpp"
+../src/Librerias_Reconocimiento.cpp: In function ‘void face_recognition(std::__cxx11::string*, cv::CascadeClassifier&, cv::Mat&, cv::Mat&, int, int, cv::Ptr<cv::face::FaceRecognizer>, int, double&, double&, double&)’:
+../src/Librerias_Reconocimiento.cpp:325:3: error: ‘UBUNTU_MODE’ was not declared in this scope
+   UBUNTU_MODE  model->predict(face_resized,prediction,predicted_confidence);
+   ^
+../src/Librerias_Reconocimiento.cpp:326:3: error: ‘MAQUINA_VIRTUAL_MODE’ was not declared in this scope
+   MAQUINA_VIRTUAL_MODE model->predict(face_resized,prediction,predicted_confidence);
+   ^
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/Librerias_Reconocimiento.o'
+make: *** [src/Librerias_Reconocimiento.o] Error 1
+00:25:23 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/Librerias_Reconocimiento.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Librerias_Reconocimiento.d" -MT"src/Librerias_Reconocimiento.d" -o "src/Librerias_Reconocimiento.o" "../src/Librerias_Reconocimiento.cpp"
+Finished building: ../src/Librerias_Reconocimiento.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o   -lopencv_shape -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core
+./src/Librerias_Reconocimiento.o: En la función `face_recognition(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, cv::CascadeClassifier&, cv::Mat&, cv::Mat&, int, int, cv::Ptr<cv::face::FaceRecognizer>, int, double&, double&, double&)':
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/Face_tracking_PC/Eclipse/FaceTracking/Debug/../src/Librerias_Reconocimiento.cpp:328: referencia a `cv::face::FaceRecognizer::predict(cv::_InputArray const&, int&, double&) const' sin definir
+collect2: error: ld returned 1 exit status
+makefile:45: fallo en las instrucciones para el objetivo 'FaceTracking'
+make: *** [FaceTracking] Error 1
+00:25:42 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/Librerias_Reconocimiento.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Librerias_Reconocimiento.d" -MT"src/Librerias_Reconocimiento.d" -o "src/Librerias_Reconocimiento.o" "../src/Librerias_Reconocimiento.cpp"
+../src/Librerias_Reconocimiento.cpp: In function ‘void face_recognition(std::__cxx11::string*, cv::CascadeClassifier&, cv::Mat&, cv::Mat&, int, int, cv::Ptr<cv::face::FaceRecognizer>, int, double&, double&, double&)’:
+../src/Librerias_Reconocimiento.cpp:328:10: error: ‘cv::predict’ is not a class member
+   model->cv::predict(face_resized,prediction,predicted_confidence);
+          ^
+make: *** [src/Librerias_Reconocimiento.o] Error 1
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/Librerias_Reconocimiento.o'
+00:25:52 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/Librerias_Reconocimiento.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Librerias_Reconocimiento.d" -MT"src/Librerias_Reconocimiento.d" -o "src/Librerias_Reconocimiento.o" "../src/Librerias_Reconocimiento.cpp"
+Finished building: ../src/Librerias_Reconocimiento.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o   -lopencv_shape -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core
+./src/Librerias_Reconocimiento.o: En la función `face_recognition(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, cv::CascadeClassifier&, cv::Mat&, cv::Mat&, int, int, cv::Ptr<cv::face::FaceRecognizer>, int, double&, double&, double&)':
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/Face_tracking_PC/Eclipse/FaceTracking/Debug/../src/Librerias_Reconocimiento.cpp:328: referencia a `cv::face::FaceRecognizer::predict(cv::_InputArray const&, int&, double&) const' sin definir
+collect2: error: ld returned 1 exit status
+makefile:45: fallo en las instrucciones para el objetivo 'FaceTracking'
+make: *** [FaceTracking] Error 1
+00:27:42 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/Librerias_Reconocimiento.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Librerias_Reconocimiento.d" -MT"src/Librerias_Reconocimiento.d" -o "src/Librerias_Reconocimiento.o" "../src/Librerias_Reconocimiento.cpp"
+Finished building: ../src/Librerias_Reconocimiento.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o   -lopencv_shape -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core
+Finished building target: FaceTracking
+ 
+00:27:47 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+00:28:26 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, const char**)’:
+../src/FaceTracking.cpp:201:38: error: ‘createEigenFaceRecognizer’ is not a member of ‘cv’
+     Ptr<BasicFaceRecognizer> model = cv::createEigenFaceRecognizer();
+                                      ^
+../src/FaceTracking.cpp:201:38: note: suggested alternatives:
+In file included from /usr/local/include/opencv2/face.hpp:371:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/face/facerec.hpp:67:39: note:   ‘cv::face::createEigenFaceRecognizer’
+ CV_EXPORTS_W Ptr<BasicFaceRecognizer> createEigenFaceRecognizer(int num_components = 0, double threshold = DBL_MAX);
+                                       ^
+/usr/local/include/opencv2/face/facerec.hpp:67:39: note:   ‘cv::face::createEigenFaceRecognizer’
+make: *** [src/FaceTracking.o] Error 1
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+00:28:46 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, const char**)’:
+../src/FaceTracking.cpp:201:38: error: ‘createEigenFaceRecognizer’ is not a member of ‘cv’
+     Ptr<BasicFaceRecognizer> model = cv::createEigenFaceRecognizer(10);
+                                      ^
+../src/FaceTracking.cpp:201:38: note: suggested alternatives:
+In file included from /usr/local/include/opencv2/face.hpp:371:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/face/facerec.hpp:67:39: note:   ‘cv::face::createEigenFaceRecognizer’
+ CV_EXPORTS_W Ptr<BasicFaceRecognizer> createEigenFaceRecognizer(int num_components = 0, double threshold = DBL_MAX);
+                                       ^
+/usr/local/include/opencv2/face/facerec.hpp:67:39: note:   ‘cv::face::createEigenFaceRecognizer’
+make: *** [src/FaceTracking.o] Error 1
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+00:32:48 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+Finished building: ../src/FaceTracking.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o   -lopencv_shape -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core
+./src/FaceTracking.o: En la función `main':
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/Face_tracking_PC/Eclipse/FaceTracking/Debug/../src/FaceTracking.cpp:201: referencia a `cv::face::createEigenFaceRecognizer(int, double)' sin definir
+makefile:45: fallo en las instrucciones para el objetivo 'FaceTracking'
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/Face_tracking_PC/Eclipse/FaceTracking/Debug/../src/FaceTracking.cpp:205: referencia a `cv::face::FaceRecognizer::predict(cv::_InputArray const&) const' sin definir
+collect2: error: ld returned 1 exit status
+make: *** [FaceTracking] Error 1
+00:33:05 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+Finished building: ../src/FaceTracking.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o   -lopencv_shape -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core
+./src/FaceTracking.o: En la función `main':
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/Face_tracking_PC/Eclipse/FaceTracking/Debug/../src/FaceTracking.cpp:201: referencia a `cv::face::createEigenFaceRecognizer(int, double)' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/Face_tracking_PC/Eclipse/FaceTracking/Debug/../src/FaceTracking.cpp:205: referencia a `cv::face::FaceRecognizer::predict(cv::_InputArray const&) const' sin definir
+collect2: error: ld returned 1 exit status
+makefile:45: fallo en las instrucciones para el objetivo 'FaceTracking'
+make: *** [FaceTracking] Error 1
+00:36:04 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+Finished building: ../src/FaceTracking.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o   -lopencv_shape -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core
+./src/FaceTracking.o: En la función `main':
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/Face_tracking_PC/Eclipse/FaceTracking/Debug/../src/FaceTracking.cpp:201: referencia a `cv::face::createEigenFaceRecognizer(int, double)' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/Face_tracking_PC/Eclipse/FaceTracking/Debug/../src/FaceTracking.cpp:205: referencia a `cv::face::FaceRecognizer::predict(cv::_InputArray const&) const' sin definir
+collect2: error: ld returned 1 exit status
+make: *** [FaceTracking] Error 1
+makefile:45: fallo en las instrucciones para el objetivo 'FaceTracking'
+00:36:28 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, const char**)’:
+../src/FaceTracking.cpp:201:13: error: ‘BasicFaceRecognizer’ is not a member of ‘cv’
+     cv::Ptr<cv::BasicFaceRecognizer> model = createEigenFaceRecognizer();
+             ^
+../src/FaceTracking.cpp:201:13: note: suggested alternatives:
+In file included from /usr/local/include/opencv2/face.hpp:371:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/face/facerec.hpp:20:20: note:   ‘cv::face::BasicFaceRecognizer’
+ class CV_EXPORTS_W BasicFaceRecognizer : public FaceRecognizer
+                    ^
+/usr/local/include/opencv2/face/facerec.hpp:20:20: note:   ‘cv::face::BasicFaceRecognizer’
+../src/FaceTracking.cpp:201:13: error: ‘BasicFaceRecognizer’ is not a member of ‘cv’
+     cv::Ptr<cv::BasicFaceRecognizer> model = createEigenFaceRecognizer();
+             ^
+../src/FaceTracking.cpp:201:13: note: suggested alternatives:
+In file included from /usr/local/include/opencv2/face.hpp:371:0,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/face/facerec.hpp:20:20: note:   ‘cv::face::BasicFaceRecognizer’
+ class CV_EXPORTS_W BasicFaceRecognizer : public FaceRecognizer
+                    ^
+/usr/local/include/opencv2/face/facerec.hpp:20:20: note:   ‘cv::face::BasicFaceRecognizer’
+../src/FaceTracking.cpp:201:36: error: template argument 1 is invalid
+     cv::Ptr<cv::BasicFaceRecognizer> model = createEigenFaceRecognizer();
+                                    ^
+../src/FaceTracking.cpp:201:71: error: invalid user-defined conversion from ‘cv::Ptr<cv::face::BasicFaceRecognizer>’ to ‘int’ [-fpermissive]
+     cv::Ptr<cv::BasicFaceRecognizer> model = createEigenFaceRecognizer();
+                                                                       ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:1067:0,
+                 from /usr/local/include/opencv2/core/base.hpp:56,
+                 from /usr/local/include/opencv2/core.hpp:54,
+                 from /usr/local/include/opencv2/core/types_c.h:101,
+                 from /usr/local/include/opencv2/core/core_c.h:48,
+                 from /usr/local/include/opencv/cv.h:63,
+                 from ../src/Librerias_Reconocimiento.h:18,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/ptr.inl.hpp:222:1: note: candidate is: cv::Ptr<T>::operator T*() const [with T = cv::face::BasicFaceRecognizer] <near match>
+ Ptr<T>::operator T* () const
+ ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:222:1: note:   no known conversion from ‘cv::face::BasicFaceRecognizer*’ to ‘int’
+../src/FaceTracking.cpp:202:10: error: base operand of ‘->’ is not a pointer
+     model->train(images, labels);
+          ^
+../src/FaceTracking.cpp:205:31: error: base operand of ‘->’ is not a pointer
+     int predictedLabel = model->predict(testSample);
+                               ^
+../src/FaceTracking.cpp:216:28: error: base operand of ‘->’ is not a pointer
+     Mat eigenvalues = model->getEigenValues();
+                            ^
+../src/FaceTracking.cpp:218:18: error: base operand of ‘->’ is not a pointer
+     Mat W = model->getEigenVectors();
+                  ^
+../src/FaceTracking.cpp:220:21: error: base operand of ‘->’ is not a pointer
+     Mat mean = model->getMean();
+                     ^
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+make: *** [src/FaceTracking.o] Error 1
+00:36:34 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+Finished building: ../src/FaceTracking.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o   -lopencv_shape -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core
+./src/FaceTracking.o: En la función `main':
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/Face_tracking_PC/Eclipse/FaceTracking/Debug/../src/FaceTracking.cpp:201: referencia a `cv::face::createEigenFaceRecognizer(int, double)' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/Face_tracking_PC/Eclipse/FaceTracking/Debug/../src/FaceTracking.cpp:205: referencia a `cv::face::FaceRecognizer::predict(cv::_InputArray const&) const' sin definir
+makefile:45: fallo en las instrucciones para el objetivo 'FaceTracking'
+collect2: error: ld returned 1 exit status
+make: *** [FaceTracking] Error 1
+00:39:56 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, const char**)’:
+../src/FaceTracking.cpp:213:81: error: ‘predictedLabel’ was not declared in this scope
+     string result_message = format("Predicted class = %d / Actual class = %d.", predictedLabel, testLabel);
+                                                                                 ^
+../src/FaceTracking.cpp:216:23: error: ‘model’ was not declared in this scope
+     Mat eigenvalues = model->getEigenValues();
+                       ^
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+make: *** [src/FaceTracking.o] Error 1
+00:41:15 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, const char**)’:
+../src/FaceTracking.cpp:213:81: error: ‘predictedLabel’ was not declared in this scope
+     string result_message = format("Predicted class = %d / Actual class = %d.", predictedLabel, testLabel);
+                                                                                 ^
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+make: *** [src/FaceTracking.o] Error 1
+00:41:26 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, const char**)’:
+../src/FaceTracking.cpp:213:35: warning: ‘predictedLabel’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     string result_message = format("Predicted class = %d / Actual class = %d.", predictedLabel, testLabel);
+                                   ^
+Finished building: ../src/FaceTracking.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o   -lopencv_shape -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core
+Finished building target: FaceTracking
+ 
+00:41:33 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+00:45:00 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:32:6: warning: unused variable ‘nPictureById’ [-Wunused-variable]
+  int nPictureById[MAX_PEOPLE];     // Id of each person of the model of face recognition
+      ^
+../src/FaceTracking.cpp:33:6: warning: unused variable ‘im_width’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+      ^
+../src/FaceTracking.cpp:33:16: warning: unused variable ‘im_height’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+                ^
+../src/FaceTracking.cpp:39:9: warning: unused variable ‘x_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+         ^
+../src/FaceTracking.cpp:39:21: warning: unused variable ‘y_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                     ^
+../src/FaceTracking.cpp:39:33: warning: unused variable ‘area_face’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                                 ^
+../src/FaceTracking.cpp:42:6: warning: variable ‘PREDICTION_SEUIL’ set but not used [-Wunused-but-set-variable]
+  int PREDICTION_SEUIL;      // Prediction limit
+      ^
+Finished building: ../src/FaceTracking.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o   -lopencv_shape -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core
+Finished building target: FaceTracking
+ 
+00:45:03 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+00:45:27 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:35:2: error: ‘Eigenfaces’ was not declared in this scope
+  Eigenfaces model;       // Model of face recognition
+  ^
+../src/FaceTracking.cpp:32:6: warning: unused variable ‘nPictureById’ [-Wunused-variable]
+  int nPictureById[MAX_PEOPLE];     // Id of each person of the model of face recognition
+      ^
+../src/FaceTracking.cpp:33:6: warning: unused variable ‘im_width’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+      ^
+../src/FaceTracking.cpp:33:16: warning: unused variable ‘im_height’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+                ^
+../src/FaceTracking.cpp:39:9: warning: unused variable ‘x_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+         ^
+../src/FaceTracking.cpp:39:21: warning: unused variable ‘y_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                     ^
+../src/FaceTracking.cpp:39:33: warning: unused variable ‘area_face’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                                 ^
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+make: *** [src/FaceTracking.o] Error 1
+00:45:34 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:32:6: warning: unused variable ‘nPictureById’ [-Wunused-variable]
+  int nPictureById[MAX_PEOPLE];     // Id of each person of the model of face recognition
+      ^
+../src/FaceTracking.cpp:33:6: warning: unused variable ‘im_width’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+      ^
+../src/FaceTracking.cpp:33:16: warning: unused variable ‘im_height’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+                ^
+../src/FaceTracking.cpp:39:9: warning: unused variable ‘x_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+         ^
+../src/FaceTracking.cpp:39:21: warning: unused variable ‘y_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                     ^
+../src/FaceTracking.cpp:39:33: warning: unused variable ‘area_face’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                                 ^
+../src/FaceTracking.cpp:42:6: warning: variable ‘PREDICTION_SEUIL’ set but not used [-Wunused-but-set-variable]
+  int PREDICTION_SEUIL;      // Prediction limit
+      ^
+Finished building: ../src/FaceTracking.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o   -lopencv_shape -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core
+Finished building target: FaceTracking
+ 
+00:47:23 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:32:6: warning: unused variable ‘nPictureById’ [-Wunused-variable]
+  int nPictureById[MAX_PEOPLE];     // Id of each person of the model of face recognition
+      ^
+../src/FaceTracking.cpp:33:6: warning: unused variable ‘im_width’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+      ^
+../src/FaceTracking.cpp:33:16: warning: unused variable ‘im_height’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+                ^
+../src/FaceTracking.cpp:39:9: warning: unused variable ‘x_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+         ^
+../src/FaceTracking.cpp:39:21: warning: unused variable ‘y_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                     ^
+../src/FaceTracking.cpp:39:33: warning: unused variable ‘area_face’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                                 ^
+../src/FaceTracking.cpp:42:6: warning: variable ‘PREDICTION_SEUIL’ set but not used [-Wunused-but-set-variable]
+  int PREDICTION_SEUIL;      // Prediction limit
+      ^
+Finished building: ../src/FaceTracking.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o   -lopencv_shape -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core
+./src/FaceTracking.o: En la función `main':
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/Face_tracking_PC/Eclipse/FaceTracking/Debug/../src/FaceTracking.cpp:36: referencia a `cv::face::createEigenFaceRecognizer(int, double)' sin definir
+makefile:45: fallo en las instrucciones para el objetivo 'FaceTracking'
+collect2: error: ld returned 1 exit status
+make: *** [FaceTracking] Error 1
+00:47:32 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:32:6: warning: unused variable ‘nPictureById’ [-Wunused-variable]
+  int nPictureById[MAX_PEOPLE];     // Id of each person of the model of face recognition
+      ^
+../src/FaceTracking.cpp:33:6: warning: unused variable ‘im_width’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+      ^
+../src/FaceTracking.cpp:33:16: warning: unused variable ‘im_height’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+                ^
+../src/FaceTracking.cpp:39:9: warning: unused variable ‘x_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+         ^
+../src/FaceTracking.cpp:39:21: warning: unused variable ‘y_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                     ^
+../src/FaceTracking.cpp:39:33: warning: unused variable ‘area_face’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                                 ^
+../src/FaceTracking.cpp:42:6: warning: variable ‘PREDICTION_SEUIL’ set but not used [-Wunused-but-set-variable]
+  int PREDICTION_SEUIL;      // Prediction limit
+      ^
+Finished building: ../src/FaceTracking.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o   -lopencv_shape -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core
+./src/FaceTracking.o: En la función `main':
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/Face_tracking_PC/Eclipse/FaceTracking/Debug/../src/FaceTracking.cpp:36: referencia a `cv::face::createEigenFaceRecognizer(int, double)' sin definir
+collect2: error: ld returned 1 exit status
+makefile:45: fallo en las instrucciones para el objetivo 'FaceTracking'
+make: *** [FaceTracking] Error 1
+00:47:47 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:32:6: warning: unused variable ‘nPictureById’ [-Wunused-variable]
+  int nPictureById[MAX_PEOPLE];     // Id of each person of the model of face recognition
+      ^
+../src/FaceTracking.cpp:33:6: warning: unused variable ‘im_width’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+      ^
+../src/FaceTracking.cpp:33:16: warning: unused variable ‘im_height’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+                ^
+../src/FaceTracking.cpp:39:9: warning: unused variable ‘x_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+         ^
+../src/FaceTracking.cpp:39:21: warning: unused variable ‘y_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                     ^
+../src/FaceTracking.cpp:39:33: warning: unused variable ‘area_face’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                                 ^
+../src/FaceTracking.cpp:42:6: warning: variable ‘PREDICTION_SEUIL’ set but not used [-Wunused-but-set-variable]
+  int PREDICTION_SEUIL;      // Prediction limit
+      ^
+Finished building: ../src/FaceTracking.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o   -lopencv_shape -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core
+Finished building target: FaceTracking
+ 

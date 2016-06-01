@@ -1,6 +1,37 @@
-23:24:56 **** Incremental Build of configuration Debug for project FaceTracking ****
+00:47:47 **** Incremental Build of configuration Debug for project FaceTracking ****
 make all 
-make: No se hace nada para 'all'.
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:32:6: warning: unused variable ‘nPictureById’ [-Wunused-variable]
+  int nPictureById[MAX_PEOPLE];     // Id of each person of the model of face recognition
+      ^
+../src/FaceTracking.cpp:33:6: warning: unused variable ‘im_width’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+      ^
+../src/FaceTracking.cpp:33:16: warning: unused variable ‘im_height’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+                ^
+../src/FaceTracking.cpp:39:9: warning: unused variable ‘x_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+         ^
+../src/FaceTracking.cpp:39:21: warning: unused variable ‘y_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                     ^
+../src/FaceTracking.cpp:39:33: warning: unused variable ‘area_face’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                                 ^
+../src/FaceTracking.cpp:42:6: warning: variable ‘PREDICTION_SEUIL’ set but not used [-Wunused-but-set-variable]
+  int PREDICTION_SEUIL;      // Prediction limit
+      ^
+Finished building: ../src/FaceTracking.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o   -lopencv_shape -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core
+Finished building target: FaceTracking
+ 
 
-23:24:56 Build Finished (took 84ms)
+00:47:48 Build Finished (took 972ms)
 

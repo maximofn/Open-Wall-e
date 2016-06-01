@@ -18,9 +18,16 @@ using namespace std;
 #include <cv.h>
 #include <highgui.h>
 #include <opencv2/objdetect/objdetect.hpp>
-#include <opencv2/highgui/highgui.hpp>
-#include <opencv2/imgproc/imgproc.hpp>
-#include "opencv2/core/core.hpp"
+#include "opencv2/core.hpp"
+#include "/usr/local/include/opencv2/face.hpp"
+#include "opencv2/highgui.hpp"
+#include "opencv2/imgproc.hpp"
+#include <iostream>
+#include <fstream>
+#include <sstream>
+using namespace cv;
+using namespace cv::face;
+using namespace std;
 //#include "opencv2/contrib/contrib.hpp"
 //#include "/home/pi/wall-e/libfacerec-0.04/include/facerec.hpp"
 using namespace cv;
@@ -61,7 +68,7 @@ void read_csv(int nPictureById[MAX_PEOPLE], string people[MAX_PEOPLE], const str
 
 bool load_haar_cascade(CascadeClassifier& face_cascade);
 
-//void face_recognition(string people[MAX_PEOPLE], CascadeClassifier& face_cascade, Mat& gray, Mat& captureFrame, int im_width, int im_height, Ptr<FaceRecognizer> model, int PREDICTION_SEUIL, double& x_face_pos, double& y_face_pos, double& area_face);
+void face_recognition(string people[MAX_PEOPLE], CascadeClassifier& face_cascade, Mat& gray, Mat& captureFrame, int im_width, int im_height, Ptr<FaceRecognizer> model, int PREDICTION_SEUIL, double& x_face_pos, double& y_face_pos, double& area_face);
 //void face_recognition(string people[MAX_PEOPLE], CascadeClassifier& face_cascade, Mat& gray, Mat& captureFrame, int im_width, int im_height, Eigenfaces model, int PREDICTION_SEUIL, double& x_face_pos, double& y_face_pos, double& area_face);
 
 

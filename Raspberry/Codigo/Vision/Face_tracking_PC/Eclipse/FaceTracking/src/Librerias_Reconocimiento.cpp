@@ -293,84 +293,90 @@ bool load_haar_cascade(CascadeClassifier& face_cascade)
  * 		= face_recognition(string people[MAX_PEOPLE], CascadeClassifier& face_cascade, Mat& gray, Mat& captureFrame, int im_width, int im_height, Eigenfaces model, int PREDICTION_SEUIL, double& x_face_pos, double& y_face_pos, double& area_face)
  */
 //void face_recognition(string people[MAX_PEOPLE], CascadeClassifier& face_cascade, Mat& gray, Mat& captureFrame, int im_width, int im_height, Eigenfaces model, int PREDICTION_SEUIL, double& x_face_pos, double& y_face_pos, double& area_face)
-//void face_recognition(string people[MAX_PEOPLE], CascadeClassifier& face_cascade, Mat& gray, Mat& captureFrame, int im_width, int im_height, Ptr<FaceRecognizer> model, int PREDICTION_SEUIL, double& x_face_pos, double& y_face_pos, double& area_face)
-//{
-//	// Declaration of variables
-//	Mat face,face_resized;			// Face converted to gray scale and face resized
-//	vector< Rect_<int> > faces;		// Vector of faces
-//	double scaleFactor = 1.1;		// Parameter specifying how much the image size is reduced at each image scale
-//	int minNeighbors = 3; 			// Parameter specifying how many neighbors each candidate rectangle should have to retain it
-//	double fx = 1.0;			// scale factor along the horizontal axis
-//	double fy = 1.0;			// scale factor along the vertical axis
-//
-//	// Detect faces
-//	face_cascade.detectMultiScale(gray, faces, scaleFactor, minNeighbors, CV_HAAR_SCALE_IMAGE, Size(80,80));
-//
-//	// For each faces founded
-//	for(unsigned int i = 0; i < faces.size(); i++)
-//	{
-//		// crop face (pretty easy with opencv, don't you think ?
-//		Rect face_i = faces[i];
-//
-//		face = gray(face_i);
-//
-//		//  resized face and display it
-//		cv::resize(face, face_resized, Size(im_width, im_height), fx, fy, CV_INTER_NN); //INTER_CUBIC);
-//
-//		// now, we try to predict who is it ?
-//		char sTmp1[256], sTmp2[256], sTmp3[256], sTmp4[256];
-//		double predicted_confidence = 0.0;
-//		int prediction = -1;
-//		//RASPBERRY_MODE		model.predict(face_resized,prediction,predicted_confidence);
-//		UBUNTU_MODE		model->predict(face_resized,prediction,predicted_confidence);
-//		MAQUINA_VIRTUAL_MODE	model->predict(face_resized,prediction,predicted_confidence);
-//
-//		// create a rectangle around the face
-//		INFORMATION rectangle(captureFrame, face_i, CV_RGB(0, 255 ,0), 1);
-//
-//		// get face area and position
-//		x_face_pos = face_i.x + face_i.width/2;
-//		y_face_pos = face_i.y + face_i.height/2;
-//		area_face = face_i.width * face_i.height;
-//
-//		// if good prediction : > threshold
-//		if (predicted_confidence>PREDICTION_SEUIL)
-//		{
-//			// trace is commented to speed up
-//			DEBUG sprintf(sTmp1,"(DEBUG) prediction ok = %s (%d) confiance = (%d)",people[prediction].c_str(),prediction,(int)predicted_confidence);
-//			DEBUG trace((string)(sTmp1));
-//
-//		 	// display name of the guy on the picture
-//			string box_text1, box_text2, box_text3;
-//			if (prediction<MAX_PEOPLE)
-//			{
-//				box_text1 = "Id: " + people[prediction];
-//				sprintf(sTmp2,"confiance = %d",(int)predicted_confidence);
-//				sprintf(sTmp3,"x = %d, y = %d",(int)x_face_pos,(int)y_face_pos);
-//				sprintf(sTmp4,"area = %d",(int)area_face);
-//			}
-//			else
-//			{
-//				trace("(Error) prediction id incoherent");
-//			}
-//			int pos_x = std::max(face_i.tl().x - 0,0);
-//			int pos_y = std::max(face_i.tl().y + face_i.height + 15,0);
-//			INFORMATION putText(captureFrame, box_text1, Point(pos_x, pos_y), FONT_HERSHEY_COMPLEX_SMALL, 1.0, CV_RGB(255,255,255), 1.0);
-//
-//			pos_y = pos_y + 20;
-//			INFORMATION putText(captureFrame, sTmp2, Point(pos_x, pos_y), FONT_HERSHEY_COMPLEX_SMALL, 1.0, CV_RGB(255,255,255), 1.0);
-//
-//			pos_y = pos_y + 20;
-//			INFORMATION putText(captureFrame, sTmp3, Point(pos_x, pos_y), FONT_HERSHEY_COMPLEX_SMALL, 1.0, CV_RGB(255,255,255), 1.0);
-//
-//			pos_y = pos_y + 20;
-//			INFORMATION putText(captureFrame, sTmp4, Point(pos_x, pos_y), FONT_HERSHEY_COMPLEX_SMALL, 1.0, CV_RGB(255,255,255), 1.0);
-//		}
-//		else
-//		{
-//			// trace is commented to speed up
-//			DEBUG sprintf(sTmp1,"(DEBUG) prediction too low = %s (%d) confiance = (%d)",people[prediction].c_str(),prediction,(int)predicted_confidence);
-//			DEBUG trace((string)(sTmp1));
-//		}
-//	} // end for
-//}
+void face_recognition(string people[MAX_PEOPLE], CascadeClassifier& face_cascade, Mat& gray, Mat& captureFrame, int im_width, int im_height, Ptr<FaceRecognizer> model, int PREDICTION_SEUIL, double& x_face_pos, double& y_face_pos, double& area_face)
+{
+	// Declaration of variables
+	Mat face,face_resized;			// Face converted to gray scale and face resized
+	vector< Rect_<int> > faces;		// Vector of faces
+	double scaleFactor = 1.1;		// Parameter specifying how much the image size is reduced at each image scale
+	int minNeighbors = 3; 			// Parameter specifying how many neighbors each candidate rectangle should have to retain it
+	double fx = 1.0;			// scale factor along the horizontal axis
+	double fy = 1.0;			// scale factor along the vertical axis
+
+	// Detect faces
+	face_cascade.detectMultiScale(gray, faces, scaleFactor, minNeighbors, CV_HAAR_SCALE_IMAGE, Size(80,80));
+
+	// For each faces founded
+	for(unsigned int i = 0; i < faces.size(); i++)
+	{
+		// crop face (pretty easy with opencv, don't you think ?
+		Rect face_i = faces[i];
+
+		face = gray(face_i);
+
+		//  resized face and display it
+		cv::resize(face, face_resized, Size(im_width, im_height), fx, fy, CV_INTER_NN); //INTER_CUBIC);
+
+		// now, we try to predict who is it ?
+		char sTmp1[256], sTmp2[256], sTmp3[256], sTmp4[256];
+		double predicted_confidence = 0.0;
+		int prediction = -1;
+#ifdef RASPBERRY
+		model.predict(face_resized,prediction,predicted_confidence);
+#endif
+#ifdef UBUNTU
+		//model->predict(face_resized,prediction,predicted_confidence);
+#endif
+#ifdef MAQUINA_VIRTUAL
+		model->predict(face_resized,prediction,predicted_confidence);
+#endif
+
+		// create a rectangle around the face
+		INFORMATION rectangle(captureFrame, face_i, CV_RGB(0, 255 ,0), 1);
+
+		// get face area and position
+		x_face_pos = face_i.x + face_i.width/2;
+		y_face_pos = face_i.y + face_i.height/2;
+		area_face = face_i.width * face_i.height;
+
+		// if good prediction : > threshold
+		if (predicted_confidence>PREDICTION_SEUIL)
+		{
+			// trace is commented to speed up
+			DEBUG sprintf(sTmp1,"(DEBUG) prediction ok = %s (%d) confiance = (%d)",people[prediction].c_str(),prediction,(int)predicted_confidence);
+			DEBUG trace((string)(sTmp1));
+
+		 	// display name of the guy on the picture
+			string box_text1, box_text2, box_text3;
+			if (prediction<MAX_PEOPLE)
+			{
+				box_text1 = "Id: " + people[prediction];
+				sprintf(sTmp2,"confiance = %d",(int)predicted_confidence);
+				sprintf(sTmp3,"x = %d, y = %d",(int)x_face_pos,(int)y_face_pos);
+				sprintf(sTmp4,"area = %d",(int)area_face);
+			}
+			else
+			{
+				trace("(Error) prediction id incoherent");
+			}
+			int pos_x = std::max(face_i.tl().x - 0,0);
+			int pos_y = std::max(face_i.tl().y + face_i.height + 15,0);
+			INFORMATION putText(captureFrame, box_text1, Point(pos_x, pos_y), FONT_HERSHEY_COMPLEX_SMALL, 1.0, CV_RGB(255,255,255), 1.0);
+
+			pos_y = pos_y + 20;
+			INFORMATION putText(captureFrame, sTmp2, Point(pos_x, pos_y), FONT_HERSHEY_COMPLEX_SMALL, 1.0, CV_RGB(255,255,255), 1.0);
+
+			pos_y = pos_y + 20;
+			INFORMATION putText(captureFrame, sTmp3, Point(pos_x, pos_y), FONT_HERSHEY_COMPLEX_SMALL, 1.0, CV_RGB(255,255,255), 1.0);
+
+			pos_y = pos_y + 20;
+			INFORMATION putText(captureFrame, sTmp4, Point(pos_x, pos_y), FONT_HERSHEY_COMPLEX_SMALL, 1.0, CV_RGB(255,255,255), 1.0);
+		}
+		else
+		{
+			// trace is commented to speed up
+			DEBUG sprintf(sTmp1,"(DEBUG) prediction too low = %s (%d) confiance = (%d)",people[prediction].c_str(),prediction,(int)predicted_confidence);
+			DEBUG trace((string)(sTmp1));
+		}
+	} // end for
+}
