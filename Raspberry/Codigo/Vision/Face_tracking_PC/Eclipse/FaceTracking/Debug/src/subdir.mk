@@ -5,15 +5,18 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
 ../src/FaceTracking.cpp \
-../src/Librerias_Reconocimiento.cpp 
+../src/Librerias_Reconocimiento.cpp \
+../src/Utilities.cpp 
 
 OBJS += \
 ./src/FaceTracking.o \
-./src/Librerias_Reconocimiento.o 
+./src/Librerias_Reconocimiento.o \
+./src/Utilities.o 
 
 CPP_DEPS += \
 ./src/FaceTracking.d \
-./src/Librerias_Reconocimiento.d 
+./src/Librerias_Reconocimiento.d \
+./src/Utilities.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

@@ -1,0 +1,35 @@
+/*
+ * Utilities.h
+ *
+ *  Created on: 04/06/2016
+ *      Author: maximofn
+ */
+
+#ifndef SRC_UTILITIES_H_
+#define SRC_UTILITIES_H_
+
+#include "Librerias_Reconocimiento.h"
+#include "Defines.h"
+
+
+/////////////////////////////////////////////////
+// trace if TRACE==1
+/////////////////////////////////////////////////
+inline void trace(string s)
+{
+	printf ("\n TRACE: %s", s);
+	cout << "TRACE: " << s;
+}
+
+
+
+/////////////////////////////////////////////////
+// debug if DEBUG==1
+/////////////////////////////////////////////////
+inline void debug(string s)
+{
+	cout << "DEBUG: " << s;
+}
+
+
+#endif /* SRC_UTILITIES_H_ */
