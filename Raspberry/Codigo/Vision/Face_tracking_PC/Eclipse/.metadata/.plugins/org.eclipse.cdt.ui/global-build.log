@@ -8969,3 +8969,9 @@ Finished building target: FaceTracking
 22:33:39 **** Incremental Build of configuration Debug for project FaceTracking ****
 make all 
 make: No se hace nada para 'all'.
+22:36:12 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+00:08:19 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
