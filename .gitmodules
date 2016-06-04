@@ -1,3 +1,0 @@
-[submodule "Raspberry/Codigo/Vision/opencv_contrib"]
-	path = Raspberry/Codigo/Vision/opencv_contrib
-	url = ../../Itseez/opencv_contrib.git
