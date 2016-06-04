@@ -1,22 +1,77 @@
 /*
  * Librerias_Reconocimiento.cpp
  *
- *  Created on: 28/05/2016
- *      Author: maximofn
+ *  Created on: 21/03/2014
+ *      Author: Máximo Fernández Núñez
  */
 
 
 #include "Librerias_Reconocimiento.h"
-#include "Defines.h"
+
+
+// some constants to manage nb of people to learn+ id of people
+#define MAX_PEOPLE 			15
+#define P_MAXIMO			0
+#define P_ANGELINA_JOLIE		1
+#define P_ARNOLD_SCHWARZENEGGER		2
+#define P_BRAD_PITT			3
+#define P_EMMA_WATSON			4
+#define P_GEROGE_CLOONEY		5
+#define P_JENNIFER_LOPEZ		6
+#define P_JOHNNY_DEPP			7
+#define P_JUSTIN_TIMBERLAKE		8
+#define P_KATY_PERRY			9
+#define P_KEANU_REEVES			10
+#define P_NAOMI_WATTS			11
+#define P_PATRICK_STEWART		12
+#define P_MATIAS_PRATS			13
+#define P_DESCONOCIDO			14
+// #define P_NEWPERSON			X
+
+// for debug and trace
+#define TRACE 1
+#define DEBUG_MODE 0
+#define DEBUG if (DEBUG_MODE==1)
+
+// for show and information
+bool SHOW_MODE = 1;
+#define SHOW if (SHOW_MODE==1)
+bool INFORMATION_MODE = 1;
+#define INFORMATION if (INFORMATION_MODE==1 && SHOW_MODE==1)
+
+// for device mode
+#define RASPBERRY 		1
+#define UBUNTU 			2
+#define MAQUINA_VIRTUAL		3
+extern int DEVICE_MODE;
+#define RASPBERRY_MODE 			if (DEVICE_MODE==1)
+#define UBUNTU_MODE 			if (DEVICE_MODE==2)
+#define MAQUINA_VIRTUAL_MODE		if (DEVICE_MODE==3)
+
+// for Cascade mode
+#define LBP_CASCADE_FRONTALFACE			1
+#define HAAR_CASCADE_FRONTALFACE_ALT		2
+#define HAAR_CASCADE_FRONTALFACE_ALT2		3
+#define HAAR_CASCADE_FRONTALFACE_ALT_TREE	4
+#define HAAR_CASCADE_FRONTALFACE_ALT_DEFAULT	5
+#define CASCADE_MODE 				LBP_CASCADE_FRONTALFACE
+
+
+
+
+
 
 
 
 /////////////////////////////////////////////////
 // trace if TRACE==1
 /////////////////////////////////////////////////
-inline void trace(string s)
+void trace(string s)
 {
-	cout<<s<<"\n";
+	if (TRACE==1)
+	{
+		cout<<s<<"\n";
+	}
 }
 
 
@@ -97,75 +152,75 @@ void read_csv(int nPictureById[MAX_PEOPLE], string people[MAX_PEOPLE], const str
  * 		= train_model_recognition(int nPictureById[MAX_PEOPLE], string people[MAX_PEOPLE], Eigenfaces& model, int& im_width, int& im_height)
  */
 //void train_model_recognition(int nPictureById[MAX_PEOPLE], string people[MAX_PEOPLE], Eigenfaces& model, int& im_width, int& im_height)
-//void train_model_recognition(int nPictureById[MAX_PEOPLE], string people[MAX_PEOPLE], Ptr<FaceRecognizer> model, int& im_width, int& im_height)//, Fisherfaces model)
-//{
-//	vector<Mat> images;
-//	vector<int> labels;
-//
-//	// init people, should be do in a config file, but I don't have time, I need to go to swimming pool with my daughters and they prefer to swimm
-//	// than to see their father do a config file, life is hard "Pierre (http://thinkrpi.wordpress.com/)"
-//	people[P_MAXIMO] 			= "Maximo";
-//	people[P_ANGELINA_JOLIE] 		= "Angelina Jolie";
-//	people[P_ARNOLD_SCHWARZENEGGER] 	= "Arnold Schwarzenegger";
-//	people[P_BRAD_PITT] 			= "Brad Pitt";
-//	people[P_EMMA_WATSON] 			= "Emma Watson";
-//	people[P_GEROGE_CLOONEY] 		= "George Clooney";
-//	people[P_JENNIFER_LOPEZ] 		= "jennifer Lopez";
-//	people[P_JOHNNY_DEPP] 			= "johnny Depp";
-//	people[P_JUSTIN_TIMBERLAKE] 		= "Justin Timberlake";
-//	people[P_KATY_PERRY] 			= "Katy Perry";
-//	people[P_KEANU_REEVES] 			= "Keanu Reeves";
-//	people[P_NAOMI_WATTS] 			= "Naomi Watts";
-//	people[P_PATRICK_STEWART] 		= "Patrick Stewart";
-//	people[P_MATIAS_PRATS] 			= "Matias Prats";
-//	people[P_DESCONOCIDO] 			= "Desconocido";
-//	// people[P_NEWPERSON] 			= "NewPerson";
-//
-//	// init...
-//	// reset counter
-//	for (int i=0;i<MAX_PEOPLE;i++)
-//	{
-//		nPictureById[i]=0;
-//	}
-//	//int bFirstDisplay	= 1;
-//	trace("(init) People initialized : ok");
-//
-//	// Get the path to your CSV
-//	string fn_csv;
-//	RASPBERRY_MODE 			fn_csv = "/home/pi/Face_tracking/04__Face_recognition__Robidouille_API/faces.csv";
-//	UBUNTU_MODE 			fn_csv = "/home/maximo/Dropbox/Wall-e/Raspberry_pi/Codigo/Face_tracking/Face_tracking_Ordenador/Face_tracking/Face Tracking/Debug/faces.csv";
-//	MAQUINA_VIRTUAL_MODE		fn_csv = "/home/maximo/Escritorio/Face_tracking/Face_tracking/Debug/faces.csv";
-//	DEBUG cout << "(DEBUG) csv = " << fn_csv << "\n";
-//
-//	// Read in the data (fails if no valid input filename is given, but you'll get an error message):
-//	try {
-//		read_csv(nPictureById, people, fn_csv, images, labels);
-//		DEBUG cout<<"(DEBUG) read CSV ok\n";
-//	}
-//	catch (cv::Exception& e)
-//	{
-//		cerr << "Error opening file \"" << fn_csv << "\". Reason: " << e.msg << endl;
-//		exit(1);
-//	}
-//
-//	// get heigh, witdh of 1st images--> must be the same
-//	im_width = images[0].cols;
-//	im_height = images[0].rows;
-//	trace("(init) taille images : ok");
-//
-//	// This a Eigen model, but you could replace with Fisher model
-//	// in this case threshold value should be lower (try)
-//
-//	// train the model with your nice collection of pictures
-//	trace("(init) start train images");
-//
-//	//RASPBERRY_MODE model.train(images, labels);
-//	//RASPBERRY_MODE		model.train(images, labels);
-//	UBUNTU_MODE		model->train(images, labels);
-//	MAQUINA_VIRTUAL_MODE	model->train(images, labels);
-//	trace("(init) train images : ok");
-//}
-//
+void train_model_recognition(int nPictureById[MAX_PEOPLE], string people[MAX_PEOPLE], Ptr<FaceRecognizer> model, int& im_width, int& im_height)//, Fisherfaces model)
+{
+	vector<Mat> images;
+	vector<int> labels;
+
+	// init people, should be do in a config file, but I don't have time, I need to go to swimming pool with my daughters and they prefer to swimm
+	// than to see their father do a config file, life is hard "Pierre (http://thinkrpi.wordpress.com/)"
+	people[P_MAXIMO] 			= "Maximo";
+	people[P_ANGELINA_JOLIE] 		= "Angelina Jolie";
+	people[P_ARNOLD_SCHWARZENEGGER] 	= "Arnold Schwarzenegger";
+	people[P_BRAD_PITT] 			= "Brad Pitt";
+	people[P_EMMA_WATSON] 			= "Emma Watson";
+	people[P_GEROGE_CLOONEY] 		= "George Clooney";
+	people[P_JENNIFER_LOPEZ] 		= "jennifer Lopez";
+	people[P_JOHNNY_DEPP] 			= "johnny Depp";
+	people[P_JUSTIN_TIMBERLAKE] 		= "Justin Timberlake";
+	people[P_KATY_PERRY] 			= "Katy Perry";
+	people[P_KEANU_REEVES] 			= "Keanu Reeves";
+	people[P_NAOMI_WATTS] 			= "Naomi Watts";
+	people[P_PATRICK_STEWART] 		= "Patrick Stewart";
+	people[P_MATIAS_PRATS] 			= "Matias Prats";
+	people[P_DESCONOCIDO] 			= "Desconocido";
+	// people[P_NEWPERSON] 			= "NewPerson";
+
+	// init...
+	// reset counter
+	for (int i=0;i<MAX_PEOPLE;i++)
+	{
+		nPictureById[i]=0;
+	}
+	//int bFirstDisplay	= 1;
+	trace("(init) People initialized : ok");
+
+	// Get the path to your CSV
+	string fn_csv;
+	RASPBERRY_MODE 			fn_csv = "/home/pi/Face_tracking/04__Face_recognition__Robidouille_API/faces.csv";
+	UBUNTU_MODE 			fn_csv = "/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/Face_tracking_PC/Eclipse/FaceTracking/Debug/faces.csv";
+	MAQUINA_VIRTUAL_MODE		fn_csv = "/home/maximo/Escritorio/Face_tracking/Face_tracking/Debug/faces.csv";
+	DEBUG cout << "(DEBUG) csv = " << fn_csv << "\n";
+
+	// Read in the data (fails if no valid input filename is given, but you'll get an error message):
+	try {
+		read_csv(nPictureById, people, fn_csv, images, labels);
+		DEBUG cout<<"(DEBUG) read CSV ok\n";
+	}
+	catch (cv::Exception& e)
+	{
+		cerr << "Error opening file \"" << fn_csv << "\". Reason: " << e.msg << endl;
+		exit(1);
+	}
+
+	// get heigh, witdh of 1st images--> must be the same
+	im_width = images[0].cols;
+	im_height = images[0].rows;
+	trace("(init) taille images : ok");
+
+	// This a Eigen model, but you could replace with Fisher model
+	// in this case threshold value should be lower (try)
+
+	// train the model with your nice collection of pictures
+	trace("(init) start train images");
+
+	//RASPBERRY_MODE model.train(images, labels);
+	//RASPBERRY_MODE		model.train(images, labels);
+	UBUNTU_MODE		model->train(images, labels);
+	MAQUINA_VIRTUAL_MODE	model->train(images, labels);
+	trace("(init) train images : ok");
+}
+
 
 
 
@@ -195,59 +250,29 @@ bool load_haar_cascade(CascadeClassifier& face_cascade)
 	string fn_haar;
 	switch (CASCADE_MODE){
 		case LBP_CASCADE_FRONTALFACE:
-			#ifdef RASPBERRY
-				fn_haar = "/usr/share/opencv/lbpcascades/lbpcascade_frontalface.xml";
-			#endif
-			#ifdef UBUNTU
-				fn_haar = "/usr/local/share/OpenCV/lbpcascades/lbpcascade_frontalface.xml";
-			#endif
-			#ifdef MAQUINA_VIRTUAL
-				fn_haar = "/usr/local/share/OpenCV/lbpcascades/lbpcascade_frontalface.xml";
-			#endif
+			RASPBERRY_MODE 		fn_haar = "/usr/share/opencv/lbpcascades/lbpcascade_frontalface.xml";
+			UBUNTU_MODE 		fn_haar = "/usr/local/share/OpenCV/lbpcascades/lbpcascade_frontalface.xml";
+			MAQUINA_VIRTUAL_MODE	fn_haar = "/usr/local/share/OpenCV/lbpcascades/lbpcascade_frontalface.xml";
 			break;
 		case HAAR_CASCADE_FRONTALFACE_ALT:
-			#ifdef RASPBERRY
-				fn_haar = "/usr/share/opencv/haarcascades/haarcascade_frontalface_alt.xml";
-			#endif
-			#ifdef UBUNTU
-				fn_haar = "/usr/local/share/OpenCV/haarcascades/haarcascade_frontalface_alt.xml";
-			#endif
-			#ifdef MAQUINA_VIRTUAL
-				fn_haar = "/usr/local/share/OpenCV/haarcascades/haarcascade_frontalface_alt.xml";
-			#endif
+			RASPBERRY_MODE 		fn_haar = "/usr/share/opencv/haarcascades/haarcascade_frontalface_alt.xml";
+			UBUNTU_MODE 		fn_haar = "/usr/local/share/OpenCV/haarcascades/haarcascade_frontalface_alt.xml";
+			MAQUINA_VIRTUAL_MODE	fn_haar = "/usr/local/share/OpenCV/haarcascades/haarcascade_frontalface_alt.xml";
 			break;
 		case HAAR_CASCADE_FRONTALFACE_ALT2:
-			#ifdef RASPBERRY
-				fn_haar = "/usr/share/opencv/haarcascades/haarcascade_frontalface_alt2.xml";
-			#endif
-			#ifdef UBUNTU
-				fn_haar = "/usr/local/share/OpenCV/haarcascades/haarcascade_frontalface_alt2.xml";
-			#endif
-			#ifdef MAQUINA_VIRTUAL
-				fn_haar = "/usr/local/share/OpenCV/haarcascades/haarcascade_frontalface_alt2.xml";
-			#endif
+			RASPBERRY_MODE 		fn_haar = "/usr/share/opencv/haarcascades/haarcascade_frontalface_alt2.xml";
+			UBUNTU_MODE 		fn_haar = "/usr/local/share/OpenCV/haarcascades/haarcascade_frontalface_alt2.xml";
+			MAQUINA_VIRTUAL_MODE	fn_haar = "/usr/local/share/OpenCV/haarcascades/haarcascade_frontalface_alt2.xml";
 			break;
 		case HAAR_CASCADE_FRONTALFACE_ALT_TREE:
-			#ifdef RASPBERRY
-				fn_haar = "/usr/share/opencv/haarcascades/haarcascade_frontalface_alt_tree.xml";
-			#endif
-			#ifdef UBUNTU
-				fn_haar = "/usr/local/share/OpenCV/haarcascades/haarcascade_frontalface_alt_tree.xml";
-			#endif
-			#ifdef MAQUINA_VIRTUAL
-				fn_haar = "/usr/local/share/OpenCV/haarcascades/haarcascade_frontalface_alt_tree.xml";
-			#endif
+			RASPBERRY_MODE 		fn_haar = "/usr/share/opencv/haarcascades/haarcascade_frontalface_alt_tree.xml";
+			UBUNTU_MODE 		fn_haar = "/usr/local/share/OpenCV/haarcascades/haarcascade_frontalface_alt_tree.xml";
+			MAQUINA_VIRTUAL_MODE	fn_haar = "/usr/local/share/OpenCV/haarcascades/haarcascade_frontalface_alt_tree.xml";
 			break;
 		case HAAR_CASCADE_FRONTALFACE_ALT_DEFAULT:
-			#ifdef RASPBERRY
-				fn_haar = "/usr/share/opencv/haarcascades/haarcascade_frontalface_default.xml";
-			#endif
-			#ifdef UBUNTU
-				fn_haar = "/usr/local/share/OpenCV/haarcascades/haarcascade_frontalface_default.xml";
-			#endif
-			#ifdef MAQUINA_VIRTUAL
-				fn_haar = "/usr/local/share/OpenCV/haarcascades/haarcascade_frontalface_default.xml";
-			#endif
+			RASPBERRY_MODE 		fn_haar = "/usr/share/opencv/haarcascades/haarcascade_frontalface_default.xml";
+			UBUNTU_MODE 		fn_haar = "/usr/local/share/OpenCV/haarcascades/haarcascade_frontalface_default.xml";
+			MAQUINA_VIRTUAL_MODE	fn_haar = "/usr/local/share/OpenCV/haarcascades/haarcascade_frontalface_default.xml";
 			break;
 		default:
 			cerr << "Error opening Cascade file" << endl;
@@ -321,15 +346,9 @@ void face_recognition(string people[MAX_PEOPLE], CascadeClassifier& face_cascade
 		char sTmp1[256], sTmp2[256], sTmp3[256], sTmp4[256];
 		double predicted_confidence = 0.0;
 		int prediction = -1;
-#ifdef RASPBERRY
-		model.predict(face_resized,prediction,predicted_confidence);
-#endif
-#ifdef UBUNTU
-		//model->predict(face_resized,prediction,predicted_confidence);
-#endif
-#ifdef MAQUINA_VIRTUAL
-		model->predict(face_resized,prediction,predicted_confidence);
-#endif
+		//RASPBERRY_MODE		model.predict(face_resized,prediction,predicted_confidence);
+		UBUNTU_MODE		model->predict(face_resized,prediction,predicted_confidence);
+		MAQUINA_VIRTUAL_MODE	model->predict(face_resized,prediction,predicted_confidence);
 
 		// create a rectangle around the face
 		INFORMATION rectangle(captureFrame, face_i, CV_RGB(0, 255 ,0), 1);

@@ -2164,3 +2164,939 @@ Invoking: GCC C++ Linker
 g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o   -lopencv_shape -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core
 Finished building target: FaceTracking
  
+17:07:15 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, const char**)’:
+../src/FaceTracking.cpp:200:26: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for(int i = 0; i < faces.size(); i++) {
+                          ^
+Finished building: ../src/FaceTracking.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o   -lopencv_shape -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core
+./src/FaceTracking.o: En la función `main':
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/Face_tracking_PC/Eclipse/FaceTracking/Debug/../src/FaceTracking.cpp:169: referencia a `cv::face::createFisherFaceRecognizer(int, double)' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/Face_tracking_PC/Eclipse/FaceTracking/Debug/../src/FaceTracking.cpp:218: referencia a `cv::face::FaceRecognizer::predict(cv::_InputArray const&) const' sin definir
+collect2: error: ld returned 1 exit status
+makefile:45: fallo en las instrucciones para el objetivo 'FaceTracking'
+make: *** [FaceTracking] Error 1
+18:29:50 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:51:0,
+                 from /usr/local/include/opencv2/face/predict_collector.hpp:53,
+                 from /usr/local/include/opencv2/face.hpp:51,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/cvdef.h:306:15: error: redefinition of ‘union Cv32suf’
+ typedef union Cv32suf
+               ^
+In file included from /usr/local/include/opencv2/core/core_c.h:47:0,
+                 from /usr/local/include/opencv/cv.h:63,
+                 from ../src/Librerias_Reconocimiento.h:18,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/types_c.h:198:15: error: previous definition of ‘union Cv32suf’
+ typedef union Cv32suf
+               ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:51:0,
+                 from /usr/local/include/opencv2/face/predict_collector.hpp:53,
+                 from /usr/local/include/opencv2/face.hpp:51,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/cvdef.h:312:1: error: conflicting declaration ‘typedef int Cv32suf’
+ Cv32suf;
+ ^
+In file included from /usr/local/include/opencv2/core/core_c.h:47:0,
+                 from /usr/local/include/opencv/cv.h:63,
+                 from ../src/Librerias_Reconocimiento.h:18,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/types_c.h:204:1: note: previous declaration as ‘typedef union Cv32suf Cv32suf’
+ Cv32suf;
+ ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:51:0,
+                 from /usr/local/include/opencv2/face/predict_collector.hpp:53,
+                 from /usr/local/include/opencv2/face.hpp:51,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/cvdef.h:314:15: error: redefinition of ‘union Cv64suf’
+ typedef union Cv64suf
+               ^
+In file included from /usr/local/include/opencv2/core/core_c.h:47:0,
+                 from /usr/local/include/opencv/cv.h:63,
+                 from ../src/Librerias_Reconocimiento.h:18,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/types_c.h:206:15: error: previous definition of ‘union Cv64suf’
+ typedef union Cv64suf
+               ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:51:0,
+                 from /usr/local/include/opencv2/face/predict_collector.hpp:53,
+                 from /usr/local/include/opencv2/face.hpp:51,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/cvdef.h:320:1: error: conflicting declaration ‘typedef int Cv64suf’
+ Cv64suf;
+ ^
+In file included from /usr/local/include/opencv2/core/core_c.h:47:0,
+                 from /usr/local/include/opencv/cv.h:63,
+                 from ../src/Librerias_Reconocimiento.h:18,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/types_c.h:212:1: note: previous declaration as ‘typedef union Cv64suf Cv64suf’
+ Cv64suf;
+ ^
+In file included from /usr/local/include/opencv2/face/predict_collector.hpp:53:0,
+                 from /usr/local/include/opencv2/face.hpp:51,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/cvstd.hpp:130:30: error: redefinition of ‘class cv::Allocator<_Tp>’
+ template<typename _Tp> class Allocator
+                              ^
+In file included from /usr/local/include/opencv/cv.h:64:0,
+                 from ../src/Librerias_Reconocimiento.h:18,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/core.hpp:368:30: error: previous definition of ‘class cv::Allocator<_Tp>’
+ template<typename _Tp> class Allocator
+                              ^
+In file included from /usr/local/include/opencv2/face/predict_collector.hpp:53:0,
+                 from /usr/local/include/opencv2/face.hpp:51,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/cvstd.hpp:283:8: error: redefinition of ‘struct cv::Ptr<_Tp>’
+ struct Ptr
+        ^
+In file included from /usr/local/include/opencv/cv.h:64:0,
+                 from ../src/Librerias_Reconocimiento.h:18,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/core.hpp:1258:30: error: previous definition of ‘struct cv::Ptr<_Tp>’
+ template<typename _Tp> class Ptr
+                              ^
+In file included from /usr/local/include/opencv2/face/predict_collector.hpp:53:0,
+                 from /usr/local/include/opencv2/face.hpp:51,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/cvstd.hpp:480:18: error: using typedef-name ‘cv::String’ after ‘class’
+ class CV_EXPORTS String
+                  ^
+In file included from /usr/local/include/opencv/cv.h:64:0,
+                 from ../src/Librerias_Reconocimiento.h:18,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/core.hpp:84:21: note: ‘cv::String’ has a previous declaration here
+ typedef std::string String;
+                     ^
+In file included from /usr/local/include/opencv2/face/predict_collector.hpp:53:0,
+                 from /usr/local/include/opencv2/face.hpp:51,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/cvstd.hpp:590:1: error: specializing member ‘std::__cxx11::basic_string<char>::String’ requires ‘template<>’ syntax
+ String::String()
+ ^
+/usr/local/include/opencv2/core/cvstd.hpp:595:22: error: ‘String’ does not name a type
+ String::String(const String& str)
+                      ^
+/usr/local/include/opencv2/core/cvstd.hpp:595:1: error: specializing member ‘std::__cxx11::basic_string<char>::String’ requires ‘template<>’ syntax
+ String::String(const String& str)
+ ^
+/usr/local/include/opencv2/core/cvstd.hpp:603:22: error: ‘String’ does not name a type
+ String::String(const String& str, size_t pos, size_t len)
+                      ^
+/usr/local/include/opencv2/core/cvstd.hpp:603:1: error: specializing member ‘std::__cxx11::basic_string<char>::String’ requires ‘template<>’ syntax
+ String::String(const String& str, size_t pos, size_t len)
+ ^
+../src/FaceTracking.cpp:103:1: error: expected ‘}’ at end of input
+ }
+ ^
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+make: *** [src/FaceTracking.o] Error 1
+18:32:57 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+Finished building: ../src/FaceTracking.cpp
+ 
+Building file: ../src/Librerias_Reconocimiento.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Librerias_Reconocimiento.d" -MT"src/Librerias_Reconocimiento.d" -o "src/Librerias_Reconocimiento.o" "../src/Librerias_Reconocimiento.cpp"
+Finished building: ../src/Librerias_Reconocimiento.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o   -lopencv_shape -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core
+/usr/bin/ld: no se puede encontrar -lopencv_shape
+/usr/bin/ld: no se puede encontrar -lopencv_videoio
+/usr/bin/ld: no se puede encontrar -lopencv_imgcodecs
+collect2: error: ld returned 1 exit status
+makefile:45: fallo en las instrucciones para el objetivo 'FaceTracking'
+make: *** [FaceTracking] Error 1
+18:39:36 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o   -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_contrib -lopencv_gpu -lopencv_legacy -lopencv_nonfree -lopencv_ocl -lopencv_ts -lopencv_features2d -lopencv_highgui -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core
+Finished building target: FaceTracking
+ 
+18:39:40 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+18:40:29 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+Finished building: ../src/FaceTracking.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o   -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_contrib -lopencv_gpu -lopencv_legacy -lopencv_nonfree -lopencv_ocl -lopencv_ts -lopencv_features2d -lopencv_highgui -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core
+Finished building target: FaceTracking
+ 
+18:40:33 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+18:46:00 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+Finished building: ../src/FaceTracking.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o   -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_contrib -lopencv_gpu -lopencv_legacy -lopencv_nonfree -lopencv_ocl -lopencv_ts -lopencv_features2d -lopencv_highgui -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core
+Finished building target: FaceTracking
+ 
+18:46:35 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:79:6: warning: unused variable ‘nPictureById’ [-Wunused-variable]
+  int nPictureById[MAX_PEOPLE];    // Id of each person of the model of face recognition
+      ^
+../src/FaceTracking.cpp:120:152: warning: ‘im_width’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   face_recognition(people, face_cascade, grayscaleFrame, captureFrame, im_width, im_height, model, PREDICTION_SEUIL, x_face_pos, y_face_pos, area_face);
+                                                                                                                                                        ^
+../src/FaceTracking.cpp:120:152: warning: ‘im_height’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+Finished building: ../src/FaceTracking.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o   -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_contrib -lopencv_gpu -lopencv_legacy -lopencv_nonfree -lopencv_ocl -lopencv_ts -lopencv_features2d -lopencv_highgui -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core
+Finished building target: FaceTracking
+ 
+18:47:02 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:79:6: warning: unused variable ‘nPictureById’ [-Wunused-variable]
+  int nPictureById[MAX_PEOPLE];    // Id of each person of the model of face recognition
+      ^
+../src/FaceTracking.cpp:80:6: warning: unused variable ‘im_width’ [-Wunused-variable]
+  int im_width, im_height;   // heigh, witdh of 1st images of the model of face recognition
+      ^
+../src/FaceTracking.cpp:80:16: warning: unused variable ‘im_height’ [-Wunused-variable]
+  int im_width, im_height;   // heigh, witdh of 1st images of the model of face recognition
+                ^
+../src/FaceTracking.cpp:86:9: warning: unused variable ‘x_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+         ^
+../src/FaceTracking.cpp:86:21: warning: unused variable ‘y_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                     ^
+../src/FaceTracking.cpp:86:33: warning: unused variable ‘area_face’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                                 ^
+../src/FaceTracking.cpp:89:6: warning: variable ‘PREDICTION_SEUIL’ set but not used [-Wunused-but-set-variable]
+  int PREDICTION_SEUIL;    // Prediction limit
+      ^
+Finished building: ../src/FaceTracking.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o   -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_contrib -lopencv_gpu -lopencv_legacy -lopencv_nonfree -lopencv_ocl -lopencv_ts -lopencv_features2d -lopencv_highgui -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core
+Finished building target: FaceTracking
+ 
+18:47:05 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+18:48:44 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp:19:21: error: ‘face’ is not a namespace-name
+ using namespace cv::face;
+                     ^
+../src/FaceTracking.cpp:19:25: error: expected namespace-name before ‘;’ token
+ using namespace cv::face;
+                         ^
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:32:6: warning: unused variable ‘nPictureById’ [-Wunused-variable]
+  int nPictureById[MAX_PEOPLE];     // Id of each person of the model of face recognition
+      ^
+../src/FaceTracking.cpp:33:6: warning: unused variable ‘im_width’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+      ^
+../src/FaceTracking.cpp:33:16: warning: unused variable ‘im_height’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+                ^
+../src/FaceTracking.cpp:39:9: warning: unused variable ‘x_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+         ^
+../src/FaceTracking.cpp:39:21: warning: unused variable ‘y_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                     ^
+../src/FaceTracking.cpp:39:33: warning: unused variable ‘area_face’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                                 ^
+make: *** [src/FaceTracking.o] Error 1
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+18:48:51 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:32:6: warning: unused variable ‘nPictureById’ [-Wunused-variable]
+  int nPictureById[MAX_PEOPLE];     // Id of each person of the model of face recognition
+      ^
+../src/FaceTracking.cpp:33:6: warning: unused variable ‘im_width’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+      ^
+../src/FaceTracking.cpp:33:16: warning: unused variable ‘im_height’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+                ^
+../src/FaceTracking.cpp:39:9: warning: unused variable ‘x_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+         ^
+../src/FaceTracking.cpp:39:21: warning: unused variable ‘y_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                     ^
+../src/FaceTracking.cpp:39:33: warning: unused variable ‘area_face’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                                 ^
+../src/FaceTracking.cpp:42:6: warning: variable ‘PREDICTION_SEUIL’ set but not used [-Wunused-but-set-variable]
+  int PREDICTION_SEUIL;      // Prediction limit
+      ^
+Finished building: ../src/FaceTracking.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o   -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_contrib -lopencv_gpu -lopencv_legacy -lopencv_nonfree -lopencv_ocl -lopencv_ts -lopencv_features2d -lopencv_highgui -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core
+./src/Librerias_Reconocimiento.o: En la función `train_model_recognition(int*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, cv::Ptr<cv::FaceRecognizer>, int&, int&)':
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/Face_tracking_PC/Eclipse/FaceTracking/Debug/../src/Librerias_Reconocimiento.cpp:190: referencia a `DEVICE_MODE' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/Face_tracking_PC/Eclipse/FaceTracking/Debug/../src/Librerias_Reconocimiento.cpp:191: referencia a `DEVICE_MODE' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/Face_tracking_PC/Eclipse/FaceTracking/Debug/../src/Librerias_Reconocimiento.cpp:192: referencia a `DEVICE_MODE' sin definir
+makefile:45: fallo en las instrucciones para el objetivo 'FaceTracking'
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/Face_tracking_PC/Eclipse/FaceTracking/Debug/../src/Librerias_Reconocimiento.cpp:219: referencia a `DEVICE_MODE' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/Face_tracking_PC/Eclipse/FaceTracking/Debug/../src/Librerias_Reconocimiento.cpp:220: referencia a `DEVICE_MODE' sin definir
+./src/Librerias_Reconocimiento.o:/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/Face_tracking_PC/Eclipse/FaceTracking/Debug/../src/Librerias_Reconocimiento.cpp:253: más referencias a `DEVICE_MODE' sin definir a continuación
+collect2: error: ld returned 1 exit status
+make: *** [FaceTracking] Error 1
+18:49:23 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:51:0,
+                 from /usr/local/include/opencv2/face/predict_collector.hpp:53,
+                 from /usr/local/include/opencv2/face.hpp:51,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/cvdef.h:306:15: error: redefinition of ‘union Cv32suf’
+ typedef union Cv32suf
+               ^
+In file included from /usr/local/include/opencv2/core/core_c.h:47:0,
+                 from /usr/local/include/opencv/cv.h:63,
+                 from ../src/Librerias_Reconocimiento.h:18,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/types_c.h:198:15: error: previous definition of ‘union Cv32suf’
+ typedef union Cv32suf
+               ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:51:0,
+                 from /usr/local/include/opencv2/face/predict_collector.hpp:53,
+                 from /usr/local/include/opencv2/face.hpp:51,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/cvdef.h:312:1: error: conflicting declaration ‘typedef int Cv32suf’
+ Cv32suf;
+ ^
+In file included from /usr/local/include/opencv2/core/core_c.h:47:0,
+                 from /usr/local/include/opencv/cv.h:63,
+                 from ../src/Librerias_Reconocimiento.h:18,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/types_c.h:204:1: note: previous declaration as ‘typedef union Cv32suf Cv32suf’
+ Cv32suf;
+ ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:51:0,
+                 from /usr/local/include/opencv2/face/predict_collector.hpp:53,
+                 from /usr/local/include/opencv2/face.hpp:51,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/cvdef.h:314:15: error: redefinition of ‘union Cv64suf’
+ typedef union Cv64suf
+               ^
+In file included from /usr/local/include/opencv2/core/core_c.h:47:0,
+                 from /usr/local/include/opencv/cv.h:63,
+                 from ../src/Librerias_Reconocimiento.h:18,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/types_c.h:206:15: error: previous definition of ‘union Cv64suf’
+ typedef union Cv64suf
+               ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:51:0,
+                 from /usr/local/include/opencv2/face/predict_collector.hpp:53,
+                 from /usr/local/include/opencv2/face.hpp:51,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/cvdef.h:320:1: error: conflicting declaration ‘typedef int Cv64suf’
+ Cv64suf;
+ ^
+In file included from /usr/local/include/opencv2/core/core_c.h:47:0,
+                 from /usr/local/include/opencv/cv.h:63,
+                 from ../src/Librerias_Reconocimiento.h:18,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/types_c.h:212:1: note: previous declaration as ‘typedef union Cv64suf Cv64suf’
+ Cv64suf;
+ ^
+In file included from /usr/local/include/opencv2/face/predict_collector.hpp:53:0,
+                 from /usr/local/include/opencv2/face.hpp:51,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/cvstd.hpp:130:30: error: redefinition of ‘class cv::Allocator<_Tp>’
+ template<typename _Tp> class Allocator
+                              ^
+In file included from /usr/local/include/opencv/cv.h:64:0,
+                 from ../src/Librerias_Reconocimiento.h:18,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/core.hpp:368:30: error: previous definition of ‘class cv::Allocator<_Tp>’
+ template<typename _Tp> class Allocator
+                              ^
+In file included from /usr/local/include/opencv2/face/predict_collector.hpp:53:0,
+                 from /usr/local/include/opencv2/face.hpp:51,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/cvstd.hpp:283:8: error: redefinition of ‘struct cv::Ptr<_Tp>’
+ struct Ptr
+        ^
+In file included from /usr/local/include/opencv/cv.h:64:0,
+                 from ../src/Librerias_Reconocimiento.h:18,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/core.hpp:1258:30: error: previous definition of ‘struct cv::Ptr<_Tp>’
+ template<typename _Tp> class Ptr
+                              ^
+In file included from /usr/local/include/opencv2/face/predict_collector.hpp:53:0,
+                 from /usr/local/include/opencv2/face.hpp:51,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/cvstd.hpp:480:18: error: using typedef-name ‘cv::String’ after ‘class’
+ class CV_EXPORTS String
+                  ^
+In file included from /usr/local/include/opencv/cv.h:64:0,
+                 from ../src/Librerias_Reconocimiento.h:18,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/core.hpp:84:21: note: ‘cv::String’ has a previous declaration here
+ typedef std::string String;
+                     ^
+In file included from /usr/local/include/opencv2/face/predict_collector.hpp:53:0,
+                 from /usr/local/include/opencv2/face.hpp:51,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/cvstd.hpp:590:1: error: specializing member ‘std::__cxx11::basic_string<char>::String’ requires ‘template<>’ syntax
+ String::String()
+ ^
+/usr/local/include/opencv2/core/cvstd.hpp:595:22: error: ‘String’ does not name a type
+ String::String(const String& str)
+                      ^
+/usr/local/include/opencv2/core/cvstd.hpp:595:1: error: specializing member ‘std::__cxx11::basic_string<char>::String’ requires ‘template<>’ syntax
+ String::String(const String& str)
+ ^
+/usr/local/include/opencv2/core/cvstd.hpp:603:22: error: ‘String’ does not name a type
+ String::String(const String& str, size_t pos, size_t len)
+                      ^
+/usr/local/include/opencv2/core/cvstd.hpp:603:1: error: specializing member ‘std::__cxx11::basic_string<char>::String’ requires ‘template<>’ syntax
+ String::String(const String& str, size_t pos, size_t len)
+ ^
+../src/FaceTracking.cpp:103:1: error: expected ‘}’ at end of input
+ }
+ ^
+make: *** [src/FaceTracking.o] Error 1
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+18:50:57 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:51:0,
+                 from /usr/local/include/opencv2/face/predict_collector.hpp:53,
+                 from /usr/local/include/opencv2/face.hpp:51,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/cvdef.h:306:15: error: redefinition of ‘union Cv32suf’
+ typedef union Cv32suf
+               ^
+In file included from /usr/local/include/opencv2/core/core_c.h:47:0,
+                 from /usr/local/include/opencv/cv.h:63,
+                 from ../src/Librerias_Reconocimiento.h:18,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/types_c.h:198:15: error: previous definition of ‘union Cv32suf’
+ typedef union Cv32suf
+               ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:51:0,
+                 from /usr/local/include/opencv2/face/predict_collector.hpp:53,
+                 from /usr/local/include/opencv2/face.hpp:51,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/cvdef.h:312:1: error: conflicting declaration ‘typedef int Cv32suf’
+ Cv32suf;
+ ^
+In file included from /usr/local/include/opencv2/core/core_c.h:47:0,
+                 from /usr/local/include/opencv/cv.h:63,
+                 from ../src/Librerias_Reconocimiento.h:18,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/types_c.h:204:1: note: previous declaration as ‘typedef union Cv32suf Cv32suf’
+ Cv32suf;
+ ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:51:0,
+                 from /usr/local/include/opencv2/face/predict_collector.hpp:53,
+                 from /usr/local/include/opencv2/face.hpp:51,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/cvdef.h:314:15: error: redefinition of ‘union Cv64suf’
+ typedef union Cv64suf
+               ^
+In file included from /usr/local/include/opencv2/core/core_c.h:47:0,
+                 from /usr/local/include/opencv/cv.h:63,
+                 from ../src/Librerias_Reconocimiento.h:18,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/types_c.h:206:15: error: previous definition of ‘union Cv64suf’
+ typedef union Cv64suf
+               ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:51:0,
+                 from /usr/local/include/opencv2/face/predict_collector.hpp:53,
+                 from /usr/local/include/opencv2/face.hpp:51,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/cvdef.h:320:1: error: conflicting declaration ‘typedef int Cv64suf’
+ Cv64suf;
+ ^
+In file included from /usr/local/include/opencv2/core/core_c.h:47:0,
+                 from /usr/local/include/opencv/cv.h:63,
+                 from ../src/Librerias_Reconocimiento.h:18,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/types_c.h:212:1: note: previous declaration as ‘typedef union Cv64suf Cv64suf’
+ Cv64suf;
+ ^
+In file included from /usr/local/include/opencv2/face/predict_collector.hpp:53:0,
+                 from /usr/local/include/opencv2/face.hpp:51,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/cvstd.hpp:130:30: error: redefinition of ‘class cv::Allocator<_Tp>’
+ template<typename _Tp> class Allocator
+                              ^
+In file included from /usr/local/include/opencv/cv.h:64:0,
+                 from ../src/Librerias_Reconocimiento.h:18,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/core.hpp:368:30: error: previous definition of ‘class cv::Allocator<_Tp>’
+ template<typename _Tp> class Allocator
+                              ^
+In file included from /usr/local/include/opencv2/face/predict_collector.hpp:53:0,
+                 from /usr/local/include/opencv2/face.hpp:51,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/cvstd.hpp:283:8: error: redefinition of ‘struct cv::Ptr<_Tp>’
+ struct Ptr
+        ^
+In file included from /usr/local/include/opencv/cv.h:64:0,
+                 from ../src/Librerias_Reconocimiento.h:18,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/core.hpp:1258:30: error: previous definition of ‘struct cv::Ptr<_Tp>’
+ template<typename _Tp> class Ptr
+                              ^
+In file included from /usr/local/include/opencv2/face/predict_collector.hpp:53:0,
+                 from /usr/local/include/opencv2/face.hpp:51,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/cvstd.hpp:480:18: error: using typedef-name ‘cv::String’ after ‘class’
+ class CV_EXPORTS String
+                  ^
+In file included from /usr/local/include/opencv/cv.h:64:0,
+                 from ../src/Librerias_Reconocimiento.h:18,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/core.hpp:84:21: note: ‘cv::String’ has a previous declaration here
+ typedef std::string String;
+                     ^
+In file included from /usr/local/include/opencv2/face/predict_collector.hpp:53:0,
+                 from /usr/local/include/opencv2/face.hpp:51,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/cvstd.hpp:590:1: error: specializing member ‘std::__cxx11::basic_string<char>::String’ requires ‘template<>’ syntax
+ String::String()
+ ^
+/usr/local/include/opencv2/core/cvstd.hpp:595:22: error: ‘String’ does not name a type
+ String::String(const String& str)
+                      ^
+/usr/local/include/opencv2/core/cvstd.hpp:595:1: error: specializing member ‘std::__cxx11::basic_string<char>::String’ requires ‘template<>’ syntax
+ String::String(const String& str)
+ ^
+/usr/local/include/opencv2/core/cvstd.hpp:603:22: error: ‘String’ does not name a type
+ String::String(const String& str, size_t pos, size_t len)
+                      ^
+/usr/local/include/opencv2/core/cvstd.hpp:603:1: error: specializing member ‘std::__cxx11::basic_string<char>::String’ requires ‘template<>’ syntax
+ String::String(const String& str, size_t pos, size_t len)
+ ^
+../src/FaceTracking.cpp:103:1: error: expected ‘}’ at end of input
+ }
+ ^
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+make: *** [src/FaceTracking.o] Error 1
+18:51:38 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:51:0,
+                 from /usr/local/include/opencv2/face/predict_collector.hpp:53,
+                 from /usr/local/include/opencv2/face.hpp:51,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/cvdef.h:306:15: error: redefinition of ‘union Cv32suf’
+ typedef union Cv32suf
+               ^
+In file included from /usr/local/include/opencv2/core/core_c.h:47:0,
+                 from /usr/local/include/opencv/cv.h:63,
+                 from ../src/Librerias_Reconocimiento.h:18,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/types_c.h:198:15: error: previous definition of ‘union Cv32suf’
+ typedef union Cv32suf
+               ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:51:0,
+                 from /usr/local/include/opencv2/face/predict_collector.hpp:53,
+                 from /usr/local/include/opencv2/face.hpp:51,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/cvdef.h:312:1: error: conflicting declaration ‘typedef int Cv32suf’
+ Cv32suf;
+ ^
+In file included from /usr/local/include/opencv2/core/core_c.h:47:0,
+                 from /usr/local/include/opencv/cv.h:63,
+                 from ../src/Librerias_Reconocimiento.h:18,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/types_c.h:204:1: note: previous declaration as ‘typedef union Cv32suf Cv32suf’
+ Cv32suf;
+ ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:51:0,
+                 from /usr/local/include/opencv2/face/predict_collector.hpp:53,
+                 from /usr/local/include/opencv2/face.hpp:51,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/cvdef.h:314:15: error: redefinition of ‘union Cv64suf’
+ typedef union Cv64suf
+               ^
+In file included from /usr/local/include/opencv2/core/core_c.h:47:0,
+                 from /usr/local/include/opencv/cv.h:63,
+                 from ../src/Librerias_Reconocimiento.h:18,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/types_c.h:206:15: error: previous definition of ‘union Cv64suf’
+ typedef union Cv64suf
+               ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:51:0,
+                 from /usr/local/include/opencv2/face/predict_collector.hpp:53,
+                 from /usr/local/include/opencv2/face.hpp:51,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/cvdef.h:320:1: error: conflicting declaration ‘typedef int Cv64suf’
+ Cv64suf;
+ ^
+In file included from /usr/local/include/opencv2/core/core_c.h:47:0,
+                 from /usr/local/include/opencv/cv.h:63,
+                 from ../src/Librerias_Reconocimiento.h:18,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/types_c.h:212:1: note: previous declaration as ‘typedef union Cv64suf Cv64suf’
+ Cv64suf;
+ ^
+In file included from /usr/local/include/opencv2/face/predict_collector.hpp:53:0,
+                 from /usr/local/include/opencv2/face.hpp:51,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/cvstd.hpp:130:30: error: redefinition of ‘class cv::Allocator<_Tp>’
+ template<typename _Tp> class Allocator
+                              ^
+In file included from /usr/local/include/opencv/cv.h:64:0,
+                 from ../src/Librerias_Reconocimiento.h:18,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/core.hpp:368:30: error: previous definition of ‘class cv::Allocator<_Tp>’
+ template<typename _Tp> class Allocator
+                              ^
+In file included from /usr/local/include/opencv2/face/predict_collector.hpp:53:0,
+                 from /usr/local/include/opencv2/face.hpp:51,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/cvstd.hpp:283:8: error: redefinition of ‘struct cv::Ptr<_Tp>’
+ struct Ptr
+        ^
+In file included from /usr/local/include/opencv/cv.h:64:0,
+                 from ../src/Librerias_Reconocimiento.h:18,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/core.hpp:1258:30: error: previous definition of ‘struct cv::Ptr<_Tp>’
+ template<typename _Tp> class Ptr
+                              ^
+In file included from /usr/local/include/opencv2/face/predict_collector.hpp:53:0,
+                 from /usr/local/include/opencv2/face.hpp:51,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/cvstd.hpp:480:18: error: using typedef-name ‘cv::String’ after ‘class’
+ class CV_EXPORTS String
+                  ^
+In file included from /usr/local/include/opencv/cv.h:64:0,
+                 from ../src/Librerias_Reconocimiento.h:18,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/core.hpp:84:21: note: ‘cv::String’ has a previous declaration here
+ typedef std::string String;
+                     ^
+In file included from /usr/local/include/opencv2/face/predict_collector.hpp:53:0,
+                 from /usr/local/include/opencv2/face.hpp:51,
+                 from ../src/Librerias_Reconocimiento.h:22,
+                 from ../src/FaceTracking.cpp:8:
+/usr/local/include/opencv2/core/cvstd.hpp:590:1: error: specializing member ‘std::__cxx11::basic_string<char>::String’ requires ‘template<>’ syntax
+ String::String()
+ ^
+/usr/local/include/opencv2/core/cvstd.hpp:595:22: error: ‘String’ does not name a type
+ String::String(const String& str)
+                      ^
+/usr/local/include/opencv2/core/cvstd.hpp:595:1: error: specializing member ‘std::__cxx11::basic_string<char>::String’ requires ‘template<>’ syntax
+ String::String(const String& str)
+ ^
+/usr/local/include/opencv2/core/cvstd.hpp:603:22: error: ‘String’ does not name a type
+ String::String(const String& str, size_t pos, size_t len)
+                      ^
+/usr/local/include/opencv2/core/cvstd.hpp:603:1: error: specializing member ‘std::__cxx11::basic_string<char>::String’ requires ‘template<>’ syntax
+ String::String(const String& str, size_t pos, size_t len)
+ ^
+../src/FaceTracking.cpp:103:1: error: expected ‘}’ at end of input
+ }
+ ^
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+make: *** [src/FaceTracking.o] Error 1
+18:52:01 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:32:19: error: ‘MAX_PEOPLE’ was not declared in this scope
+  int nPictureById[MAX_PEOPLE];     // Id of each person of the model of face recognition
+                   ^
+../src/FaceTracking.cpp:36:6: error: ‘FaceRecognizer’ was not declared in this scope
+  Ptr<FaceRecognizer> model;    // Model of face recognition
+      ^
+../src/FaceTracking.cpp:36:20: error: template argument 1 is invalid
+  Ptr<FaceRecognizer> model;    // Model of face recognition
+                    ^
+../src/FaceTracking.cpp:37:2: error: ‘CascadeClassifier’ was not declared in this scope
+  CascadeClassifier face_cascade;   // Cascade Classifier
+  ^
+../src/FaceTracking.cpp:33:6: warning: unused variable ‘im_width’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+      ^
+../src/FaceTracking.cpp:33:16: warning: unused variable ‘im_height’ [-Wunused-variable]
+  int im_width, im_height;     // heigh, witdh of 1st images of the model of face recognition
+                ^
+../src/FaceTracking.cpp:36:22: warning: unused variable ‘model’ [-Wunused-variable]
+  Ptr<FaceRecognizer> model;    // Model of face recognition
+                      ^
+../src/FaceTracking.cpp:39:9: warning: unused variable ‘x_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+         ^
+../src/FaceTracking.cpp:39:21: warning: unused variable ‘y_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                     ^
+../src/FaceTracking.cpp:39:33: warning: unused variable ‘area_face’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                                 ^
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+make: *** [src/FaceTracking.o] Error 1
+18:55:24 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:79:6: warning: unused variable ‘nPictureById’ [-Wunused-variable]
+  int nPictureById[MAX_PEOPLE];    // Id of each person of the model of face recognition
+      ^
+../src/FaceTracking.cpp:80:6: warning: unused variable ‘im_width’ [-Wunused-variable]
+  int im_width, im_height;   // heigh, witdh of 1st images of the model of face recognition
+      ^
+../src/FaceTracking.cpp:80:16: warning: unused variable ‘im_height’ [-Wunused-variable]
+  int im_width, im_height;   // heigh, witdh of 1st images of the model of face recognition
+                ^
+../src/FaceTracking.cpp:86:9: warning: unused variable ‘x_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+         ^
+../src/FaceTracking.cpp:86:21: warning: unused variable ‘y_face_pos’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                     ^
+../src/FaceTracking.cpp:86:33: warning: unused variable ‘area_face’ [-Wunused-variable]
+  double x_face_pos, y_face_pos, area_face; // Coordinates of the detected face
+                                 ^
+../src/FaceTracking.cpp:89:6: warning: variable ‘PREDICTION_SEUIL’ set but not used [-Wunused-but-set-variable]
+  int PREDICTION_SEUIL;    // Prediction limit
+      ^
+Finished building: ../src/FaceTracking.cpp
+ 
+Building file: ../src/Librerias_Reconocimiento.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Librerias_Reconocimiento.d" -MT"src/Librerias_Reconocimiento.d" -o "src/Librerias_Reconocimiento.o" "../src/Librerias_Reconocimiento.cpp"
+Finished building: ../src/Librerias_Reconocimiento.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o   -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_contrib -lopencv_gpu -lopencv_legacy -lopencv_nonfree -lopencv_ocl -lopencv_ts -lopencv_features2d -lopencv_highgui -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core
+Finished building target: FaceTracking
+ 
+18:55:30 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+18:55:37 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:79:6: warning: unused variable ‘nPictureById’ [-Wunused-variable]
+  int nPictureById[MAX_PEOPLE];    // Id of each person of the model of face recognition
+      ^
+../src/FaceTracking.cpp:120:152: warning: ‘im_width’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   face_recognition(people, face_cascade, grayscaleFrame, captureFrame, im_width, im_height, model, PREDICTION_SEUIL, x_face_pos, y_face_pos, area_face);
+                                                                                                                                                        ^
+../src/FaceTracking.cpp:120:152: warning: ‘im_height’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+Finished building: ../src/FaceTracking.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o   -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_contrib -lopencv_gpu -lopencv_legacy -lopencv_nonfree -lopencv_ocl -lopencv_ts -lopencv_features2d -lopencv_highgui -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core
+Finished building target: FaceTracking
+ 
+18:55:39 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+18:57:23 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+Finished building: ../src/FaceTracking.cpp
+ 
+Building file: ../src/Librerias_Reconocimiento.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Librerias_Reconocimiento.d" -MT"src/Librerias_Reconocimiento.d" -o "src/Librerias_Reconocimiento.o" "../src/Librerias_Reconocimiento.cpp"
+Finished building: ../src/Librerias_Reconocimiento.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o   -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_contrib -lopencv_gpu -lopencv_legacy -lopencv_nonfree -lopencv_ocl -lopencv_ts -lopencv_features2d -lopencv_highgui -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core
+Finished building target: FaceTracking
+ 
+18:58:27 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:79:6: warning: unused variable ‘nPictureById’ [-Wunused-variable]
+  int nPictureById[MAX_PEOPLE];    // Id of each person of the model of face recognition
+      ^
+../src/FaceTracking.cpp:120:152: warning: ‘im_width’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   face_recognition(people, face_cascade, grayscaleFrame, captureFrame, im_width, im_height, model, PREDICTION_SEUIL, x_face_pos, y_face_pos, area_face);
+                                                                                                                                                        ^
+../src/FaceTracking.cpp:120:152: warning: ‘im_height’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+Finished building: ../src/FaceTracking.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o   -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_contrib -lopencv_gpu -lopencv_legacy -lopencv_nonfree -lopencv_ocl -lopencv_ts -lopencv_features2d -lopencv_highgui -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core
+Finished building target: FaceTracking
+ 
+18:58:30 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+18:58:42 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+18:58:48 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:79:6: warning: unused variable ‘nPictureById’ [-Wunused-variable]
+  int nPictureById[MAX_PEOPLE];    // Id of each person of the model of face recognition
+      ^
+../src/FaceTracking.cpp:120:152: warning: ‘im_width’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   face_recognition(people, face_cascade, grayscaleFrame, captureFrame, im_width, im_height, model, PREDICTION_SEUIL, x_face_pos, y_face_pos, area_face);
+                                                                                                                                                        ^
+../src/FaceTracking.cpp:120:152: warning: ‘im_height’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+Finished building: ../src/FaceTracking.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o   -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_contrib -lopencv_gpu -lopencv_legacy -lopencv_nonfree -lopencv_ocl -lopencv_ts -lopencv_features2d -lopencv_highgui -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core
+Finished building target: FaceTracking
+ 
+18:58:52 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+18:58:59 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:79:6: warning: unused variable ‘nPictureById’ [-Wunused-variable]
+  int nPictureById[MAX_PEOPLE];    // Id of each person of the model of face recognition
+      ^
+../src/FaceTracking.cpp:120:152: warning: ‘im_width’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   face_recognition(people, face_cascade, grayscaleFrame, captureFrame, im_width, im_height, model, PREDICTION_SEUIL, x_face_pos, y_face_pos, area_face);
+                                                                                                                                                        ^
+../src/FaceTracking.cpp:120:152: warning: ‘im_height’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+Finished building: ../src/FaceTracking.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o   -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_contrib -lopencv_gpu -lopencv_legacy -lopencv_nonfree -lopencv_ocl -lopencv_ts -lopencv_features2d -lopencv_highgui -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core
+Finished building target: FaceTracking
+ 
+18:59:02 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+18:59:08 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:79:6: warning: unused variable ‘nPictureById’ [-Wunused-variable]
+  int nPictureById[MAX_PEOPLE];    // Id of each person of the model of face recognition
+      ^
+../src/FaceTracking.cpp:120:152: warning: ‘im_width’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   face_recognition(people, face_cascade, grayscaleFrame, captureFrame, im_width, im_height, model, PREDICTION_SEUIL, x_face_pos, y_face_pos, area_face);
+                                                                                                                                                        ^
+../src/FaceTracking.cpp:120:152: warning: ‘im_height’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+Finished building: ../src/FaceTracking.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o   -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_contrib -lopencv_gpu -lopencv_legacy -lopencv_nonfree -lopencv_ocl -lopencv_ts -lopencv_features2d -lopencv_highgui -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core
+Finished building target: FaceTracking
+ 
+18:59:16 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
