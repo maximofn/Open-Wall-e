@@ -33,25 +33,35 @@
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
+<part id="4"/>
+<part id="5"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="FaceTracking.cpp" partName="FaceTracking.cpp" path="/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/Face_tracking_PC/Eclipse/FaceTracking/src/FaceTracking.cpp" title="FaceTracking.cpp" tooltip="FaceTracking/src/FaceTracking.cpp" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="FaceTracking.cpp" partName="FaceTracking.cpp" path="/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/Face_tracking_PC/Eclipse/FaceTracking/src/FaceTracking.cpp" title="FaceTracking.cpp" tooltip="FaceTracking/src/FaceTracking.cpp" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/FaceTracking/src/FaceTracking.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3577" selectionTopPixel="1379"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2790" selectionTopPixel="1085"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="Librerias_Reconocimiento.h" partName="Librerias_Reconocimiento.h" path="/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/Face_tracking_PC/Eclipse/FaceTracking/src/Librerias_Reconocimiento.h" title="Librerias_Reconocimiento.h" tooltip="FaceTracking/src/Librerias_Reconocimiento.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/FaceTracking/src/Librerias_Reconocimiento.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2193" selectionTopPixel="477"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5852" selectionTopPixel="1713"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Librerias_Reconocimiento.cpp" partName="Librerias_Reconocimiento.cpp" path="/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/Face_tracking_PC/Eclipse/FaceTracking/src/Librerias_Reconocimiento.cpp" title="Librerias_Reconocimiento.cpp" tooltip="FaceTracking/src/Librerias_Reconocimiento.cpp" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="Librerias_Reconocimiento.cpp" partName="Librerias_Reconocimiento.cpp" path="/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/Face_tracking_PC/Eclipse/FaceTracking/src/Librerias_Reconocimiento.cpp" title="Librerias_Reconocimiento.cpp" tooltip="FaceTracking/src/Librerias_Reconocimiento.cpp" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/FaceTracking/src/Librerias_Reconocimiento.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5791" selectionTopPixel="2607"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4903" selectionTopPixel="3235"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Defines.h" partName="Defines.h" path="/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/Face_tracking_PC/Eclipse/FaceTracking/src/Defines.h" title="Defines.h" tooltip="FaceTracking/src/Defines.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/FaceTracking/src/Defines.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="15" selectionOffset="293" selectionTopPixel="0"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Defines.h" partName="Defines.h" path="/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/Face_tracking_PC/Eclipse/FaceTracking/Resources/Defines.h" title="Defines.h" tooltip="FaceTracking/Resources/Defines.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/FaceTracking/Resources/Defines.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="486" selectionTopPixel="297"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="libreria_Detection.h" partName="libreria_Detection.h" path="/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/Face_tracking_PC/Eclipse/FaceTracking/src/libreria_Detection.h" title="libreria_Detection.h" tooltip="FaceTracking/src/libreria_Detection.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/FaceTracking/src/libreria_Detection.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="80" selectionOffset="3622" selectionTopPixel="1017"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="libreria_Detection.cpp" partName="libreria_Detection.cpp" path="/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/Face_tracking_PC/Eclipse/FaceTracking/src/libreria_Detection.cpp" title="libreria_Detection.cpp" tooltip="FaceTracking/src/libreria_Detection.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/FaceTracking/src/libreria_Detection.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1945" selectionTopPixel="242"/>
 </editor>
 </editors>
 <views>
@@ -61,6 +71,7 @@
 <expanded>
 <category IMemento.internal.id="Errors"/>
 <category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Warnings (6 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="519" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -219,7 +230,7 @@
 </fastViewBar>
 <fastViewBar fastViewLocation="131072" id="topRight" orientation="512" selectedTabId="org.eclipse.ui.views.ContentOutline" style="0">
 <fastViews>
-<view id="org.eclipse.ui.views.ContentOutline" ratio="0.3"/>
+<view id="org.eclipse.ui.views.ContentOutline" ratio="0.29959184"/>
 <view id="org.eclipse.cdt.make.ui.views.MakeView" ratio="0.3"/>
 </fastViews>
 </fastViewBar>
@@ -272,165 +283,160 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FaceTracking/src/FaceTracking.cpp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FaceTracking/src/Librerias_Reconocimiento.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FaceTracking/src/Librerias_Reconocimiento.cpp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FaceTracking/src/Defines.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FaceTracking/src/Librerias_Reconocimiento.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FaceTracking/src/Librerias_Reconocimiento.cpp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FaceTracking/src/Defines.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FaceTracking/src/Librerias_Reconocimiento.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FaceTracking/src/Librerias_Reconocimiento.cpp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FaceTracking/src/Defines.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FaceTracking/src/libreria_Detection.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FaceTracking/src/libreria_Detection.cpp"/>
 </editors>
-<item historyLabel="FaceTracking.cpp" index="0">
+<item historyLabel="libreria_Detection.h" index="3">
+<position info="not_deleted" x="1453" y="730"/>
+</item>
+<item historyLabel="Librerias_Reconocimiento.h" index="2">
+<position info="not_deleted" x="2751" y="0"/>
+</item>
+<item historyLabel="libreria_Detection.h" index="3">
+<position info="not_deleted" x="2185" y="728"/>
+</item>
+<item historyLabel="Librerias_Reconocimiento.h" index="2">
+<position info="not_deleted" x="2941" y="0"/>
+</item>
+<item historyLabel="Librerias_Reconocimiento.cpp" index="1">
+<position info="not_deleted" x="216" y="0"/>
+</item>
+<item historyLabel="Librerias_Reconocimiento.h" index="2">
+<position info="not_deleted" x="3724" y="0"/>
+</item>
+<item historyLabel="libreria_Detection.h" index="3">
+<position info="not_deleted" x="2994" y="0"/>
+</item>
+<item historyLabel="Librerias_Reconocimiento.h" index="2">
 <position/>
 </item>
-<item historyLabel="Librerias_Reconocimiento.h" index="1">
-<position info="not_deleted" x="272" y="325"/>
+<item historyLabel="Librerias_Reconocimiento.cpp" index="1">
+<position info="not_deleted" x="3598" y="0"/>
+</item>
+<item historyLabel="Librerias_Reconocimiento.h" index="2">
+<position info="not_deleted" x="3074" y="0"/>
+</item>
+<item historyLabel="Librerias_Reconocimiento.cpp" index="1">
+<position info="not_deleted" x="3598" y="0"/>
+</item>
+<item historyLabel="Librerias_Reconocimiento.cpp" index="1">
+<position info="not_deleted" x="3578" y="0"/>
+</item>
+<item historyLabel="Librerias_Reconocimiento.cpp" index="1">
+<position info="not_deleted" x="282" y="0"/>
+</item>
+<item historyLabel="Librerias_Reconocimiento.h" index="2">
+<position info="not_deleted" x="3114" y="0"/>
+</item>
+<item historyLabel="Librerias_Reconocimiento.cpp" index="1">
+<position info="not_deleted" x="3609" y="0"/>
+</item>
+<item historyLabel="Librerias_Reconocimiento.h" index="2">
+<position info="not_deleted" x="3838" y="0"/>
+</item>
+<item historyLabel="Librerias_Reconocimiento.cpp" index="1">
+<position info="not_deleted" x="3609" y="0"/>
+</item>
+<item historyLabel="Librerias_Reconocimiento.cpp" index="1">
+<position info="not_deleted" x="3578" y="0"/>
+</item>
+<item historyLabel="Librerias_Reconocimiento.cpp" index="1">
+<position info="not_deleted" x="304" y="0"/>
+</item>
+<item historyLabel="Librerias_Reconocimiento.h" index="2">
+<position info="not_deleted" x="3390" y="0"/>
+</item>
+<item historyLabel="Librerias_Reconocimiento.cpp" index="1">
+<position info="not_deleted" x="304" y="0"/>
+</item>
+<item historyLabel="Librerias_Reconocimiento.cpp" index="1">
+<position info="not_deleted" x="3580" y="0"/>
+</item>
+<item historyLabel="Librerias_Reconocimiento.cpp" index="1">
+<position info="not_deleted" x="329" y="0"/>
+</item>
+<item historyLabel="Librerias_Reconocimiento.h" index="2">
+<position info="not_deleted" x="4890" y="0"/>
+</item>
+<item historyLabel="libreria_Detection.h" index="3">
+<position info="not_deleted" x="3054" y="0"/>
+</item>
+<item historyLabel="Librerias_Reconocimiento.h" index="2">
+<position info="not_deleted" x="7285" y="0"/>
+</item>
+<item historyLabel="Librerias_Reconocimiento.cpp" index="1">
+<position info="not_deleted" x="329" y="0"/>
+</item>
+<item historyLabel="Librerias_Reconocimiento.h" index="2">
+<position info="not_deleted" x="7668" y="23"/>
+</item>
+<item historyLabel="Librerias_Reconocimiento.cpp" index="1">
+<position info="not_deleted" x="1826" y="0"/>
 </item>
 <item historyLabel="FaceTracking.cpp" index="0">
-<position/>
+<position info="not_deleted" x="1382" y="9"/>
 </item>
-<item historyLabel="Defines.h" index="3">
-<position info="not_deleted" x="276" y="6"/>
+<item historyLabel="Librerias_Reconocimiento.h" index="2">
+<position info="not_deleted" x="7331" y="0"/>
 </item>
-<item historyLabel="FaceTracking.cpp" index="0">
-<position/>
+<item historyLabel="Librerias_Reconocimiento.cpp" index="1">
+<position info="not_deleted" x="1826" y="0"/>
 </item>
-<item historyLabel="Librerias_Reconocimiento.h" index="1">
-<position info="not_deleted" x="2181" y="2"/>
+<item historyLabel="Librerias_Reconocimiento.h" index="2">
+<position info="not_deleted" x="9311" y="0"/>
 </item>
-<item historyLabel="Librerias_Reconocimiento.cpp" index="2">
-<position info="not_deleted" x="9162" y="2"/>
+<item historyLabel="Librerias_Reconocimiento.cpp" index="1">
+<position info="not_deleted" x="1826" y="0"/>
 </item>
-<item historyLabel="Defines.h" index="3">
-<position info="not_deleted" x="276" y="6"/>
+<item historyLabel="Librerias_Reconocimiento.cpp" index="1">
+<position info="not_deleted" x="4468" y="0"/>
 </item>
-<item historyLabel="FaceTracking.cpp" index="0">
-<position info="not_deleted" x="181" y="7"/>
+<item historyLabel="Librerias_Reconocimiento.cpp" index="1">
+<position info="not_deleted" x="4708" y="0"/>
 </item>
-<item historyLabel="Librerias_Reconocimiento.h" index="4">
-<position info="not_deleted" x="2332" y="0"/>
+<item historyLabel="Librerias_Reconocimiento.cpp" index="1">
+<position info="not_deleted" x="1704" y="0"/>
 </item>
-<item historyLabel="FaceTracking.cpp" index="0">
-<position info="not_deleted" x="2643" y="0"/>
+<item historyLabel="Librerias_Reconocimiento.cpp" index="1">
+<position info="not_deleted" x="4708" y="0"/>
 </item>
-<item historyLabel="Librerias_Reconocimiento.h" index="4">
-<position info="not_deleted" x="2080" y="0"/>
+<item historyLabel="Librerias_Reconocimiento.h" index="2">
+<position info="not_deleted" x="9311" y="0"/>
 </item>
-<item historyLabel="FaceTracking.cpp" index="0">
-<position info="not_deleted" x="143" y="261"/>
+<item historyLabel="Librerias_Reconocimiento.cpp" index="1">
+<position info="not_deleted" x="4807" y="0"/>
 </item>
-<item historyLabel="Librerias_Reconocimiento.h" index="4">
-<position info="not_deleted" x="2080" y="0"/>
+<item historyLabel="Librerias_Reconocimiento.h" index="2">
+<position info="not_deleted" x="9311" y="0"/>
 </item>
-<item historyLabel="Librerias_Reconocimiento.cpp" index="5">
-<position info="not_deleted" x="9162" y="2"/>
-</item>
-<item historyLabel="Librerias_Reconocimiento.h" index="4">
-<position info="not_deleted" x="360" y="0"/>
-</item>
-<item historyLabel="Librerias_Reconocimiento.cpp" index="5">
-<position info="not_deleted" x="10857" y="0"/>
-</item>
-<item historyLabel="Librerias_Reconocimiento.h" index="4">
-<position info="not_deleted" x="360" y="0"/>
+<item historyLabel="Librerias_Reconocimiento.cpp" index="1">
+<position info="not_deleted" x="4807" y="0"/>
 </item>
 <item historyLabel="FaceTracking.cpp" index="0">
-<position info="not_deleted" x="405" y="16"/>
+<position info="not_deleted" x="2936" y="0"/>
 </item>
-<item historyLabel="Librerias_Reconocimiento.h" index="4">
-<position info="not_deleted" x="360" y="0"/>
+<item historyLabel="libreria_Detection.h" index="3">
+<position info="not_deleted" x="3622" y="80"/>
 </item>
-<item historyLabel="Librerias_Reconocimiento.cpp" index="5">
-<position info="not_deleted" x="10857" y="0"/>
+<item historyLabel="Librerias_Reconocimiento.h" index="2">
+<position info="not_deleted" x="5852" y="0"/>
 </item>
-<item historyLabel="Defines.h" index="6">
-<position info="not_deleted" x="293" y="15"/>
-</item>
-<item historyLabel="Librerias_Reconocimiento.cpp" index="5">
-<position info="not_deleted" x="10869" y="0"/>
-</item>
-<item historyLabel="Librerias_Reconocimiento.h" index="4">
-<position info="not_deleted" x="360" y="0"/>
-</item>
-<item historyLabel="Librerias_Reconocimiento.cpp" index="5">
-<position info="not_deleted" x="10862" y="0"/>
+<item historyLabel="Librerias_Reconocimiento.cpp" index="1">
+<position info="not_deleted" x="4903" y="0"/>
 </item>
 <item historyLabel="FaceTracking.cpp" index="0">
-<position info="not_deleted" x="926" y="5"/>
+<position info="not_deleted" x="2790" y="0"/>
 </item>
-<item historyLabel="Librerias_Reconocimiento.h" index="4">
-<position info="not_deleted" x="360" y="0"/>
+<item historyLabel="libreria_Detection.cpp" index="4">
+<position info="not_deleted" x="1945" y="0"/>
 </item>
-<item historyLabel="Librerias_Reconocimiento.cpp" index="5">
-<position info="not_deleted" x="10862" y="0"/>
+<item historyLabel="libreria_Detection.h" index="3">
+<position info="not_deleted" x="3622" y="80"/>
 </item>
-<item historyLabel="FaceTracking.cpp" index="0">
-<position info="not_deleted" x="927" y="0"/>
-</item>
-<item historyLabel="Librerias_Reconocimiento.cpp" index="5">
-<position info="not_deleted" x="2661" y="5"/>
-</item>
-<item historyLabel="FaceTracking.cpp" index="0">
-<position info="not_deleted" x="927" y="0"/>
-</item>
-<item historyLabel="Librerias_Reconocimiento.h" index="7">
-<position/>
-</item>
-<item historyLabel="Librerias_Reconocimiento.cpp" index="8">
-<position info="not_deleted" x="13900" y="0"/>
-</item>
-<item historyLabel="FaceTracking.cpp" index="0">
-<position/>
-</item>
-<item historyLabel="Librerias_Reconocimiento.h" index="7">
-<position info="not_deleted" x="0" y="2193"/>
-</item>
-<item historyLabel="Librerias_Reconocimiento.cpp" index="8">
-<position info="not_deleted" x="0" y="13881"/>
-</item>
-<item historyLabel="FaceTracking.cpp" index="0">
-<position/>
-</item>
-<item historyLabel="Librerias_Reconocimiento.h" index="7">
-<position/>
-</item>
-<item historyLabel="Librerias_Reconocimiento.cpp" index="8">
-<position info="not_deleted" x="0" y="13881"/>
-</item>
-<item historyLabel="Defines.h" index="9">
-<position info="not_deleted" x="293" y="15"/>
-</item>
-<item historyLabel="Librerias_Reconocimiento.h" index="7">
-<position/>
-</item>
-<item historyLabel="FaceTracking.cpp" index="0">
-<position info="not_deleted" x="4731" y="0"/>
-</item>
-<item historyLabel="Librerias_Reconocimiento.h" index="7">
-<position/>
-</item>
-<item historyLabel="Librerias_Reconocimiento.cpp" index="8">
-<position info="not_deleted" x="13900" y="0"/>
-</item>
-<item historyLabel="Librerias_Reconocimiento.h" index="7">
-<position info="not_deleted" x="2193" y="0"/>
-</item>
-<item historyLabel="FaceTracking.cpp" index="0">
-<position info="not_deleted" x="3496" y="0"/>
-</item>
-<item historyLabel="Librerias_Reconocimiento.cpp" index="8">
-<position info="not_deleted" x="5791" y="0"/>
-</item>
-<item historyLabel="FaceTracking.cpp" index="0">
-<position info="not_deleted" x="3577" y="0"/>
-</item>
-<item historyLabel="Librerias_Reconocimiento.h" index="7">
-<position info="not_deleted" x="2193" y="0"/>
-</item>
-<item active="true" historyLabel="FaceTracking.cpp" index="0">
-<position info="not_deleted" x="3577" y="0"/>
+<item active="true" historyLabel="Librerias_Reconocimiento.cpp" index="1">
+<position info="not_deleted" x="4903" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -455,6 +461,27 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Utilities.h" tooltip="FaceTracking/src/Utilities.h">
+<persistable path="/FaceTracking/src/Utilities.h"/>
+</file>
+<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stl_vector.h" tooltip="/usr/include/c++/5/bits/stl_vector.h">
+<persistable path="/usr/include/c++/5/bits/stl_vector.h" project="FaceTracking"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="libreria_Detection.cpp" tooltip="FaceTracking/src/libreria_Detection.cpp">
+<persistable path="/FaceTracking/src/libreria_Detection.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="libreria_Detection.h" tooltip="FaceTracking/src/libreria_Detection.h">
+<persistable path="/FaceTracking/src/libreria_Detection.h"/>
+</file>
+<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="objdetect.hpp" tooltip="/usr/local/include/opencv2/objdetect.hpp">
+<persistable path="/usr/local/include/opencv2/objdetect.hpp" project="FaceTracking"/>
+</file>
+<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="objdetect_c.h" tooltip="/usr/local/include/opencv2/objdetect/objdetect_c.h">
+<persistable path="/usr/local/include/opencv2/objdetect/objdetect_c.h" project="FaceTracking"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Utilities.cpp" tooltip="FaceTracking/src/Utilities.cpp">
+<persistable path="/FaceTracking/src/Utilities.cpp"/>
+</file>
 <file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="contrib.hpp" tooltip="/usr/include/opencv2/contrib/contrib.hpp">
 <persistable path="/usr/include/opencv2/contrib/contrib.hpp" project="FaceTracking"/>
 </file>

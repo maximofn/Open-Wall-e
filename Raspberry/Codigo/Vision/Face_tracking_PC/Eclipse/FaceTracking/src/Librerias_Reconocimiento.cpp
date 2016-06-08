@@ -7,21 +7,12 @@
 
 
 #include "Librerias_Reconocimiento.h"
-#include "Defines.h"
 #include "Utilities.h"
 
 
+#ifdef RECOGNITION
 
-/////////////////////////////////////////////////
-//
-// read csv files.
-// Fully copied from Philipp Wagner works
-// http://docs.opencv.org/trunk/modules/contrib/doc/facerec/tutorial/facerec_video_recognition.html
-//
-//	[int nPictureById[MAX_PEOPLE], string  people[MAX_PEOPLE]] =
-// 		= read_csv(const string& filename, vector<Mat>& images, vector<int>& labels, char separator = ';')
-//
-////////////////////////////////////////////////
+
 void read_csv(int nPictureById[MAX_PEOPLE], string people[MAX_PEOPLE], const string& filename, vector<Mat>& images,
 		vector<int>& labels, char separator) {
 	string s;
@@ -65,27 +56,12 @@ void read_csv(int nPictureById[MAX_PEOPLE], string people[MAX_PEOPLE], const str
 
 
 
-
-/**
- *  train model recognition
- *
- * @param no param
- *
- * [int nPictureById[MAX_PEOPLE], string people[MAX_PEOPLE], Ptr<FaceRecognizer> model, int& im_width, int& im_height] =
- * 		= train_model_recognition(int nPictureById[MAX_PEOPLE], string people[MAX_PEOPLE], Ptr<FaceRecognizer> model,
- * 		int& im_width, int& im_height)
- *
- * or
- *
- * [int nPictureById[MAX_PEOPLE], string people[MAX_PEOPLE], Eigenfaces& model, int& im_width, int& im_height] =
- * 		= train_model_recognition(int nPictureById[MAX_PEOPLE], string people[MAX_PEOPLE], Eigenfaces& model, int& im_width, int& im_height)
- */
 #ifdef RASPBERRY
 void train_model_recognition(int nPictureById[MAX_PEOPLE], string people[MAX_PEOPLE], Eigenfaces& model,
 		int& im_width, int& im_height)
 #else
 void train_model_recognition(int nPictureById[MAX_PEOPLE], string people[MAX_PEOPLE], Ptr<FaceRecognizer> model,
-		int& im_width, int& im_height)//, Fisherfaces model)
+		int& im_width, int& im_height)
 #endif
 {
 	vector<Mat> images;
@@ -129,12 +105,13 @@ void train_model_recognition(int nPictureById[MAX_PEOPLE], string people[MAX_PEO
 	fn_csv = "/home/pi/Face_tracking/04__Face_recognition__Robidouille_API/faces.csv";
 #endif
 #ifdef UBUNTU
-	fn_csv = "/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/Face_tracking_PC/Eclipse/FaceTracking/Debug/faces.csv";
-	//fn_csv = "/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/Face_tracking_PC/Eclipse/FaceTracking/Debug/faces.csv";
+	#ifdef ECLIPSE
+		fn_csv = "Resources/faces.csv";
+	#else
+		fn_csv = "../Resources/faces.csv";
+	#endif
 #endif
-#ifdef MAQUINA_VIRTUAL
-	fn_csv = "/home/maximo/Escritorio/Face_tracking/Face_tracking/Debug/faces.csv";
-#endif
+
 #ifdef DEBUG
     sprintf(sTmp,"\n (init train model) csv = ");
     debug(sTmp);
@@ -176,9 +153,6 @@ void train_model_recognition(int nPictureById[MAX_PEOPLE], string people[MAX_PEO
 #ifdef UBUNTU
 	model->train(images, labels);
 #endif
-#ifdef MAQUINA_VIRTUAL
-	model->train(images, labels);
-#endif
 
 #ifdef TRACE
 	trace("\n (init train model) train images : ok");
@@ -187,147 +161,27 @@ void train_model_recognition(int nPictureById[MAX_PEOPLE], string people[MAX_PEO
 
 
 
-
-/**
- * Load haar cascade
- *
- * @param no param.
- *
- * [CascadeClassifier& face_cascade, string& fn_haar] =
- * 		= load_haar_cascade(CascadeClassifier& face_cascade, string& fn_haar)
- *
- */
-bool load_haar_cascade(CascadeClassifier& face_cascade)
-{
-	// set path for haar cascade
-	// change fn_harr to be quicker LBP (see article)
-	string fn_haar;
-	char sTmp[1000];
-
-#ifdef LBP_CASCADE_FRONTALFACE
-	#ifdef RASPBERRY
-		fn_haar = "/usr/share/opencv/lbpcascades/lbpcascade_frontalface.xml";
-	#endif
-	#ifdef UBUNTU
-		fn_haar = "/usr/local/share/OpenCV/lbpcascades/lbpcascade_frontalface.xml";
-	#endif
-	#ifdef MAQUINA_VIRTUAL
-		fn_haar = "/usr/local/share/OpenCV/lbpcascades/lbpcascade_frontalface.xml";
-	#endif
-#endif
-#ifdef HAAR_CASCADE_FRONTALFACE_ALT
-	#ifdef RASPBERRY
-		fn_haar = "/usr/share/opencv/haarcascades/haarcascade_frontalface_alt.xml";
-	#endif
-	#ifdef UBUNTU
-		fn_haar = "/usr/local/share/OpenCV/haarcascades/haarcascade_frontalface_alt.xml";
-	#endif
-	#ifdef MAQUINA_VIRTUAL
-		fn_haar = "/usr/local/share/OpenCV/haarcascades/haarcascade_frontalface_alt.xml";
-	#endif
-#endif
-#ifdef HAAR_CASCADE_FRONTALFACE_ALT2
-	#ifdef RASPBERRY
-		fn_haar = "/usr/share/opencv/haarcascades/haarcascade_frontalface_alt2.xml";
-	#endif
-	#ifdef UBUNTU
-		fn_haar = "/usr/local/share/OpenCV/haarcascades/haarcascade_frontalface_alt2.xml";
-	#endif
-	#ifdef MAQUINA_VIRTUAL
-		fn_haar = "/usr/local/share/OpenCV/haarcascades/haarcascade_frontalface_alt2.xml";
-	#endif
-#endif
-#ifdef HAAR_CASCADE_FRONTALFACE_ALT_TREE
-	#ifdef RASPBERRY
-		fn_haar = "/usr/share/opencv/haarcascades/haarcascade_frontalface_alt_tree.xml";
-	#endif
-	#ifdef UBUNTU
-		fn_haar = "/usr/local/share/OpenCV/haarcascades/haarcascade_frontalface_alt_tree.xml";
-	#endif
-	#ifdef MAQUINA_VIRTUAL
-		fn_haar = "/usr/local/share/OpenCV/haarcascades/haarcascade_frontalface_alt_tree.xml";
-	#endif
-#endif
-#ifdef HAAR_CASCADE_FRONTALFACE_ALT_DEFAULT
-	#ifdef RASPBERRY
-		fn_haar = "/usr/share/opencv/haarcascades/haarcascade_frontalface_default.xml";
-	#endif
-	#ifdef UBUNTU
-		fn_haar = "/usr/local/share/OpenCV/haarcascades/haarcascade_frontalface_default.xml";
-	#endif
-	#ifdef MAQUINA_VIRTUAL
-		fn_haar = "/usr/local/share/OpenCV/haarcascades/haarcascade_frontalface_default.xml";
-	#endif
-#endif
-
-#ifdef DEBUG
-	sprintf(sTmp,"\n (init load haar cascade) haar = ");
-	debug(sTmp);
-	cout << fn_haar;
-#endif
-#ifdef TRACE
-	trace("\n (init load haar cascade) fn_haar : ok");
-#endif
-
-	// load face model
-	if (!face_cascade.load(fn_haar))
-   	{
-		cout <<"\n (Error load haar cascade) face cascade model not loaded :" + fn_haar;
-		return false;
-	}
-#ifdef TRACE
-	trace("\n (init load haar cascade) Load modele : ok");
-#endif
-
-	return true;
-}
-
-
-
-
-/**
- *  face recognition
- *
- * @param no param
- *
- * [Mat& captureFrame, double& x_face_pos, double& y_face_pos, double& area_face] =
- * 		= face_recognition(string people[MAX_PEOPLE], CascadeClassifier& face_cascade, Mat& gray, Mat& captureFrame,
- * 		int im_width, int im_height, Ptr<FaceRecognizer> model,
- * 		int PREDICTION_SEUIL, double& x_face_pos, double& y_face_pos, double& area_face)
- *
- * or
- *
- * [Mat& captureFrame, double& x_face_pos, double& y_face_pos, double& area_face] =
- * 		= face_recognition(string people[MAX_PEOPLE], CascadeClassifier& face_cascade, Mat& gray, Mat& captureFrame,
- * 		int im_width, int im_height, Eigenfaces model,
- * 		int PREDICTION_SEUIL, double& x_face_pos, double& y_face_pos, double& area_face)
- */
 #ifdef RASPBERRY
-void face_recognition(string people[MAX_PEOPLE], CascadeClassifier& face_cascade, Mat& gray, Mat& captureFrame,
+void face_recognition(string people[MAX_PEOPLE], Mat& gray, Mat& captureFrame,
 		int im_width, int im_height, Eigenfaces model,
-		int PREDICTION_SEUIL, double& x_face_pos, double& y_face_pos, double& area_face)
+		int prediction_seuil, double& x_face_pos, double& y_face_pos, double& area_face)
 #else
-void face_recognition(string people[MAX_PEOPLE], CascadeClassifier& face_cascade, Mat& gray, Mat& captureFrame,
+void face_recognition(string people[MAX_PEOPLE], Mat& gray, Mat& captureFrame, vector< Rect_<int> > *faces,
 		int im_width, int im_height, Ptr<FaceRecognizer> model,
-		int PREDICTION_SEUIL, double& x_face_pos, double& y_face_pos, double& area_face)
+		int prediction_seuil, double& x_face_pos, double& y_face_pos, double& area_face)
 #endif
 {
 	// Declaration of variables
 	Mat face,face_resized;			// Face converted to gray scale and face resized
-	vector< Rect_<int> > faces;		// Vector of faces
-	double scaleFactor = 1.1;		// Parameter specifying how much the image size is reduced at each image scale
-	int minNeighbors = 3; 			// Parameter specifying how many neighbors each candidate rectangle should have to retain it
-	double fx = 1.0;			// scale factor along the horizontal axis
-	double fy = 1.0;			// scale factor along the vertical axis
-
-	// Detect faces
-	face_cascade.detectMultiScale(gray, faces, scaleFactor, minNeighbors, CV_HAAR_SCALE_IMAGE, Size(80,80));
+//	vector< Rect_<int> > faces;		// Vector of faces
+	double fx = 1.0;				// scale factor along the horizontal axis
+	double fy = 1.0;				// scale factor along the vertical axis
 
 	// For each faces founded
-	for(unsigned int i = 0; i < faces.size(); i++)
+	for(unsigned int i = 0; i < (*faces).size(); i++)
 	{
 		// crop face (pretty easy with opencv, don't you think ?
-		Rect face_i = faces[i];
+		Rect face_i = (*faces)[i];
 
 		face = gray(face_i);
 
@@ -344,22 +198,9 @@ void face_recognition(string people[MAX_PEOPLE], CascadeClassifier& face_cascade
 #ifdef UBUNTU
 		model->predict(face_resized,prediction,predicted_confidence);
 #endif
-#ifdef MAQUINA_VIRTUAL
-		model->predict(face_resized,prediction,predicted_confidence);
-#endif
-
-		// create a rectangle around the face
-#ifdef INFORMATION
-		rectangle(captureFrame, face_i, CV_RGB(0, 255 ,0), 1);
-#endif
-
-		// get face area and position
-		x_face_pos = face_i.x + face_i.width/2;
-		y_face_pos = face_i.y + face_i.height/2;
-		area_face = face_i.width * face_i.height;
 
 		// if good prediction : > threshold
-		if (predicted_confidence>PREDICTION_SEUIL)
+		if (predicted_confidence>prediction_seuil)
 		{
 			// trace is commented to speed up
 #ifdef DEBUG
@@ -410,3 +251,10 @@ void face_recognition(string people[MAX_PEOPLE], CascadeClassifier& face_cascade
 		}
 	} // end for
 }
+
+
+#endif
+
+
+
+

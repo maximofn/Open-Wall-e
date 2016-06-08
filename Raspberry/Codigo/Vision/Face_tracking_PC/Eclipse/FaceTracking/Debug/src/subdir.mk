@@ -6,17 +6,20 @@
 CPP_SRCS += \
 ../src/FaceTracking.cpp \
 ../src/Librerias_Reconocimiento.cpp \
-../src/Utilities.cpp 
+../src/Utilities.cpp \
+../src/libreria_Detection.cpp 
 
 OBJS += \
 ./src/FaceTracking.o \
 ./src/Librerias_Reconocimiento.o \
-./src/Utilities.o 
+./src/Utilities.o \
+./src/libreria_Detection.o 
 
 CPP_DEPS += \
 ./src/FaceTracking.d \
 ./src/Librerias_Reconocimiento.d \
-./src/Utilities.d 
+./src/Utilities.d \
+./src/libreria_Detection.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

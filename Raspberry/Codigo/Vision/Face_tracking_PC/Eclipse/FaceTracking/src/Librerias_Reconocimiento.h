@@ -8,10 +8,20 @@
 #ifndef LIBRERIAS_RECONOCIMIENTO_H_
 #define LIBRERIAS_RECONOCIMIENTO_H_
 
+/******************************************************************************/
+/*                            ARCHIVOS IMPORTADOS                             */
+/******************************************************************************/
+
+#include "../Resources/Defines.h"
+
+#ifdef RECOGNITION
 #include <iostream>
 #include <fstream>
 #include <sstream>
 #include "time.h"
+#include <unistd.h>
+#include <stdio.h>
+#include <errno.h>
 
 // OPENCV
 #include <cv.h>
@@ -22,12 +32,22 @@
 #include <opencv2/core/core.hpp>
 #include "opencv2/contrib/contrib.hpp"
 #ifdef RASPBERRY
-#include "/home/pi/wall-e/libfacerec-0.04/include/facerec.hpp"
-#include "RaspiCamCV.h"
+	#include "/home/pi/wall-e/libfacerec-0.04/include/facerec.hpp"
+	#include "RaspiCamCV.h"
 #endif
 using namespace std;
 using namespace cv;
 
+/******************************************************************************/
+/*                           DEFINICIONES Y MACROS                            */
+/******************************************************************************/
+
+// for Cascade mode
+#define LBP_CASCADE_FRONTALFACE
+//#define HAAR_CASCADE_FRONTALFACE_ALT
+//#define HAAR_CASCADE_FRONTALFACE_ALT2
+//#define HAAR_CASCADE_FRONTALFACE_ALT_TREE
+//#define HAAR_CASCADE_FRONTALFACE_ALT_DEFAULT
 
 // some constants to manage nb of people to learn+ id of people
 #define MAX_PEOPLE 					15
@@ -48,30 +68,114 @@ using namespace cv;
 #define P_DESCONOCIDO				14
 // #define P_NEWPERSON		X
 
-// for Cascade mode
-#define LBP_CASCADE_FRONTALFACE
-//#define HAAR_CASCADE_FRONTALFACE_ALT
-//#define HAAR_CASCADE_FRONTALFACE_ALT2
-//#define HAAR_CASCADE_FRONTALFACE_ALT_TREE
-//#define HAAR_CASCADE_FRONTALFACE_ALT_DEFAULT
+/******************************************************************************/
+/*                        ESTRUCTURAS Y TIPOS DEFINIDOS                       */
+/******************************************************************************/
+
+/******************************************************************************/
+/*                             VARIABLES GLOBALES                             */
+/******************************************************************************/
+
+/******************************************************************************/
+/*                                 FUNCIONES                                  */
+/******************************************************************************/
+
+/*----------------------------------------------------------------------------*/
+/* NOMBRE: read_csv                                                           */
+/* ARGUMENTOS ENTRADA: N/A                                                    */
+/*    ARGUMENTO0: (string) people: Nombres de las personas para entrenar      */
+/*    ARGUMENTO1: (string) filename: directorio del archivo csv               */
+/* ARGUMENTOS SALIDA:                                                         */
+/*    ARGUMENTO0: (int) nPictureById: Numero de fotos por cada persona        */
+/*    ARGUMENTO1: (vector<Mat>) images: Imagenes de la coleccion              */
+/*    ARGUMENTO2: (vector<int>) labels: labels de la coleccion                */
+/* VALOR DEVUELTO: N/A                                                        */
+/* DESCRIPCION: Funcion que lee el archivo csv                                */
+/*----------------------------------------------------------------------------*/
+void read_csv(int nPictureById[MAX_PEOPLE], string people[MAX_PEOPLE], const string& filename,
+		vector<Mat>& images, vector<int>& labels, char separator = ';');
 
 
-	void read_csv(int nPictureById[MAX_PEOPLE], string people[MAX_PEOPLE], const string& filename,
-			vector<Mat>& images, vector<int>& labels, char separator = ';');
+
 #ifdef RASPBERRY
+	/*----------------------------------------------------------------------------*/
+	/* NOMBRE: train_model_recognition                                            */
+	/* ARGUMENTOS ENTRADA: N/A                                                    */
+	/*    ARGUMENTO0: (int) nPictureById: Numero de fotos por cada persona        */
+	/*    ARGUMENTO1: (string) people: Nombres de las personas para entrenar      */
+	/*    ARGUMENTO2: (Eigenfaces) model: Modelo de reconocimiento                */
+	/* ARGUMENTOS SALIDA:                                                         */
+	/*    ARGUMENTO0: (int) im_width: Ancho de las imagenes                       */
+	/*    ARGUMENTO1: (int) im_height: Alto de las imagenes                       */
+	/* VALOR DEVUELTO: N/A                                                        */
+	/* DESCRIPCION: Entrenamiento del modelo de reconocimiento                    */
+	/*----------------------------------------------------------------------------*/
 	void train_model_recognition(int nPictureById[MAX_PEOPLE], string people[MAX_PEOPLE], Eigenfaces& model,
 			int& im_width, int& im_height);
-	void face_recognition(string people[MAX_PEOPLE], CascadeClassifier& face_cascade, Mat& gray, Mat& captureFrame,
+
+
+
+	/*----------------------------------------------------------------------------*/
+	/* NOMBRE: face_recognition                                                   */
+	/* ARGUMENTOS ENTRADA: N/A                                                    */
+	/*    ARGUMENTO0: (string) people: Nombres de las personas para entrenar      */
+	/*    ARGUMENTO1: (Mat) gray: Imagen en blanco y negro                        */
+	/*    ARGUMENTO2: (Mat) captureFrame: Imagen en color                         */
+	/*    ARGUMENTO3: (vector< Rect_<int> >) faces: vector con caras detectadas   */
+	/*    ARGUMENTO4: (int) im_width: Ancho de las imagenes                       */
+	/*    ARGUMENTO5: (int) im_height: Alto de las imagenes                       */
+	/*    ARGUMENTO6: (Eigenfaces) model: Modelo de reconocimiento                */
+	/*    ARGUMENTO7: (int) prediction_seuil: Prediccion                          */
+	/* ARGUMENTOS SALIDA:                                                         */
+	/*    ARGUMENTO0: (double) x_face_pos: Posicion x de la cara                  */
+	/*    ARGUMENTO1: (double) y_face_pos: Posicion y de la cara                  */
+	/* VALOR DEVUELTO: N/A                                                        */
+	/* DESCRIPCION: Reconocimiento de la persona detectada                        */
+	/*----------------------------------------------------------------------------*/
+	void face_recognition(string people[MAX_PEOPLE], Mat& gray, Mat& captureFrame, vector< Rect_<int> > *faces,
 			int im_width, int im_height, Eigenfaces model,
-			int PREDICTION_SEUIL, double& x_face_pos, double& y_face_pos, double& area_face);
+			int prediction_seuil, double& x_face_pos, double& y_face_pos, double& area_face)
 #else
+	/*----------------------------------------------------------------------------*/
+	/* NOMBRE: train_model_recognition                                            */
+	/* ARGUMENTOS ENTRADA: N/A                                                    */
+	/*    ARGUMENTO0: (int) nPictureById: Numero de fotos por cada persona        */
+	/*    ARGUMENTO1: (string) people: Nombres de las personas para entrenar      */
+	/*    ARGUMENTO2: (Ptr<FaceRecognizer>) model: Modelo de reconocimiento       */
+	/* ARGUMENTOS SALIDA:                                                         */
+	/*    ARGUMENTO0: (int) im_width: Ancho de las imagenes                       */
+	/*    ARGUMENTO1: (int) im_height: Alto de las imagenes                       */
+	/* VALOR DEVUELTO: N/A                                                        */
+	/* DESCRIPCION: Entrenamiento del modelo de reconocimiento                    */
+	/*----------------------------------------------------------------------------*/
 	void train_model_recognition(int nPictureById[MAX_PEOPLE], string people[MAX_PEOPLE], Ptr<FaceRecognizer> model,
 			int& im_width, int& im_height);
-	void face_recognition(string people[MAX_PEOPLE], CascadeClassifier& face_cascade, Mat& gray, Mat& captureFrame,
+
+
+
+	/*----------------------------------------------------------------------------*/
+	/* NOMBRE: face_recognition                                                   */
+	/* ARGUMENTOS ENTRADA: N/A                                                    */
+	/*    ARGUMENTO0: (string) people: Nombres de las personas para entrenar      */
+	/*    ARGUMENTO1: (Mat) gray: Imagen en blanco y negro                        */
+	/*    ARGUMENTO2: (Mat) captureFrame: Imagen en color                         */
+	/*    ARGUMENTO3: (vector< Rect_<int> >) faces: vector con caras detectadas   */
+	/*    ARGUMENTO4: (int) im_width: Ancho de las imagenes                       */
+	/*    ARGUMENTO5: (int) im_height: Alto de las imagenes                       */
+	/*    ARGUMENTO6: (Ptr<FaceRecognizer>) model: Modelo de reconocimiento       */
+	/*    ARGUMENTO7: (int) prediction_seuil: Prediccion                          */
+	/* ARGUMENTOS SALIDA:                                                         */
+	/*    ARGUMENTO0: (double) x_face_pos: Posicion x de la cara                  */
+	/*    ARGUMENTO1: (double) y_face_pos: Posicion y de la cara                  */
+	/* VALOR DEVUELTO: N/A                                                        */
+	/* DESCRIPCION: Reconocimiento de la persona detectada                        */
+	/*----------------------------------------------------------------------------*/
+	void face_recognition(string people[MAX_PEOPLE], Mat& gray, Mat& captureFrame, vector< Rect_<int> > *faces,
 			int im_width, int im_height, Ptr<FaceRecognizer> model,
-			int PREDICTION_SEUIL, double& x_face_pos, double& y_face_pos, double& area_face);
+			int prediction_seuil, double& x_face_pos, double& y_face_pos, double& area_face);
 #endif
-	bool load_haar_cascade(CascadeClassifier& face_cascade);
+
+#endif
 
 
 #endif /* LIBRERIAS_RECONOCIMIENTO_H_ */

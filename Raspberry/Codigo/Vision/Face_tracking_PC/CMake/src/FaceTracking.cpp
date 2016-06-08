@@ -1,55 +1,114 @@
-/*
- * FaceTracking.cpp
- *
- *  Created on: 28/05/2016
- *      Author: maximofn
- */
+//============================================================================
+// Name        : Face_tracking.cpp
+// Author      : Máximo Fernandezn Nuñez
+// Version     : 1.0
+// Copyright   :
+// Description : Face tracking: software made ​​from the work of Emil Valkov,
+// which was based on the work of Pierre Raufast
+//============================================================================
 
-// OPENCV
-#include <iostream>
-#include <fstream>
-#include <sstream>
-#include "time.h"
+// Librerias
+#include "libreria_Detection.h"
+#include "Librerias_Reconocimiento.h"
+#include "../Resources/Defines.h"
 
-#include <cv.h>
-#include <highgui.h>
-#include <opencv2/objdetect/objdetect.hpp>
-#include <opencv2/highgui/highgui.hpp>
-#include <opencv2/imgproc/imgproc.hpp>
-#include "opencv2/core/core.hpp"
-//#include "opencv2/contrib/contrib.hpp"
-#include "opencv2/objdetect/objdetect.hpp"
 
-using namespace std;
-using namespace cv;
-
-// some constants to manage nb of people to learn+ id of people
-#define MAX_PEOPLE 		1
-#define P_MAXIMO		0
-// #define P_NEWPERSON		1
 
 int main( int argc, char** argv )
 {
-	CvCapture * captureDevice = cvCreateCameraCapture(0);
+	// Declaration of variables Face detection
+	CascadeClassifier face_cascade;				// Cascade Classifier
+	Mat captureFrame, grayscaleFrame;			// Captured and converted to gray Frames
+	double x_face_pos, y_face_pos, area_face;	// Coordinates of the detected face
+	vector< Rect_<int> > faces;					// Vector of faces
+#ifdef RASPBERRY
+	RaspiCamCvCapture * captureDevice;			// Video input
+#else
+	CvCapture * captureDevice;					// Video input
+#endif
 
-	//int nPictureById[MAX_PEOPLE];
-	//string  people[MAX_PEOPLE];
 
-	Mat captureFrame, grayscaleFrame;
+#ifdef RECOGNITION
+	// Declaration of variables Face recognition
+	int nPictureById[MAX_PEOPLE]; 				// Id of each person of the model of face recognition
+	string people[MAX_PEOPLE];					// Each person of the model of face recognition
+	int im_width, im_height;					// heigh, witdh of 1st images of the model of face recognition
+	int prediction_seuil;						// Prediction limit
+	#ifdef RASPBERRY
+		Eigenfaces model;							// Model of face recognition
+	#else
+		Ptr<FaceRecognizer> model;					// Model of face recognition
+	#endif
 
-	cvNamedWindow("Face tracking", 1);
+	// Prediction limit depending on the device
+	#ifdef EIGENFACES
+		prediction_seuil = 10;
+	#else
+		prediction_seuil = 1000;
+	#endif
+
+	// Model of face recognition depending on the device
+	#ifdef EIGENFACES
+		model = createEigenFaceRecognizer();
+	#else
+		model = createFisherFaceRecognizer();
+	#endif
+
+	// Training Model of face recognition
+	train_model_recognition(nPictureById, people, model, im_width, im_height);
+#endif
+
+
+	// Video input depending on the device
+#ifdef RASPBERRY
+	captureDevice = raspiCamCvCreateCameraCapture(0); // Index doesn't really matter
+#else
+	captureDevice = cvCreateCameraCapture(0);
+#endif
+
+	// Load of Haar Cascade
+	if (!load_haar_cascade(face_cascade)) {	return -1;}
+
+	// Create new window
+#ifdef SHOW
+	SHOW cvNamedWindow("Face tracking", 1);
+#endif
 
 	do {
-		IplImage* image = cvQueryFrame(captureDevice);
+#ifdef RASPBERRY
+		IplImage* image = raspiCamCvQueryFrame(captureDevice);	// Get images from the video input
+#else
+		IplImage* image = cvQueryFrame(captureDevice);			// Get images from the video input
+#endif
+		captureFrame = cvarrToMat(image);						// Convert images to Mat
+		cvtColor(captureFrame, grayscaleFrame, CV_RGB2GRAY);	// Convert the image to gray scale
 
-		cvShowImage("Face tracking", image);
+		// Detection and Face Recognition
+		face_detection(face_cascade, grayscaleFrame, captureFrame, &faces, x_face_pos, y_face_pos, area_face);
+
+#ifdef RECOGNITION
+		// Detection and Face Recognition
+		face_recognition(people, grayscaleFrame, captureFrame, &faces, im_width, im_height, model,
+						prediction_seuil, x_face_pos, y_face_pos, area_face);
+#endif
+
+		// Display results
+#ifdef SHOW
+		imshow("Face tracking", captureFrame);
+#endif
 	} while(cvWaitKey(10) < 0);
 
+	// Destroy window
+#ifdef SHOW
 	cvDestroyWindow("Face tracking");
+#endif
+
+#ifdef RASPBERRY
+	raspiCamCvReleaseCapture(&captureDevice);
+#else
 	cvReleaseCapture(&captureDevice);
+#endif
 
-	printf( "\nPrograma" );
-	waitKey(0);
-
-  return 0;
+	return 0;
 }
+

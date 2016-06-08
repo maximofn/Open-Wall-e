@@ -8,8 +8,15 @@
 #ifndef SRC_UTILITIES_H_
 #define SRC_UTILITIES_H_
 
-#include "Librerias_Reconocimiento.h"
-#include "Defines.h"
+
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include "time.h"
+#include <unistd.h>
+#include <stdio.h>
+#include <errno.h>
+using namespace std;
 
 
 /////////////////////////////////////////////////
@@ -17,11 +24,13 @@
 /////////////////////////////////////////////////
 inline void trace(string s)
 {
-	printf (" TRACE: %s", s);
+	//printf (" TRACE: %s", s);
+	cout << s ;
 }
-inline void trace(char* c)
+inline void trace(char* c[])
 {
-	printf (" %s", c);
+	//printf (" %s", c);
+	cout << c ;
 }
 //inline void P_LOG(char* str, int level)
 //{
