@@ -1,3 +1,0 @@
-/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/Face_tracking_PC/CMake/buil/CMakeFiles/rebuild_cache.dir
-/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/Face_tracking_PC/CMake/buil/CMakeFiles/edit_cache.dir
-/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Vision/Face_tracking_PC/CMake/buil/CMakeFiles/FaceTracking.dir
