@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;FaceTracking&apos; to &apos;FaceTracking_old&apos;" description="Rename resource &apos;FaceTracking&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/FaceTracking" name="FaceTracking_old" stamp="1465470052380" updateReferences="true"/>&#x0A;<refactoring comment="Delete resource &apos;FaceTracking_old&apos;" deleteContents="true" description="Delete resource &apos;FaceTracking_old&apos;" element1="/FaceTracking_old" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1465470492789"/>
+</session>

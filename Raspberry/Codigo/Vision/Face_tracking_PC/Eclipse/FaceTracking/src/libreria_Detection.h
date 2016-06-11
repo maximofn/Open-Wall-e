@@ -13,6 +13,7 @@
 /******************************************************************************/
 
 #include "../Resources/Defines.h"
+#include "../Resources/Resources.h"
 #include "Utilities.h"
 
 #include <iostream>
@@ -30,24 +31,19 @@
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/core/core.hpp>
-#include "opencv2/contrib/contrib.hpp"
 #ifdef RASPBERRY
-#include "/home/pi/wall-e/libfacerec-0.04/include/facerec.hpp"
-#include "RaspiCamCV.h"
+	#include "../libfacerec-0.04/include/facerec.hpp"
+	#include "../Resources/raspicam/RaspiCamCV.h"
+#else
+	#include <opencv2/contrib/contrib.hpp>
 #endif
+
 using namespace std;
 using namespace cv;
 
 /******************************************************************************/
 /*                           DEFINICIONES Y MACROS                            */
 /******************************************************************************/
-
-// for Cascade mode
-#define LBP_CASCADE_FRONTALFACE
-//#define HAAR_CASCADE_FRONTALFACE_ALT
-//#define HAAR_CASCADE_FRONTALFACE_ALT2
-//#define HAAR_CASCADE_FRONTALFACE_ALT_TREE
-//#define HAAR_CASCADE_FRONTALFACE_ALT_DEFAULT
 
 /******************************************************************************/
 /*                        ESTRUCTURAS Y TIPOS DEFINIDOS                       */

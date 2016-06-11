@@ -13,6 +13,7 @@
 /******************************************************************************/
 
 #include "../Resources/Defines.h"
+#include "../Resources/Resources.h"
 
 #ifdef RECOGNITION
 #include <iostream>
@@ -30,10 +31,11 @@
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/core/core.hpp>
-#include "opencv2/contrib/contrib.hpp"
 #ifdef RASPBERRY
-	#include "/home/pi/wall-e/libfacerec-0.04/include/facerec.hpp"
-	#include "RaspiCamCV.h"
+	#include "../libfacerec-0.04/include/facerec.hpp"
+	#include "../Resources/raspicam/RaspiCamCV.h"
+#else
+	#include <opencv2/contrib/contrib.hpp>
 #endif
 using namespace std;
 using namespace cv;
@@ -41,13 +43,6 @@ using namespace cv;
 /******************************************************************************/
 /*                           DEFINICIONES Y MACROS                            */
 /******************************************************************************/
-
-// for Cascade mode
-#define LBP_CASCADE_FRONTALFACE
-//#define HAAR_CASCADE_FRONTALFACE_ALT
-//#define HAAR_CASCADE_FRONTALFACE_ALT2
-//#define HAAR_CASCADE_FRONTALFACE_ALT_TREE
-//#define HAAR_CASCADE_FRONTALFACE_ALT_DEFAULT
 
 // some constants to manage nb of people to learn+ id of people
 #define MAX_PEOPLE 					15
@@ -134,7 +129,7 @@ void read_csv(int nPictureById[MAX_PEOPLE], string people[MAX_PEOPLE], const str
 	/*----------------------------------------------------------------------------*/
 	void face_recognition(string people[MAX_PEOPLE], Mat& gray, Mat& captureFrame, vector< Rect_<int> > *faces,
 			int im_width, int im_height, Eigenfaces model,
-			int prediction_seuil, double& x_face_pos, double& y_face_pos, double& area_face)
+			int prediction_seuil, double& x_face_pos, double& y_face_pos, double& area_face);
 #else
 	/*----------------------------------------------------------------------------*/
 	/* NOMBRE: train_model_recognition                                            */

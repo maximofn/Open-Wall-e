@@ -1,0 +1,13 @@
+13:07:44 **** Incremental Build of configuration Debug for project FaceTracking_old ****
+make all 
+Building target: FaceTracking_old
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -shared -o "FaceTracking_old"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o ./src/Utilities.o ./src/libreria_Detection.o  ./Resources/Resources.o   -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_contrib -lopencv_gpu -lopencv_legacy -lopencv_nonfree -lopencv_ocl -lopencv_ts -lopencv_features2d -lopencv_highgui -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_core
+/usr/bin/ld: ./src/FaceTracking.o: no se puede usar la reubicación R_X86_64_32 contra `.rodata' cuando se hace un objeto compartido; recompile con -fPIC
+./src/FaceTracking.o: error adding symbols: Valor erróneo
+makefile:46: fallo en las instrucciones para el objetivo 'FaceTracking_old'
+collect2: error: ld returned 1 exit status
+make: *** [FaceTracking_old] Error 1
+
+13:07:44 Build Finished (took 67ms)
+

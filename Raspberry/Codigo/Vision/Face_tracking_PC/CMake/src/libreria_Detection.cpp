@@ -15,46 +15,7 @@ bool load_haar_cascade(CascadeClassifier& face_cascade)
 	string fn_haar;
 	char sTmp[1000];
 
-#ifdef LBP_CASCADE_FRONTALFACE
-	#ifdef RASPBERRY
-		fn_haar = "/usr/share/opencv/lbpcascades/lbpcascade_frontalface.xml";
-	#endif
-	#ifdef UBUNTU
-		fn_haar = "/usr/local/share/OpenCV/lbpcascades/lbpcascade_frontalface.xml";
-	#endif
-#endif
-#ifdef HAAR_CASCADE_FRONTALFACE_ALT
-	#ifdef RASPBERRY
-		fn_haar = "/usr/share/opencv/haarcascades/haarcascade_frontalface_alt.xml";
-	#endif
-	#ifdef UBUNTU
-		fn_haar = "/usr/local/share/OpenCV/haarcascades/haarcascade_frontalface_alt.xml";
-	#endif
-#endif
-#ifdef HAAR_CASCADE_FRONTALFACE_ALT2
-	#ifdef RASPBERRY
-		fn_haar = "/usr/share/opencv/haarcascades/haarcascade_frontalface_alt2.xml";
-	#endif
-	#ifdef UBUNTU
-		fn_haar = "/usr/local/share/OpenCV/haarcascades/haarcascade_frontalface_alt2.xml";
-	#endif
-#endif
-#ifdef HAAR_CASCADE_FRONTALFACE_ALT_TREE
-	#ifdef RASPBERRY
-		fn_haar = "/usr/share/opencv/haarcascades/haarcascade_frontalface_alt_tree.xml";
-	#endif
-	#ifdef UBUNTU
-		fn_haar = "/usr/local/share/OpenCV/haarcascades/haarcascade_frontalface_alt_tree.xml";
-	#endif
-#endif
-#ifdef HAAR_CASCADE_FRONTALFACE_ALT_DEFAULT
-	#ifdef RASPBERRY
-		fn_haar = "/usr/share/opencv/haarcascades/haarcascade_frontalface_default.xml";
-	#endif
-	#ifdef UBUNTU
-		fn_haar = "/usr/local/share/OpenCV/haarcascades/haarcascade_frontalface_default.xml";
-	#endif
-#endif
+	fn_haar = get_fn_haarFileDirectory();
 
 #ifdef TRACE
 	sprintf(sTmp,"\n (init load haar cascade) haar = ");
@@ -87,6 +48,7 @@ void face_detection(CascadeClassifier& face_cascade, Mat& grayscaleFrame, Mat& c
 	int minNeighbors = 3; 			// Parameter specifying how many neighbors each candidate rectangle should have to retain it
 	int minSize = 8;				// Minimum possible object size. Objects smaller than that are ignored.
 	int maxSize = 80;				// Maximum possible object size. Objects larger than that are ignored.
+	char sTmp[150];
 
 	// Detect faces
 	face_cascade.detectMultiScale(grayscaleFrame, *faces, scaleFactor, minNeighbors, CV_HAAR_SCALE_IMAGE, Size(minSize,maxSize));
@@ -101,6 +63,11 @@ void face_detection(CascadeClassifier& face_cascade, Mat& grayscaleFrame, Mat& c
 		x_face_pos = face_i.x + face_i.width/2;
 		y_face_pos = face_i.y + face_i.height/2;
 		area_face = face_i.width * face_i.height;
+
+#ifdef TRACE
+	    sprintf(sTmp,"\n Cara detectada, x = %i, y = %i, area = %i", (int)x_face_pos, (int)y_face_pos, (int)area_face);
+	    trace(sTmp);
+#endif
 
 		// create a rectangle around the face
 #ifdef INFORMATION

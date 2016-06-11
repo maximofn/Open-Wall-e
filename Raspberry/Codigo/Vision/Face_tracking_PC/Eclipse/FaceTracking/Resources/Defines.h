@@ -8,6 +8,10 @@
 #ifndef SRC_DEFINES_H_
 #define SRC_DEFINES_H_
 
+/******************************************************************************/
+/*                            ARCHIVOS IMPORTADOS                             */
+/******************************************************************************/
+
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -15,29 +19,37 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <errno.h>
-
 using namespace std;
 
+/******************************************************************************/
+/*                           DEFINICIONES Y MACROS                            */
+/******************************************************************************/
 
-#define SHOW
-#ifdef SHOW
-	#define INFORMATION
-#endif
-
-// for debug and trace
-#define TRACE
-#define DEBUG
-
-// for device mode
+/******************************* Device mode **********************************/
 //#define RASPBERRY
 #ifndef RASPBERRY
 	#define UBUNTU
 #endif
 
-// for prediction
-#define RECOGNITION
+/*************************** Trace and debug mode *****************************/
+#define TRACE
+#define DEBUG
 
-// for face recognition mode
+/******************* Ventana e información en la ventana **********************/
+#define SHOW
+#ifdef SHOW
+	#define INFORMATION
+#endif
+
+/***************************** Haar cascade mode ******************************/
+#define LBP_CASCADE_FRONTALFACE
+//#define HAAR_CASCADE_FRONTALFACE_ALT
+//#define HAAR_CASCADE_FRONTALFACE_ALT2
+//#define HAAR_CASCADE_FRONTALFACE_ALT_TREE
+//#define HAAR_CASCADE_FRONTALFACE_ALT_DEFAULT
+
+/****************************** Recognition mode ******************************/
+#define RECOGNITION
 #ifdef RECOGNITION
 	#define EIGENFACES
 	#ifndef EIGENFACES
@@ -45,7 +57,17 @@ using namespace std;
 	#endif
 #endif
 
-#define ECLIPSE
+/******************************************************************************/
+/*                        ESTRUCTURAS Y TIPOS DEFINIDOS                       */
+/******************************************************************************/
+
+/******************************************************************************/
+/*                             VARIABLES GLOBALES                             */
+/******************************************************************************/
+
+/******************************************************************************/
+/*                                 FUNCIONES                                  */
+/******************************************************************************/
 
 
 #endif /* SRC_DEFINES_H_ */
