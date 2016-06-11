@@ -94,4 +94,16 @@ inline void debug(char* c)
 }
 
 
+
+/*----------------------------------------------------------------------------*/
+/* NOMBRE: get_ProgramDirectory                                               */
+/* ARGUMENTOS ENTRADA: N/A                                                    */
+/* ARGUMENTOS SALIDA: N/A                                                     */
+/* VALOR DEVUELTO:                                                            */
+/*    string: directorio donde se ejecuta el programa                         */
+/* DESCRIPCION: Funcion que devuleve el directorio del programa               */
+/*----------------------------------------------------------------------------*/
+string get_ProgramDirectory();
+
+
 #endif /* SRC_UTILITIES_H_ */

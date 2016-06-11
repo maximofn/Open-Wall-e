@@ -31,12 +31,7 @@
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/core/core.hpp>
-#ifdef RASPBERRY
-	#include "../libfacerec-0.04/include/facerec.hpp"
-	#include "../Resources/raspicam/RaspiCamCV.h"
-#else
-	#include <opencv2/contrib/contrib.hpp>
-#endif
+#include <opencv2/contrib/contrib.hpp>
 
 using namespace std;
 using namespace cv;

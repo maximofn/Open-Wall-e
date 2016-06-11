@@ -36,11 +36,7 @@ int main( int argc, char** argv )
 	string people[MAX_PEOPLE];					// Each person of the model of face recognition
 	int im_width, im_height;					// heigh, witdh of 1st images of the model of face recognition
 	int prediction_seuil;						// Prediction limit
-	#ifdef RASPBERRY
-		Eigenfaces model;							// Model of face recognition
-	#else
-		Ptr<FaceRecognizer> model;					// Model of face recognition
-	#endif
+	Ptr<FaceRecognizer> model;					// Model of face recognitio
 
 #ifdef TRACE
 	sprintf(sTmp,"\n Directorio de ejecucion del programa: ");
@@ -56,12 +52,10 @@ int main( int argc, char** argv )
 	#endif
 
 	// Model of face recognition depending on the device
-	#ifndef RASPBERRY
-		#ifdef EIGENFACES
-			model = createEigenFaceRecognizer();
-		#else
-			model = createFisherFaceRecognizer();
-		#endif
+	#ifdef EIGENFACES
+		model = createEigenFaceRecognizer();
+	#else
+		model = createFisherFaceRecognizer();
 	#endif
 
 	// Training Model of face recognition

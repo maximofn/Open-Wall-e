@@ -56,13 +56,8 @@ void read_csv(int nPictureById[MAX_PEOPLE], string people[MAX_PEOPLE], const str
 
 
 
-#ifdef RASPBERRY
-void train_model_recognition(int nPictureById[MAX_PEOPLE], string people[MAX_PEOPLE], Eigenfaces& model,
-		int& im_width, int& im_height)
-#else
 void train_model_recognition(int nPictureById[MAX_PEOPLE], string people[MAX_PEOPLE], Ptr<FaceRecognizer> model,
 		int& im_width, int& im_height)
-#endif
 {
 	vector<Mat> images;
 	vector<int> labels;
@@ -101,16 +96,7 @@ void train_model_recognition(int nPictureById[MAX_PEOPLE], string people[MAX_PEO
 
 	// Get the path to your CSV
 	string fn_csv;
-#ifdef RASPBERRY
-	fn_csv = "/home/pi/Face_tracking/04__Face_recognition__Robidouille_API/faces.csv";
-#endif
-#ifdef UBUNTU
-	#ifdef ECLIPSE
-		fn_csv = "Resources/faces.csv";
-	#else
-		fn_csv = "../Resources/faces.csv";
-	#endif
-#endif
+	fn_csv = get_csvFileDirectory ();
 
 #ifdef DEBUG
     sprintf(sTmp,"\n (init train model) csv = ");
@@ -135,6 +121,10 @@ void train_model_recognition(int nPictureById[MAX_PEOPLE], string people[MAX_PEO
 	// get heigh, witdh of 1st images--> must be the same
 	im_width = images[0].cols;
 	im_height = images[0].rows;
+#ifdef DEBUG
+	    sprintf(sTmp,"\n (init train model) im_width = %i, im_height = %i", im_width, im_height);
+	    debug(sTmp);
+#endif
 #ifdef TRACE
 	trace("\n (init train model) taille images : ok");
 #endif
@@ -147,12 +137,7 @@ void train_model_recognition(int nPictureById[MAX_PEOPLE], string people[MAX_PEO
 	trace("\n (init train model) start train images");
 #endif
 
-#ifdef RASPBERRY
-	model.train(images, labels);
-#endif
-#ifdef UBUNTU
 	model->train(images, labels);
-#endif
 
 #ifdef TRACE
 	trace("\n (init train model) train images : ok");
@@ -161,15 +146,9 @@ void train_model_recognition(int nPictureById[MAX_PEOPLE], string people[MAX_PEO
 
 
 
-#ifdef RASPBERRY
-void face_recognition(string people[MAX_PEOPLE], Mat& gray, Mat& captureFrame,
-		int im_width, int im_height, Eigenfaces model,
-		int prediction_seuil, double& x_face_pos, double& y_face_pos, double& area_face)
-#else
 void face_recognition(string people[MAX_PEOPLE], Mat& gray, Mat& captureFrame, vector< Rect_<int> > *faces,
 		int im_width, int im_height, Ptr<FaceRecognizer> model,
 		int prediction_seuil, double& x_face_pos, double& y_face_pos, double& area_face)
-#endif
 {
 	// Declaration of variables
 	Mat face,face_resized;			// Face converted to gray scale and face resized
@@ -192,12 +171,7 @@ void face_recognition(string people[MAX_PEOPLE], Mat& gray, Mat& captureFrame, v
 		char sTmp1[256], sTmp2[256], sTmp3[256], sTmp4[256];
 		double predicted_confidence = 0.0;
 		int prediction = -1;
-#ifdef RASPBERRY
-		model.predict(face_resized,prediction,predicted_confidence);
-#endif
-#ifdef UBUNTU
 		model->predict(face_resized,prediction,predicted_confidence);
-#endif
 
 		// if good prediction : > threshold
 		if (predicted_confidence>prediction_seuil)

@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="return" key="selection"/>
+		<item value="" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="RASPBERRY"/>
+			<item value="#ifdef RASPBERRY&#x0A;//void train_model_recognition(int nPictureById[MAX_PEOPLE], string people[MAX_PEOPLE], Eigenfaces&amp; model,&#x0A;//&#x09;&#x09;int&amp; im_width, int&amp; im_height)&#x0A;void train_model_recognition(int nPictureById[MAX_PEOPLE], string people[MAX_PEOPLE], Ptr&lt;FaceRecognizer&gt; model,&#x0A;&#x09;&#x09;int&amp; im_width, int&amp; im_height)&#x0A;#else&#x0A;void train_model_recognition(int nPictureById[MAX_PEOPLE], string people[MAX_PEOPLE], Ptr&lt;FaceRecognizer&gt; model,&#x0A;&#x09;&#x09;int&amp; im_width, int&amp; im_height)&#x0A;#endif"/>
 			<item value="fn_haar ="/>
 			<item value="get_csvFileDirectory"/>
 			<item value="train_model_recognition"/>
 			<item value="string fn_csv;"/>
 			<item value="read_csv"/>
 			<item value="fn_haar"/>
-			<item value="RASPBERRY"/>
-			<item value="model"/>
 		</list>
 		<list key="replacehistory">
 			<item value="return"/>
@@ -24,7 +24,7 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="312" key="DIALOG_WIDTH"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
-		<item value="436" key="DIALOG_HEIGHT"/>
+		<item value="464" key="DIALOG_HEIGHT"/>
 		<item value="494" key="DIALOG_X_ORIGIN"/>
 		<item value="96" key="DIALOG_Y_ORIGIN"/>
 	</section>

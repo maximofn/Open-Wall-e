@@ -26,7 +26,7 @@ using namespace std;
 /******************************************************************************/
 
 /******************************* Device mode **********************************/
-#define RASPBERRY
+//#define RASPBERRY
 #ifndef RASPBERRY
 	#define UBUNTU
 #endif

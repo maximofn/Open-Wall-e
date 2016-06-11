@@ -9,3 +9,9 @@
 
 
 
+string get_ProgramDirectory(){
+	char cwd[1024];
+	getcwd(cwd, sizeof(cwd));
+
+	return cwd;
+}

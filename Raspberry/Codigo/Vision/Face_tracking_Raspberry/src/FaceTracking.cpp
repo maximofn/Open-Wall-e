@@ -8,15 +8,17 @@
 //============================================================================
 
 // Librerias
+#include "../Resources/Defines.h"
+#include "../Resources/Resources.h"
 #include "libreria_Detection.h"
 #include "Librerias_Reconocimiento.h"
-#include "../Resources/Defines.h"
 
 
 
 int main( int argc, char** argv )
 {
 	// Declaration of variables Face detection
+	char sTmp[255];
 	CascadeClassifier face_cascade;				// Cascade Classifier
 	Mat captureFrame, grayscaleFrame;			// Captured and converted to gray Frames
 	double x_face_pos, y_face_pos, area_face;	// Coordinates of the detected face
@@ -34,11 +36,13 @@ int main( int argc, char** argv )
 	string people[MAX_PEOPLE];					// Each person of the model of face recognition
 	int im_width, im_height;					// heigh, witdh of 1st images of the model of face recognition
 	int prediction_seuil;						// Prediction limit
-	#ifdef RASPBERRY
-		Eigenfaces model;							// Model of face recognition
-	#else
-		Ptr<FaceRecognizer> model;					// Model of face recognition
-	#endif
+	Ptr<FaceRecognizer> model;					// Model of face recognitio
+
+#ifdef TRACE
+	sprintf(sTmp,"\n Directorio de ejecucion del programa: ");
+	trace (sTmp);
+	cout << get_ProgramDirectory();
+#endif
 
 	// Prediction limit depending on the device
 	#ifdef EIGENFACES
@@ -71,7 +75,7 @@ int main( int argc, char** argv )
 
 	// Create new window
 #ifdef SHOW
-	SHOW cvNamedWindow("Face tracking", 1);
+	cvNamedWindow("Face tracking", 1);
 #endif
 
 	do {
@@ -101,6 +105,10 @@ int main( int argc, char** argv )
 	// Destroy window
 #ifdef SHOW
 	cvDestroyWindow("Face tracking");
+#endif
+
+#ifdef TRACE
+	trace ("\n");
 #endif
 
 #ifdef RASPBERRY
