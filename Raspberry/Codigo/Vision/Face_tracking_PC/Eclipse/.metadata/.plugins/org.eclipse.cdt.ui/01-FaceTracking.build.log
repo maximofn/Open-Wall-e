@@ -1,0 +1,6 @@
+11:56:40 **** Incremental Build of configuration Debug for project 01-FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+
+11:56:40 Build Finished (took 67ms)
+

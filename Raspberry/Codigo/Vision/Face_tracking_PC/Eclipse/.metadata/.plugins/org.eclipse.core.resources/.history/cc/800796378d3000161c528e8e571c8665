@@ -1,0 +1,141 @@
+/*
+ * Libreria_FaceTracking_SaveModel.h
+ *
+ *  Created on: 12/06/2016
+ *      Author: maximofn
+ */
+
+#ifndef SRC_LIBRERIA_FACETRACKING_SAVEMODEL_H_
+#define SRC_LIBRERIA_FACETRACKING_SAVEMODEL_H_
+
+/******************************************************************************/
+/*                            ARCHIVOS IMPORTADOS                             */
+/******************************************************************************/
+
+#include "../Resources/Defines.h"
+#include "../Resources/Resources.h"
+#include "Utilities.h"
+
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include "time.h"
+#include <unistd.h>
+#include <stdio.h>
+#include <errno.h>
+
+// OPENCV
+#include <cv.h>
+#include <highgui.h>
+#include <opencv2/objdetect/objdetect.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
+#include <opencv2/core/core.hpp>
+#include <opencv2/contrib/contrib.hpp>
+
+using namespace std;
+using namespace cv;
+
+/******************************************************************************/
+/*                           DEFINICIONES Y MACROS                            */
+/******************************************************************************/
+
+// some constants to manage nb of people to learn+ id of people
+#define MAX_PEOPLE 					15
+#define P_MAXIMO					0
+#define P_ANGELINA_JOLIE			1
+#define P_ARNOLD_SCHWARZENEGGER		2
+#define P_BRAD_PITT					3
+#define P_EMMA_WATSON				4
+#define P_GEROGE_CLOONEY			5
+#define P_JENNIFER_LOPEZ			6
+#define P_JOHNNY_DEPP				7
+#define P_JUSTIN_TIMBERLAKE			8
+#define P_KATY_PERRY				9
+#define P_KEANU_REEVES				10
+#define P_NAOMI_WATTS				11
+#define P_PATRICK_STEWART			12
+#define P_MATIAS_PRATS				13
+#define P_DESCONOCIDO				14
+// #define P_NEWPERSON		X
+
+/******************************************************************************/
+/*                        ESTRUCTURAS Y TIPOS DEFINIDOS                       */
+/******************************************************************************/
+
+/******************************************************************************/
+/*                             VARIABLES GLOBALES                             */
+/******************************************************************************/
+
+/******************************************************************************/
+/*                                 FUNCIONES                                  */
+/******************************************************************************/
+
+/*----------------------------------------------------------------------------*/
+/* NOMBRE: write_measures_file                                                */
+/* ARGUMENTOS ENTRADA:                                                        */
+/*    ARGUMENTO0: (int) im_width: Anchura de la imagen                        */
+/*    ARGUMENTO1: (int) im_height: Altura de la imagen                        */
+/* ARGUMENTOS SALIDA: N/A                                                     */
+/* VALOR DEVUELTO: N/A                                                        */
+/* DESCRIPCION: Escritura del archivo con las medidas de las imagenes         */
+/*----------------------------------------------------------------------------*/
+void write_measures_file(int im_width, int im_height);
+
+/*----------------------------------------------------------------------------*/
+/* NOMBRE: read_measures_file                                                 */
+/* ARGUMENTOS ENTRADA: N/A                                                    */
+/* ARGUMENTOS SALIDA:                                                         */
+/*    ARGUMENTO0: (int) im_width: Anchura de la imagen                        */
+/*    ARGUMENTO1: (int) im_height: Altura de la imagen                        */
+/* VALOR DEVUELTO: N/A                                                        */
+/* DESCRIPCION: Lectura del archivo con las medidas de las imagenes           */
+/*----------------------------------------------------------------------------*/
+void read_measures_file(int& im_width, int& im_height, char separator);
+
+/*----------------------------------------------------------------------------*/
+/* NOMBRE: write_people_file                                                  */
+/* ARGUMENTOS ENTRADA:                                                        */
+/*    ARGUMENTO0: (string) people[MAX_PEOPLE]: gente para entrenar el modelo  */
+/* ARGUMENTOS SALIDA: N/A                                                     */
+/* VALOR DEVUELTO: N/A                                                        */
+/* DESCRIPCION: Escritura del archivo con la gente para entrenar el modelo    */
+/*----------------------------------------------------------------------------*/
+void write_people_file(string people[MAX_PEOPLE]);
+
+/*----------------------------------------------------------------------------*/
+/* NOMBRE: read_people_file                                                   */
+/* ARGUMENTOS ENTRADA:                                                        */
+/*    ARGUMENTO0: (char) separator1: Primer separador para lectura del archivo*/
+/*    ARGUMENTO1: (char) separator2: Segundo separador par lectura del archivo*/
+/*    ARGUMENTO2: (char) separator3: Tercer separador para lectura del archivo*/
+/* ARGUMENTOS SALIDA:                                                         */
+/*    ARGUMENTO0: (string) people[MAX_PEOPLE]: gente del modelo               */
+/* VALOR DEVUELTO: N/A                                                        */
+/* DESCRIPCION: Lectura del archivo con la gente del modelo                   */
+/*----------------------------------------------------------------------------*/
+void read_people_file(string people[MAX_PEOPLE], char separator1, char separator2, char separator3);
+
+/*----------------------------------------------------------------------------*/
+/* NOMBRE: save_model_recognition                                             */
+/* ARGUMENTOS ENTRADA:                                                        */
+/*    ARGUMENTO0: (Ptr<FaceRecognizer>) model: modelo                         */
+/* ARGUMENTOS SALIDA: N/A                                                     */
+/* VALOR DEVUELTO: N/A                                                        */
+/* DESCRIPCION: Guarda el modelo de reconocimiento                            */
+/*----------------------------------------------------------------------------*/
+void save_model_recognition(Ptr<FaceRecognizer> model);
+
+/*----------------------------------------------------------------------------*/
+/* NOMBRE: save_model_recognition                                             */
+/* ARGUMENTOS ENTRADA: N/A                                                    */
+/* ARGUMENTOS SALIDA:                                                         */
+/*    ARGUMENTO0: (Ptr<FaceRecognizer>) model: modelo                         */
+/* VALOR DEVUELTO: N/A                                                        */
+/* DESCRIPCION: Carga el modelo de reconocimiento                             */
+/*----------------------------------------------------------------------------*/
+void load_model_recognition(Ptr<FaceRecognizer> model);
+
+
+
+#endif /* SRC_LIBRERIA_FACETRACKING_SAVEMODEL_H_ */

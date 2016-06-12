@@ -1,0 +1,81 @@
+/*
+ * FaceTracking_LoadModel.cpp
+ *
+ *  Created on: 12/06/2016
+ *      Author: maximofn
+ */
+
+// Librerias
+#include "Libreria_FaceTracking_SaveModel.h"
+#include "../Resources/Defines.h"
+#include "../Resources/Resources.h"
+#include "Utilities.h"
+#include "Librerias_Reconocimiento.h"
+
+int main( int argc, char** argv )
+{
+	// Declaration of variables
+	int im_width, im_height;					// heigh, witdh of 1st images of the model of face recognition
+	string people[MAX_PEOPLE];					// Each person of the model of face recognition
+	//Eigenfaces model;							// Model of face recognition
+	Ptr<FaceRecognizer> model;					// Model of face recognition
+	CascadeClassifier face_cascade;				// Cascade Classifier
+	Mat captureFrame, grayscaleFrame;			// Captured and converted to gray Frames
+	double x_face_pos, y_face_pos, area_face;	// Coordinates of the detected face
+	#ifdef RASPBERRY
+		RaspiCamCvCapture * captureDevice;		// Video input
+	#else
+		CvCapture * captureDevice;				// Video input
+	#endif
+	int PREDICTION_SEUIL;						// Prediction limit
+
+	// Prediction limit depending on the device
+	EIGENFACES_MODE 	PREDICTION_SEUIL = 5000;
+	FISHERFACES_MODE 	PREDICTION_SEUIL = 1000;
+
+	// Video input depending on the device
+	//RASPBERRY_MODE 		captureDevice = raspiCamCvCreateCameraCapture(0); // Index doesn't really matter
+	UBUNTU_MODE 			captureDevice = cvCaptureFromFile("/home/maximo/Dropbox/Wall-e/Raspberry_pi/Codigo/Face_tracking/Face_tracking_Ordenador/Face_tracking/Face Tracking - Load model/Debug/Matias_Prats.avi");
+	MAQUINA_VIRTUAL_MODE 	captureDevice = cvCaptureFromFile("/home/maximo/Escritorio/Face_tracking/Face_tracking/Debug/Matias_Prats.avi");
+
+	// Model of face recognition depending on the device
+	EIGENFACES_MODE		model = createEigenFaceRecognizer();
+	FISHERFACES_MODE	model = createFisherFaceRecognizer();
+
+	// Read measures file
+	read_measures_file(im_width, im_height, '=');
+
+	// Read people file
+	read_people_file(people, '(', ')', '=');
+
+	// Load model
+	load_model_recognition(model);
+
+	// Load of Haar Cascade
+	if (!load_haar_cascade(face_cascade)) {	return -1;}
+
+	// Create new window
+	SHOW cvNamedWindow("Face tracking", 1);
+
+	do {
+		//IplImage* image = raspiCamCvQueryFrame(captureDevice);	// Get images from the video input
+		IplImage* image = cvQueryFrame(captureDevice);	// Get images from the video input
+		captureFrame = cvarrToMat(image);			// Convert images to Mat
+		cvtColor(captureFrame, grayscaleFrame, CV_RGB2GRAY);	// Convert the image to gray scale
+
+		// Detection and Face Recognition
+		face_recognition(people, face_cascade, grayscaleFrame, captureFrame, im_width, im_height, model, PREDICTION_SEUIL, x_face_pos, y_face_pos, area_face);
+
+		// Display results
+		//SHOW cvShowImage("Face tracking", image);
+		SHOW imshow("Face tracking", captureFrame);
+	} while(cvWaitKey(10) < 0);
+
+	// Destroy window
+	SHOW cvDestroyWindow("Face tracking");
+	//RASPBERRY_MODE		raspiCamCvReleaseCapture(&captureDevice);
+	UBUNTU_MODE		cvReleaseCapture(&captureDevice);
+	MAQUINA_VIRTUAL_MODE	cvReleaseCapture(&captureDevice);
+
+	return 0;
+}

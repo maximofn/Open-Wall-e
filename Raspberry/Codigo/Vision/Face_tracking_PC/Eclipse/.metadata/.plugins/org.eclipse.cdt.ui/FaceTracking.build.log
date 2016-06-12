@@ -1,25 +1,6 @@
-19:55:50 **** Incremental Build of configuration Debug for project FaceTracking ****
+13:03:11 **** Incremental Build of configuration Debug for project FaceTracking ****
 make all 
-Building file: ../src/Librerias_Reconocimiento.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Librerias_Reconocimiento.d" -MT"src/Librerias_Reconocimiento.d" -o "src/Librerias_Reconocimiento.o" "../src/Librerias_Reconocimiento.cpp"
-../src/Librerias_Reconocimiento.cpp: In function ‘void train_model_recognition(int*, std::__cxx11::string*, cv::Ptr<cv::FaceRecognizer>, int&, int&)’:
-../src/Librerias_Reconocimiento.cpp:133:81: warning: format ‘%i’ expects argument of type ‘int’, but argument 3 has type ‘std::vector<cv::Mat>::size_type {aka long unsigned int}’ [-Wformat=]
-      sprintf(sTmp,"\n (init train model) numero de imagenes = %i", images.size());
-                                                                                 ^
-../src/Librerias_Reconocimiento.cpp:136:79: warning: format ‘%i’ expects argument of type ‘int’, but argument 3 has type ‘std::vector<int>::size_type {aka long unsigned int}’ [-Wformat=]
-      sprintf(sTmp,"\n (init train model) numero de labels = %i", labels.size());
-                                                                               ^
-../src/Librerias_Reconocimiento.cpp:141:72: warning: format ‘%i’ expects argument of type ‘int’, but argument 4 has type ‘cv::Mat*’ [-Wformat=]
-       sprintf(sTmp,"\n (init train model) image(%i) = %i", i, images[i]);
-                                                                        ^
-Finished building: ../src/Librerias_Reconocimiento.cpp
- 
-Building target: FaceTracking
-Invoking: GCC C++ Linker
-g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o ./src/Utilities.o ./src/libreria_Detection.o  ./Resources/Resources.o   -lopencv_calib3d -lopencv_contrib -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_gpu -lopencv_highgui -lopencv_imgproc -lopencv_legacy -lopencv_ml -lopencv_nonfree -lopencv_objdetect -lopencv_ocl -lopencv_photo -lopencv_stitching -lopencv_superres -lopencv_ts -lopencv_video -lopencv_videostab
-Finished building target: FaceTracking
- 
+make: No se hace nada para 'all'.
 
-19:55:51 Build Finished (took 1s.327ms)
+13:03:11 Build Finished (took 97ms)
 
