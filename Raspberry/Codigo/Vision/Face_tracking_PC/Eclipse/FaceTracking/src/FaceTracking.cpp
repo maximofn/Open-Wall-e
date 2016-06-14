@@ -20,6 +20,11 @@
 
 int main( int argc, char** argv )
 {
+	// Medida de tiempo inicial
+	clock_t t0, t_train, t_loop, t_loop0;
+	double dtime;
+	t0 = clock();
+
 	// Declaration of variables Face detection
 	char sTmp[255];
 	CascadeClassifier face_cascade;				// Cascade Classifier
@@ -42,7 +47,7 @@ int main( int argc, char** argv )
 	Ptr<FaceRecognizer> model;					// Model of face recognitio
 
 #ifdef TRACE
-	sprintf(sTmp,"\n Directorio de ejecucion del programa: ");
+	sprintf(sTmp,"\n (Face Tracking) Directorio de ejecucion del programa: ");
 	trace (sTmp);
 	cout << get_ProgramDirectory();
 #endif
@@ -63,6 +68,15 @@ int main( int argc, char** argv )
 
 	// Training Model of face recognition
 	train_model_recognition(nPictureById, people, model, im_width, im_height);
+	t_train = clock();
+
+#ifdef DEBUG
+	dtime = difftime(t_train,t0);
+	sprintf(sTmp,"\n (Face Tracking) tiempo de entrenamiento del modelo = ");
+	debug(sTmp);
+	cout << print_time(dtime);
+#endif
+
 #endif
 
 
@@ -82,6 +96,8 @@ int main( int argc, char** argv )
 #endif
 
 	do {
+		t_loop0 = clock();
+
 #ifdef RASPBERRY
 		IplImage* image = raspiCamCvQueryFrame(captureDevice);	// Get images from the video input
 #else
@@ -102,6 +118,14 @@ int main( int argc, char** argv )
 		// Display results
 #ifdef SHOW
 		imshow("Face tracking", captureFrame);
+#endif
+
+		t_loop = clock();
+#ifdef DEBUG
+	dtime = difftime(t_loop,t_loop0);
+	sprintf(sTmp,"\n (Face Tracking) tiempo del bucle del reconocimiento de cara = ");
+	debug(sTmp);
+	cout << print_time(dtime);
 #endif
 	} while(cvWaitKey(10) < 0);
 

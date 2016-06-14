@@ -18,6 +18,11 @@
 
 int main( int argc, char** argv )
 {
+	// Medida de tiempo inicial
+	clock_t t0, t_load, t_loop, t_loop0;
+	double dtime;
+	t0 = clock();
+
 	// Declaration of variables
 	CascadeClassifier face_cascade;				// Cascade Classifier
 	Mat captureFrame, grayscaleFrame;			// Captured and converted to gray Frames
@@ -65,6 +70,15 @@ int main( int argc, char** argv )
 
 	// Load model
 	load_model_recognition(model);
+	t_load = clock();
+
+	#ifdef DEBUG
+		dtime = difftime(t_load,t0);
+		sprintf(sTmp,"\n (Face Tracking) tiempo de carga del modelo = ");
+		debug(sTmp);
+		cout << print_time(dtime);
+	#endif
+
 #endif
 
 	// Video input depending on the device
@@ -81,6 +95,8 @@ int main( int argc, char** argv )
 	SHOW cvNamedWindow("Face tracking", 1);
 
 	do {
+		t_loop0 = clock();
+
 		#ifdef RASPBERRY
 				IplImage* image = raspiCamCvQueryFrame(captureDevice);	// Get images from the video input
 		#else
@@ -101,6 +117,14 @@ int main( int argc, char** argv )
 		// Display results
 		#ifdef SHOW
 				imshow("Face tracking", captureFrame);
+		#endif
+
+		t_loop = clock();
+		#ifdef DEBUG
+			dtime = difftime(t_loop,t_loop0);
+			sprintf(sTmp,"\n (Face Tracking) tiempo del bucle del reconocimiento de cara = ");
+			debug(sTmp);
+			cout << print_time(dtime);
 		#endif
 	} while(cvWaitKey(10) < 0);
 

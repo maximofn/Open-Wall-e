@@ -1,6 +1,6 @@
-18:38:10 **** Incremental Build of configuration Debug for project 02-FaceTracking_LoadModel ****
+22:11:21 **** Incremental Build of configuration Debug for project 02-FaceTracking_LoadModel ****
 make all 
 make: No se hace nada para 'all'.
 
-18:38:10 Build Finished (took 67ms)
+22:11:21 Build Finished (took 69ms)
 

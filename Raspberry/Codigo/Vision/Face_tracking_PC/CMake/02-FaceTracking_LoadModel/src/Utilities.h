@@ -106,4 +106,17 @@ inline void debug(char* c)
 string get_ProgramDirectory();
 
 
+
+/*----------------------------------------------------------------------------*/
+/* NOMBRE: print_time                                                         */
+/* ARGUMENTOS ENTRADA:                                                        */
+/*    ARGUMENTO0: (double) t: tiempo en usegundos                             */
+/* ARGUMENTOS SALIDA: N/A                                                     */
+/* VALOR DEVUELTO:                                                            */
+/*    string: string con el tiempo introducido                                */
+/* DESCRIPCION: Funcion que devuelve string con el tiempo introducido         */
+/*----------------------------------------------------------------------------*/
+string print_time(double t);
+
+
 #endif /* SRC_UTILITIES_H_ */

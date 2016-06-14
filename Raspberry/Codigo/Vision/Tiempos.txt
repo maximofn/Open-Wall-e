@@ -1,0 +1,10 @@
+Raspberry 3:
+Face Tracking
+ - Tiempo entrenamiento		= 6004176.000000 us	= 6004.176000 ms	= 6.004176 s
+ - Tiempo bucle reconocimiento	= 442717.000000 us	= 442.717000 ms		= 0.442717 s
+ - Tiempo bucle deteccion	= 156904.000000 us	= 156.904000 ms		= 0.156904 s
+
+Face Tracking con carga de modelo
+ - Tiempo entrenamiento		= 2750652.000000 us	= 2750.652000 ms	= 2.750652 s
+ - Tiempo bucle reconocimiento	= 502275.000000 us	= 502.275000 ms		= 0.502275 s
+ - Tiempo bucle deteccion	= 159662.000000 us	= 159.662000 ms		= 0.159662 s

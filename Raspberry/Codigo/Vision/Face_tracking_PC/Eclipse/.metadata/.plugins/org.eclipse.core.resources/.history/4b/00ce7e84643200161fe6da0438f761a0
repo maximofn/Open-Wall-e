@@ -1,0 +1,28 @@
+/*
+ * Utilities.cpp
+ *
+ *  Created on: 04/06/2016
+ *      Author: maximofn
+ */
+
+#include "Utilities.h"
+
+
+
+string get_ProgramDirectory(){
+	char cwd[1024];
+	getcwd(cwd, sizeof(cwd));
+
+	return cwd;
+}
+
+
+int get_time(clock_t t0, clock_t  t){
+
+}
+
+
+
+void print_time(int t){
+
+}

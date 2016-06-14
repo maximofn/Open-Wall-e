@@ -439,3 +439,834 @@ make: No se hace nada para 'all'.
 18:38:12 **** Incremental Build of configuration Debug for project FaceTracking ****
 make all 
 make: No se hace nada para 'all'.
+21:08:02 **** Incremental Build of configuration Debug for project 02-FaceTracking_LoadModel ****
+make all 
+make: No se hace nada para 'all'.
+21:08:03 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:73:88: warning: format ‘%i’ expects argument of type ‘int’, but argument 3 has type ‘clock_t {aka long int}’ [-Wformat=]
+  sprintf(sTmp,"\n (Face Tracking) tiempo de entrenamiento del moelo = %i s", t0-t_train);
+                                                                                        ^
+../src/FaceTracking.cpp:24:23: warning: unused variable ‘t_loop’ [-Wunused-variable]
+  clock_t t0, t_train, t_loop;
+                       ^
+Finished building: ../src/FaceTracking.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o ./src/Utilities.o ./src/libreria_Detection.o  ./Resources/Resources.o   -lopencv_calib3d -lopencv_contrib -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_gpu -lopencv_highgui -lopencv_imgproc -lopencv_legacy -lopencv_ml -lopencv_nonfree -lopencv_objdetect -lopencv_ocl -lopencv_photo -lopencv_stitching -lopencv_superres -lopencv_ts -lopencv_video -lopencv_videostab
+Finished building target: FaceTracking
+ 
+21:08:08 **** Incremental Build of configuration Debug for project FaceTracking_SaveModel ****
+make all 
+make: No se hace nada para 'all'.
+21:08:20 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+21:09:09 **** Incremental Build of configuration Debug for project 02-FaceTracking_LoadModel ****
+make all 
+make: No se hace nada para 'all'.
+21:09:09 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:73:88: warning: format ‘%i’ expects argument of type ‘int’, but argument 3 has type ‘clock_t {aka long int}’ [-Wformat=]
+  sprintf(sTmp,"\n (Face Tracking) tiempo de entrenamiento del moelo = %i s", t_train-t0);
+                                                                                        ^
+../src/FaceTracking.cpp:24:23: warning: unused variable ‘t_loop’ [-Wunused-variable]
+  clock_t t0, t_train, t_loop;
+                       ^
+Finished building: ../src/FaceTracking.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o ./src/Utilities.o ./src/libreria_Detection.o  ./Resources/Resources.o   -lopencv_calib3d -lopencv_contrib -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_gpu -lopencv_highgui -lopencv_imgproc -lopencv_legacy -lopencv_ml -lopencv_nonfree -lopencv_objdetect -lopencv_ocl -lopencv_photo -lopencv_stitching -lopencv_superres -lopencv_ts -lopencv_video -lopencv_videostab
+Finished building target: FaceTracking
+ 
+21:09:11 **** Incremental Build of configuration Debug for project FaceTracking_SaveModel ****
+make all 
+make: No se hace nada para 'all'.
+21:09:12 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+21:16:51 **** Incremental Build of configuration Debug for project 02-FaceTracking_LoadModel ****
+make all 
+make: No se hace nada para 'all'.
+21:16:51 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:73:88: warning: format ‘%i’ expects argument of type ‘int’, but argument 3 has type ‘clock_t {aka long int}’ [-Wformat=]
+  sprintf(sTmp,"\n (Face Tracking) tiempo de entrenamiento del moelo = %i s", t_train-t0);
+                                                                                        ^
+../src/FaceTracking.cpp:24:23: warning: unused variable ‘t_loop’ [-Wunused-variable]
+  clock_t t0, t_train, t_loop;
+                       ^
+Finished building: ../src/FaceTracking.cpp
+ 
+Building file: ../src/Utilities.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Utilities.d" -MT"src/Utilities.d" -o "src/Utilities.o" "../src/Utilities.cpp"
+Finished building: ../src/Utilities.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o ./src/Utilities.o ./src/libreria_Detection.o  ./Resources/Resources.o   -lopencv_calib3d -lopencv_contrib -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_gpu -lopencv_highgui -lopencv_imgproc -lopencv_legacy -lopencv_ml -lopencv_nonfree -lopencv_objdetect -lopencv_ocl -lopencv_photo -lopencv_stitching -lopencv_superres -lopencv_ts -lopencv_video -lopencv_videostab
+Finished building target: FaceTracking
+ 
+21:16:53 **** Incremental Build of configuration Debug for project FaceTracking_SaveModel ****
+make all 
+make: No se hace nada para 'all'.
+21:17:19 **** Incremental Build of configuration Debug for project 02-FaceTracking_LoadModel ****
+make all 
+make: No se hace nada para 'all'.
+21:17:19 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:73:99: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘double’ [-Wformat=]
+  sprintf(sTmp,"\n (Face Tracking) tiempo de entrenamiento del moelo = %d s", difftime(t_train,t0) );
+                                                                                                   ^
+../src/FaceTracking.cpp:24:23: warning: unused variable ‘t_loop’ [-Wunused-variable]
+  clock_t t0, t_train, t_loop;
+                       ^
+Finished building: ../src/FaceTracking.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o ./src/Utilities.o ./src/libreria_Detection.o  ./Resources/Resources.o   -lopencv_calib3d -lopencv_contrib -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_gpu -lopencv_highgui -lopencv_imgproc -lopencv_legacy -lopencv_ml -lopencv_nonfree -lopencv_objdetect -lopencv_ocl -lopencv_photo -lopencv_stitching -lopencv_superres -lopencv_ts -lopencv_video -lopencv_videostab
+Finished building target: FaceTracking
+ 
+21:17:21 **** Incremental Build of configuration Debug for project FaceTracking_SaveModel ****
+make all 
+make: No se hace nada para 'all'.
+21:17:33 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+21:22:47 **** Incremental Build of configuration Debug for project 02-FaceTracking_LoadModel ****
+make all 
+make: No se hace nada para 'all'.
+21:22:47 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:75:82: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘double’ [-Wformat=]
+  sprintf(sTmp,"\n (Face Tracking) tiempo de entrenamiento del moelo = %d s", time);
+                                                                                  ^
+../src/FaceTracking.cpp:24:23: warning: unused variable ‘t_loop’ [-Wunused-variable]
+  clock_t t0, t_train, t_loop;
+                       ^
+Finished building: ../src/FaceTracking.cpp
+ 
+Building file: ../src/Utilities.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Utilities.d" -MT"src/Utilities.d" -o "src/Utilities.o" "../src/Utilities.cpp"
+Finished building: ../src/Utilities.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o ./src/Utilities.o ./src/libreria_Detection.o  ./Resources/Resources.o   -lopencv_calib3d -lopencv_contrib -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_gpu -lopencv_highgui -lopencv_imgproc -lopencv_legacy -lopencv_ml -lopencv_nonfree -lopencv_objdetect -lopencv_ocl -lopencv_photo -lopencv_stitching -lopencv_superres -lopencv_ts -lopencv_video -lopencv_videostab
+Finished building target: FaceTracking
+ 
+21:22:49 **** Incremental Build of configuration Debug for project FaceTracking_SaveModel ****
+make all 
+make: No se hace nada para 'all'.
+21:22:50 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+21:23:32 **** Incremental Build of configuration Debug for project 02-FaceTracking_LoadModel ****
+make all 
+make: No se hace nada para 'all'.
+21:23:32 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/Utilities.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Utilities.d" -MT"src/Utilities.d" -o "src/Utilities.o" "../src/Utilities.cpp"
+Finished building: ../src/Utilities.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o ./src/Utilities.o ./src/libreria_Detection.o  ./Resources/Resources.o   -lopencv_calib3d -lopencv_contrib -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_gpu -lopencv_highgui -lopencv_imgproc -lopencv_legacy -lopencv_ml -lopencv_nonfree -lopencv_objdetect -lopencv_ocl -lopencv_photo -lopencv_stitching -lopencv_superres -lopencv_ts -lopencv_video -lopencv_videostab
+Finished building target: FaceTracking
+ 
+21:23:33 **** Incremental Build of configuration Debug for project FaceTracking_SaveModel ****
+make all 
+make: No se hace nada para 'all'.
+21:23:34 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+21:24:42 **** Incremental Build of configuration Debug for project 02-FaceTracking_LoadModel ****
+make all 
+make: No se hace nada para 'all'.
+21:24:42 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/Utilities.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Utilities.d" -MT"src/Utilities.d" -o "src/Utilities.o" "../src/Utilities.cpp"
+Finished building: ../src/Utilities.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o ./src/Utilities.o ./src/libreria_Detection.o  ./Resources/Resources.o   -lopencv_calib3d -lopencv_contrib -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_gpu -lopencv_highgui -lopencv_imgproc -lopencv_legacy -lopencv_ml -lopencv_nonfree -lopencv_objdetect -lopencv_ocl -lopencv_photo -lopencv_stitching -lopencv_superres -lopencv_ts -lopencv_video -lopencv_videostab
+Finished building target: FaceTracking
+ 
+21:24:43 **** Incremental Build of configuration Debug for project FaceTracking_SaveModel ****
+make all 
+make: No se hace nada para 'all'.
+21:24:45 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+21:26:58 **** Incremental Build of configuration Debug for project 02-FaceTracking_LoadModel ****
+make all 
+make: No se hace nada para 'all'.
+21:26:59 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/Utilities.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Utilities.d" -MT"src/Utilities.d" -o "src/Utilities.o" "../src/Utilities.cpp"
+Finished building: ../src/Utilities.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o ./src/Utilities.o ./src/libreria_Detection.o  ./Resources/Resources.o   -lopencv_calib3d -lopencv_contrib -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_gpu -lopencv_highgui -lopencv_imgproc -lopencv_legacy -lopencv_ml -lopencv_nonfree -lopencv_objdetect -lopencv_ocl -lopencv_photo -lopencv_stitching -lopencv_superres -lopencv_ts -lopencv_video -lopencv_videostab
+Finished building target: FaceTracking
+ 
+21:26:59 **** Incremental Build of configuration Debug for project FaceTracking_SaveModel ****
+make all 
+make: No se hace nada para 'all'.
+21:27:01 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+21:28:16 **** Incremental Build of configuration Debug for project 02-FaceTracking_LoadModel ****
+make all 
+make: No se hace nada para 'all'.
+21:28:17 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:76:82: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘double’ [-Wformat=]
+  sprintf(sTmp,"\n (Face Tracking) tiempo de entrenamiento del moelo = %d s", time);
+                                                                                  ^
+../src/FaceTracking.cpp:24:23: warning: unused variable ‘t_loop’ [-Wunused-variable]
+  clock_t t0, t_train, t_loop;
+                       ^
+Finished building: ../src/FaceTracking.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o ./src/Utilities.o ./src/libreria_Detection.o  ./Resources/Resources.o   -lopencv_calib3d -lopencv_contrib -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_gpu -lopencv_highgui -lopencv_imgproc -lopencv_legacy -lopencv_ml -lopencv_nonfree -lopencv_objdetect -lopencv_ocl -lopencv_photo -lopencv_stitching -lopencv_superres -lopencv_ts -lopencv_video -lopencv_videostab
+Finished building target: FaceTracking
+ 
+21:28:18 **** Incremental Build of configuration Debug for project FaceTracking_SaveModel ****
+make all 
+make: No se hace nada para 'all'.
+21:28:26 **** Incremental Build of configuration Debug for project 02-FaceTracking_LoadModel ****
+make all 
+make: No se hace nada para 'all'.
+21:28:26 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:24:23: warning: unused variable ‘t_loop’ [-Wunused-variable]
+  clock_t t0, t_train, t_loop;
+                       ^
+Finished building: ../src/FaceTracking.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o ./src/Utilities.o ./src/libreria_Detection.o  ./Resources/Resources.o   -lopencv_calib3d -lopencv_contrib -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_gpu -lopencv_highgui -lopencv_imgproc -lopencv_legacy -lopencv_ml -lopencv_nonfree -lopencv_objdetect -lopencv_ocl -lopencv_photo -lopencv_stitching -lopencv_superres -lopencv_ts -lopencv_video -lopencv_videostab
+Finished building target: FaceTracking
+ 
+21:28:28 **** Incremental Build of configuration Debug for project FaceTracking_SaveModel ****
+make all 
+make: No se hace nada para 'all'.
+21:28:29 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+21:35:07 **** Incremental Build of configuration Debug for project 02-FaceTracking_LoadModel ****
+make all 
+make: No se hace nada para 'all'.
+21:35:07 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+Finished building: ../src/FaceTracking.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o ./src/Utilities.o ./src/libreria_Detection.o  ./Resources/Resources.o   -lopencv_calib3d -lopencv_contrib -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_gpu -lopencv_highgui -lopencv_imgproc -lopencv_legacy -lopencv_ml -lopencv_nonfree -lopencv_objdetect -lopencv_ocl -lopencv_photo -lopencv_stitching -lopencv_superres -lopencv_ts -lopencv_video -lopencv_videostab
+Finished building target: FaceTracking
+ 
+21:35:08 **** Incremental Build of configuration Debug for project FaceTracking_SaveModel ****
+make all 
+make: No se hace nada para 'all'.
+21:35:10 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+21:39:09 **** Incremental Build of configuration Debug for project 02-FaceTracking_LoadModel ****
+make all 
+make: No se hace nada para 'all'.
+21:39:09 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:72:8: error: ‘t_train’ was not declared in this scope
+  time(&t_train);
+        ^
+make: *** [src/FaceTracking.o] Error 1
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+21:39:10 **** Incremental Build of configuration Debug for project FaceTracking_SaveModel ****
+make all 
+make: No se hace nada para 'all'.
+21:39:12 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+../src/FaceTracking.cpp: In function ‘int main(int, char**)’:
+../src/FaceTracking.cpp:72:8: error: ‘t_train’ was not declared in this scope
+  time(&t_train);
+        ^
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/FaceTracking.o'
+make: *** [src/FaceTracking.o] Error 1
+21:39:20 **** Incremental Build of configuration Debug for project 02-FaceTracking_LoadModel ****
+make all 
+make: No se hace nada para 'all'.
+21:39:21 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+Finished building: ../src/FaceTracking.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o ./src/Utilities.o ./src/libreria_Detection.o  ./Resources/Resources.o   -lopencv_calib3d -lopencv_contrib -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_gpu -lopencv_highgui -lopencv_imgproc -lopencv_legacy -lopencv_ml -lopencv_nonfree -lopencv_objdetect -lopencv_ocl -lopencv_photo -lopencv_stitching -lopencv_superres -lopencv_ts -lopencv_video -lopencv_videostab
+Finished building target: FaceTracking
+ 
+21:39:22 **** Incremental Build of configuration Debug for project FaceTracking_SaveModel ****
+make all 
+make: No se hace nada para 'all'.
+21:39:23 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+21:41:09 **** Incremental Build of configuration Debug for project 02-FaceTracking_LoadModel ****
+make all 
+make: No se hace nada para 'all'.
+21:41:09 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+Finished building: ../src/FaceTracking.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o ./src/Utilities.o ./src/libreria_Detection.o  ./Resources/Resources.o   -lopencv_calib3d -lopencv_contrib -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_gpu -lopencv_highgui -lopencv_imgproc -lopencv_legacy -lopencv_ml -lopencv_nonfree -lopencv_objdetect -lopencv_ocl -lopencv_photo -lopencv_stitching -lopencv_superres -lopencv_ts -lopencv_video -lopencv_videostab
+Finished building target: FaceTracking
+ 
+21:41:10 **** Incremental Build of configuration Debug for project FaceTracking_SaveModel ****
+make all 
+make: No se hace nada para 'all'.
+21:41:12 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+21:41:49 **** Incremental Build of configuration Debug for project 02-FaceTracking_LoadModel ****
+make all 
+make: No se hace nada para 'all'.
+21:41:49 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+21:41:50 **** Incremental Build of configuration Debug for project FaceTracking_SaveModel ****
+make all 
+make: No se hace nada para 'all'.
+21:41:54 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+Finished building: ../src/FaceTracking.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o ./src/Utilities.o ./src/libreria_Detection.o  ./Resources/Resources.o   -lopencv_calib3d -lopencv_contrib -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_gpu -lopencv_highgui -lopencv_imgproc -lopencv_legacy -lopencv_ml -lopencv_nonfree -lopencv_objdetect -lopencv_ocl -lopencv_photo -lopencv_stitching -lopencv_superres -lopencv_ts -lopencv_video -lopencv_videostab
+Finished building target: FaceTracking
+ 
+21:41:59 **** Incremental Build of configuration Debug for project 02-FaceTracking_LoadModel ****
+make all 
+make: No se hace nada para 'all'.
+21:41:59 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+21:41:59 **** Incremental Build of configuration Debug for project FaceTracking_SaveModel ****
+make all 
+make: No se hace nada para 'all'.
+21:42:01 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+21:42:29 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+21:43:41 **** Incremental Build of configuration Debug for project 02-FaceTracking_LoadModel ****
+make all 
+make: No se hace nada para 'all'.
+21:43:41 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+Finished building: ../src/FaceTracking.cpp
+ 
+Building file: ../src/Utilities.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Utilities.d" -MT"src/Utilities.d" -o "src/Utilities.o" "../src/Utilities.cpp"
+Finished building: ../src/Utilities.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o ./src/Utilities.o ./src/libreria_Detection.o  ./Resources/Resources.o   -lopencv_calib3d -lopencv_contrib -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_gpu -lopencv_highgui -lopencv_imgproc -lopencv_legacy -lopencv_ml -lopencv_nonfree -lopencv_objdetect -lopencv_ocl -lopencv_photo -lopencv_stitching -lopencv_superres -lopencv_ts -lopencv_video -lopencv_videostab
+Finished building target: FaceTracking
+ 
+21:43:43 **** Incremental Build of configuration Debug for project FaceTracking_SaveModel ****
+make all 
+make: No se hace nada para 'all'.
+21:43:44 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+21:44:01 **** Incremental Build of configuration Debug for project 02-FaceTracking_LoadModel ****
+make all 
+make: No se hace nada para 'all'.
+21:44:02 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/Utilities.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Utilities.d" -MT"src/Utilities.d" -o "src/Utilities.o" "../src/Utilities.cpp"
+Finished building: ../src/Utilities.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o ./src/Utilities.o ./src/libreria_Detection.o  ./Resources/Resources.o   -lopencv_calib3d -lopencv_contrib -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_gpu -lopencv_highgui -lopencv_imgproc -lopencv_legacy -lopencv_ml -lopencv_nonfree -lopencv_objdetect -lopencv_ocl -lopencv_photo -lopencv_stitching -lopencv_superres -lopencv_ts -lopencv_video -lopencv_videostab
+Finished building target: FaceTracking
+ 
+21:44:02 **** Incremental Build of configuration Debug for project FaceTracking_SaveModel ****
+make all 
+make: No se hace nada para 'all'.
+21:44:04 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+21:45:37 **** Incremental Build of configuration Debug for project 02-FaceTracking_LoadModel ****
+make all 
+make: No se hace nada para 'all'.
+21:45:37 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/Utilities.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Utilities.d" -MT"src/Utilities.d" -o "src/Utilities.o" "../src/Utilities.cpp"
+Finished building: ../src/Utilities.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o ./src/Utilities.o ./src/libreria_Detection.o  ./Resources/Resources.o   -lopencv_calib3d -lopencv_contrib -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_gpu -lopencv_highgui -lopencv_imgproc -lopencv_legacy -lopencv_ml -lopencv_nonfree -lopencv_objdetect -lopencv_ocl -lopencv_photo -lopencv_stitching -lopencv_superres -lopencv_ts -lopencv_video -lopencv_videostab
+Finished building target: FaceTracking
+ 
+21:45:38 **** Incremental Build of configuration Debug for project FaceTracking_SaveModel ****
+make all 
+make: No se hace nada para 'all'.
+21:45:40 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+21:47:34 **** Incremental Build of configuration Debug for project 02-FaceTracking_LoadModel ****
+make all 
+make: No se hace nada para 'all'.
+21:47:34 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/Utilities.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Utilities.d" -MT"src/Utilities.d" -o "src/Utilities.o" "../src/Utilities.cpp"
+Finished building: ../src/Utilities.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o ./src/Utilities.o ./src/libreria_Detection.o  ./Resources/Resources.o   -lopencv_calib3d -lopencv_contrib -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_gpu -lopencv_highgui -lopencv_imgproc -lopencv_legacy -lopencv_ml -lopencv_nonfree -lopencv_objdetect -lopencv_ocl -lopencv_photo -lopencv_stitching -lopencv_superres -lopencv_ts -lopencv_video -lopencv_videostab
+Finished building target: FaceTracking
+ 
+21:47:35 **** Incremental Build of configuration Debug for project FaceTracking_SaveModel ****
+make all 
+make: No se hace nada para 'all'.
+21:47:37 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+21:48:03 **** Incremental Build of configuration Debug for project 02-FaceTracking_LoadModel ****
+make all 
+make: No se hace nada para 'all'.
+21:48:03 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/Utilities.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Utilities.d" -MT"src/Utilities.d" -o "src/Utilities.o" "../src/Utilities.cpp"
+Finished building: ../src/Utilities.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o ./src/Utilities.o ./src/libreria_Detection.o  ./Resources/Resources.o   -lopencv_calib3d -lopencv_contrib -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_gpu -lopencv_highgui -lopencv_imgproc -lopencv_legacy -lopencv_ml -lopencv_nonfree -lopencv_objdetect -lopencv_ocl -lopencv_photo -lopencv_stitching -lopencv_superres -lopencv_ts -lopencv_video -lopencv_videostab
+Finished building target: FaceTracking
+ 
+21:48:04 **** Incremental Build of configuration Debug for project FaceTracking_SaveModel ****
+make all 
+make: No se hace nada para 'all'.
+21:48:06 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+21:49:09 **** Incremental Build of configuration Debug for project 02-FaceTracking_LoadModel ****
+make all 
+make: No se hace nada para 'all'.
+21:49:10 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/Utilities.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Utilities.d" -MT"src/Utilities.d" -o "src/Utilities.o" "../src/Utilities.cpp"
+Finished building: ../src/Utilities.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o ./src/Utilities.o ./src/libreria_Detection.o  ./Resources/Resources.o   -lopencv_calib3d -lopencv_contrib -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_gpu -lopencv_highgui -lopencv_imgproc -lopencv_legacy -lopencv_ml -lopencv_nonfree -lopencv_objdetect -lopencv_ocl -lopencv_photo -lopencv_stitching -lopencv_superres -lopencv_ts -lopencv_video -lopencv_videostab
+Finished building target: FaceTracking
+ 
+21:49:10 **** Incremental Build of configuration Debug for project FaceTracking_SaveModel ****
+make all 
+make: No se hace nada para 'all'.
+21:49:12 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+21:54:53 **** Incremental Build of configuration Debug for project 02-FaceTracking_LoadModel ****
+make all 
+make: No se hace nada para 'all'.
+21:54:53 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+Finished building: ../src/FaceTracking.cpp
+ 
+Building file: ../src/Utilities.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Utilities.d" -MT"src/Utilities.d" -o "src/Utilities.o" "../src/Utilities.cpp"
+Finished building: ../src/Utilities.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o ./src/Utilities.o ./src/libreria_Detection.o  ./Resources/Resources.o   -lopencv_calib3d -lopencv_contrib -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_gpu -lopencv_highgui -lopencv_imgproc -lopencv_legacy -lopencv_ml -lopencv_nonfree -lopencv_objdetect -lopencv_ocl -lopencv_photo -lopencv_stitching -lopencv_superres -lopencv_ts -lopencv_video -lopencv_videostab
+Finished building target: FaceTracking
+ 
+21:54:55 **** Incremental Build of configuration Debug for project FaceTracking_SaveModel ****
+make all 
+make: No se hace nada para 'all'.
+21:54:56 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+21:55:39 **** Incremental Build of configuration Debug for project 02-FaceTracking_LoadModel ****
+make all 
+make: No se hace nada para 'all'.
+21:55:39 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/Utilities.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Utilities.d" -MT"src/Utilities.d" -o "src/Utilities.o" "../src/Utilities.cpp"
+../src/Utilities.cpp: In function ‘std::__cxx11::string print_time(double)’:
+../src/Utilities.cpp:32:67: warning: format ‘%f’ expects argument of type ‘double’, but argument 3 has type ‘int’ [-Wformat=]
+  sprintf(sTmp,"\n (Face Tracking) %f us = %f ms = %f s", us, ms, s);
+                                                                   ^
+Finished building: ../src/Utilities.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o ./src/Utilities.o ./src/libreria_Detection.o  ./Resources/Resources.o   -lopencv_calib3d -lopencv_contrib -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_gpu -lopencv_highgui -lopencv_imgproc -lopencv_legacy -lopencv_ml -lopencv_nonfree -lopencv_objdetect -lopencv_ocl -lopencv_photo -lopencv_stitching -lopencv_superres -lopencv_ts -lopencv_video -lopencv_videostab
+Finished building target: FaceTracking
+ 
+21:55:40 **** Incremental Build of configuration Debug for project FaceTracking_SaveModel ****
+make all 
+make: No se hace nada para 'all'.
+21:55:41 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+21:56:24 **** Incremental Build of configuration Debug for project 02-FaceTracking_LoadModel ****
+make all 
+make: No se hace nada para 'all'.
+21:56:24 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/Utilities.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Utilities.d" -MT"src/Utilities.d" -o "src/Utilities.o" "../src/Utilities.cpp"
+../src/Utilities.cpp: In function ‘std::__cxx11::string print_time(double)’:
+../src/Utilities.cpp:22:6: warning: variable ‘us’ set but not used [-Wunused-but-set-variable]
+  int us;
+      ^
+Finished building: ../src/Utilities.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o ./src/Utilities.o ./src/libreria_Detection.o  ./Resources/Resources.o   -lopencv_calib3d -lopencv_contrib -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_gpu -lopencv_highgui -lopencv_imgproc -lopencv_legacy -lopencv_ml -lopencv_nonfree -lopencv_objdetect -lopencv_ocl -lopencv_photo -lopencv_stitching -lopencv_superres -lopencv_ts -lopencv_video -lopencv_videostab
+Finished building target: FaceTracking
+ 
+21:56:25 **** Incremental Build of configuration Debug for project FaceTracking_SaveModel ****
+make all 
+make: No se hace nada para 'all'.
+21:56:26 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+21:56:39 **** Incremental Build of configuration Debug for project 02-FaceTracking_LoadModel ****
+make all 
+make: No se hace nada para 'all'.
+21:56:39 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/Utilities.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Utilities.d" -MT"src/Utilities.d" -o "src/Utilities.o" "../src/Utilities.cpp"
+../src/Utilities.cpp: In function ‘std::__cxx11::string print_time(double)’:
+../src/Utilities.cpp:32:66: warning: format ‘%i’ expects argument of type ‘int’, but argument 3 has type ‘double’ [-Wformat=]
+  sprintf(sTmp,"\n (Face Tracking) %i us = %f ms = %f s", t, ms, s);
+                                                                  ^
+../src/Utilities.cpp:22:6: warning: variable ‘us’ set but not used [-Wunused-but-set-variable]
+  int us;
+      ^
+Finished building: ../src/Utilities.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o ./src/Utilities.o ./src/libreria_Detection.o  ./Resources/Resources.o   -lopencv_calib3d -lopencv_contrib -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_gpu -lopencv_highgui -lopencv_imgproc -lopencv_legacy -lopencv_ml -lopencv_nonfree -lopencv_objdetect -lopencv_ocl -lopencv_photo -lopencv_stitching -lopencv_superres -lopencv_ts -lopencv_video -lopencv_videostab
+Finished building target: FaceTracking
+ 
+21:56:40 **** Incremental Build of configuration Debug for project FaceTracking_SaveModel ****
+make all 
+make: No se hace nada para 'all'.
+21:56:42 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+21:57:03 **** Incremental Build of configuration Debug for project 02-FaceTracking_LoadModel ****
+make all 
+make: No se hace nada para 'all'.
+21:57:03 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/Utilities.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Utilities.d" -MT"src/Utilities.d" -o "src/Utilities.o" "../src/Utilities.cpp"
+../src/Utilities.cpp: In function ‘std::__cxx11::string print_time(double)’:
+../src/Utilities.cpp:22:6: warning: variable ‘us’ set but not used [-Wunused-but-set-variable]
+  int us;
+      ^
+Finished building: ../src/Utilities.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o ./src/Utilities.o ./src/libreria_Detection.o  ./Resources/Resources.o   -lopencv_calib3d -lopencv_contrib -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_gpu -lopencv_highgui -lopencv_imgproc -lopencv_legacy -lopencv_ml -lopencv_nonfree -lopencv_objdetect -lopencv_ocl -lopencv_photo -lopencv_stitching -lopencv_superres -lopencv_ts -lopencv_video -lopencv_videostab
+Finished building target: FaceTracking
+ 
+21:57:04 **** Incremental Build of configuration Debug for project FaceTracking_SaveModel ****
+make all 
+make: No se hace nada para 'all'.
+21:57:05 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+21:59:33 **** Incremental Build of configuration Debug for project 02-FaceTracking_LoadModel ****
+make all 
+make: No se hace nada para 'all'.
+21:59:33 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+Finished building: ../src/FaceTracking.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o ./src/Utilities.o ./src/libreria_Detection.o  ./Resources/Resources.o   -lopencv_calib3d -lopencv_contrib -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_gpu -lopencv_highgui -lopencv_imgproc -lopencv_legacy -lopencv_ml -lopencv_nonfree -lopencv_objdetect -lopencv_ocl -lopencv_photo -lopencv_stitching -lopencv_superres -lopencv_ts -lopencv_video -lopencv_videostab
+Finished building target: FaceTracking
+ 
+21:59:35 **** Incremental Build of configuration Debug for project FaceTracking_SaveModel ****
+make all 
+make: No se hace nada para 'all'.
+21:59:36 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+22:00:33 **** Incremental Build of configuration Debug for project 02-FaceTracking_LoadModel ****
+make all 
+make: No se hace nada para 'all'.
+22:00:33 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/Utilities.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Utilities.d" -MT"src/Utilities.d" -o "src/Utilities.o" "../src/Utilities.cpp"
+../src/Utilities.cpp: In function ‘std::__cxx11::string print_time(double)’:
+../src/Utilities.cpp:22:6: warning: variable ‘us’ set but not used [-Wunused-but-set-variable]
+  int us;
+      ^
+Finished building: ../src/Utilities.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o ./src/Utilities.o ./src/libreria_Detection.o  ./Resources/Resources.o   -lopencv_calib3d -lopencv_contrib -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_gpu -lopencv_highgui -lopencv_imgproc -lopencv_legacy -lopencv_ml -lopencv_nonfree -lopencv_objdetect -lopencv_ocl -lopencv_photo -lopencv_stitching -lopencv_superres -lopencv_ts -lopencv_video -lopencv_videostab
+Finished building target: FaceTracking
+ 
+22:00:34 **** Incremental Build of configuration Debug for project FaceTracking_SaveModel ****
+make all 
+make: No se hace nada para 'all'.
+22:00:35 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+22:01:10 **** Incremental Build of configuration Debug for project 02-FaceTracking_LoadModel ****
+make all 
+make: No se hace nada para 'all'.
+22:01:10 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+Finished building: ../src/FaceTracking.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o ./src/Utilities.o ./src/libreria_Detection.o  ./Resources/Resources.o   -lopencv_calib3d -lopencv_contrib -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_gpu -lopencv_highgui -lopencv_imgproc -lopencv_legacy -lopencv_ml -lopencv_nonfree -lopencv_objdetect -lopencv_ocl -lopencv_photo -lopencv_stitching -lopencv_superres -lopencv_ts -lopencv_video -lopencv_videostab
+Finished building target: FaceTracking
+ 
+22:01:11 **** Incremental Build of configuration Debug for project FaceTracking_SaveModel ****
+make all 
+make: No se hace nada para 'all'.
+22:01:13 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+22:01:34 **** Incremental Build of configuration Debug for project 02-FaceTracking_LoadModel ****
+make all 
+make: No se hace nada para 'all'.
+22:01:34 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+Finished building: ../src/FaceTracking.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o ./src/Utilities.o ./src/libreria_Detection.o  ./Resources/Resources.o   -lopencv_calib3d -lopencv_contrib -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_gpu -lopencv_highgui -lopencv_imgproc -lopencv_legacy -lopencv_ml -lopencv_nonfree -lopencv_objdetect -lopencv_ocl -lopencv_photo -lopencv_stitching -lopencv_superres -lopencv_ts -lopencv_video -lopencv_videostab
+Finished building target: FaceTracking
+ 
+22:01:35 **** Incremental Build of configuration Debug for project FaceTracking_SaveModel ****
+make all 
+make: No se hace nada para 'all'.
+22:01:36 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+22:05:38 **** Incremental Build of configuration Debug for project 02-FaceTracking_LoadModel ****
+make all 
+make: No se hace nada para 'all'.
+22:05:38 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+Finished building: ../src/FaceTracking.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o ./src/Utilities.o ./src/libreria_Detection.o  ./Resources/Resources.o   -lopencv_calib3d -lopencv_contrib -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_gpu -lopencv_highgui -lopencv_imgproc -lopencv_legacy -lopencv_ml -lopencv_nonfree -lopencv_objdetect -lopencv_ocl -lopencv_photo -lopencv_stitching -lopencv_superres -lopencv_ts -lopencv_video -lopencv_videostab
+Finished building target: FaceTracking
+ 
+22:05:40 **** Incremental Build of configuration Debug for project FaceTracking_SaveModel ****
+make all 
+make: No se hace nada para 'all'.
+22:05:44 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+22:10:33 **** Incremental Build of configuration Debug for project 02-FaceTracking_LoadModel ****
+make all 
+Building file: ../src/FaceTracking_LoadModel.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking_LoadModel.d" -MT"src/FaceTracking_LoadModel.d" -o "src/FaceTracking_LoadModel.o" "../src/FaceTracking_LoadModel.cpp"
+Finished building: ../src/FaceTracking_LoadModel.cpp
+ 
+Building file: ../src/Libreria_SaveLoadModel.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Libreria_SaveLoadModel.d" -MT"src/Libreria_SaveLoadModel.d" -o "src/Libreria_SaveLoadModel.o" "../src/Libreria_SaveLoadModel.cpp"
+Finished building: ../src/Libreria_SaveLoadModel.cpp
+ 
+Building file: ../src/Librerias_Reconocimiento.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Librerias_Reconocimiento.d" -MT"src/Librerias_Reconocimiento.d" -o "src/Librerias_Reconocimiento.o" "../src/Librerias_Reconocimiento.cpp"
+Finished building: ../src/Librerias_Reconocimiento.cpp
+ 
+Building file: ../src/Utilities.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Utilities.d" -MT"src/Utilities.d" -o "src/Utilities.o" "../src/Utilities.cpp"
+../src/Utilities.cpp: In function ‘std::__cxx11::string print_time(double)’:
+../src/Utilities.cpp:22:6: warning: variable ‘us’ set but not used [-Wunused-but-set-variable]
+  int us;
+      ^
+Finished building: ../src/Utilities.cpp
+ 
+Building file: ../src/libreria_Detection.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/libreria_Detection.d" -MT"src/libreria_Detection.d" -o "src/libreria_Detection.o" "../src/libreria_Detection.cpp"
+Finished building: ../src/libreria_Detection.cpp
+ 
+Building target: 02-FaceTracking_LoadModel
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "02-FaceTracking_LoadModel"  ./src/FaceTracking_LoadModel.o ./src/Libreria_SaveLoadModel.o ./src/Librerias_Reconocimiento.o ./src/Utilities.o ./src/libreria_Detection.o  ./Resources/Resources.o   -lopencv_calib3d -lopencv_contrib -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_gpu -lopencv_highgui -lopencv_imgproc -lopencv_legacy -lopencv_ml -lopencv_nonfree -lopencv_objdetect -lopencv_ocl -lopencv_photo -lopencv_stitching -lopencv_superres -lopencv_ts -lopencv_video -lopencv_videostab
+Finished building target: 02-FaceTracking_LoadModel
+ 
+22:10:37 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+Building file: ../src/FaceTracking.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FaceTracking.d" -MT"src/FaceTracking.d" -o "src/FaceTracking.o" "../src/FaceTracking.cpp"
+Finished building: ../src/FaceTracking.cpp
+ 
+Building file: ../src/Utilities.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Utilities.d" -MT"src/Utilities.d" -o "src/Utilities.o" "../src/Utilities.cpp"
+../src/Utilities.cpp: In function ‘std::__cxx11::string print_time(double)’:
+../src/Utilities.cpp:22:6: warning: variable ‘us’ set but not used [-Wunused-but-set-variable]
+  int us;
+      ^
+Finished building: ../src/Utilities.cpp
+ 
+Building target: FaceTracking
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "FaceTracking"  ./src/FaceTracking.o ./src/Librerias_Reconocimiento.o ./src/Utilities.o ./src/libreria_Detection.o  ./Resources/Resources.o   -lopencv_calib3d -lopencv_contrib -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_gpu -lopencv_highgui -lopencv_imgproc -lopencv_legacy -lopencv_ml -lopencv_nonfree -lopencv_objdetect -lopencv_ocl -lopencv_photo -lopencv_stitching -lopencv_superres -lopencv_ts -lopencv_video -lopencv_videostab
+Finished building target: FaceTracking
+ 
+22:10:39 **** Incremental Build of configuration Debug for project FaceTracking_SaveModel ****
+make all 
+make: No se hace nada para 'all'.
+22:10:40 **** Incremental Build of configuration Debug for project 02-FaceTracking_LoadModel ****
+make all 
+make: No se hace nada para 'all'.
+22:10:51 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+22:11:00 **** Incremental Build of configuration Debug for project 02-FaceTracking_LoadModel ****
+make all 
+make: No se hace nada para 'all'.
+22:11:16 **** Incremental Build of configuration Debug for project FaceTracking ****
+make all 
+make: No se hace nada para 'all'.
+22:11:21 **** Incremental Build of configuration Debug for project 02-FaceTracking_LoadModel ****
+make all 
+make: No se hace nada para 'all'.
