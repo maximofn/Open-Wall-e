@@ -12,6 +12,9 @@
 #include "../Resources/Resources.h"
 #include "libreria_Detection.h"
 #include "Librerias_Reconocimiento.h"
+#ifdef RASPBERRY
+	#include "../Resources/raspicam/RaspiCamCV.h"
+#endif
 
 
 
@@ -46,7 +49,7 @@ int main( int argc, char** argv )
 
 	// Prediction limit depending on the device
 	#ifdef EIGENFACES
-		prediction_seuil = 10;
+		prediction_seuil = 7000;
 	#else
 		prediction_seuil = 1000;
 	#endif

@@ -12,6 +12,9 @@
 #include "../Resources/Resources.h"
 #include "libreria_Detection.h"
 #include "Librerias_Reconocimiento.h"
+#ifdef RASPBERRY
+	#include "../Resources/raspicam/RaspiCamCV.h"
+#endif
 
 
 
@@ -51,7 +54,7 @@ int main( int argc, char** argv )
 		prediction_seuil = 1000;
 	#endif
 
-	// Model of face recognition depending on the device
+	// Model of face recognition
 	#ifdef EIGENFACES
 		model = createEigenFaceRecognizer();
 	#else
