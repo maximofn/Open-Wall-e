@@ -1,0 +1,463 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Conexión a Raspberry Pi por SSH a través de una red externa
+\end_layout
+
+\begin_layout Author
+Máximo Fernández Núñez
+\end_layout
+
+\begin_layout Part
+Instalar SSH
+\end_layout
+
+\begin_layout Standard
+Escribir en la terminal
+\end_layout
+
+\begin_layout Quotation
+>> sudo aptitude install ssh
+\end_layout
+
+\begin_layout Part
+Configuración de SSH
+\end_layout
+
+\begin_layout Section
+Abrir el archivo de configuración
+\end_layout
+
+\begin_layout Standard
+Abrir el archivo de configuración escribiendo en la terminal 
+\end_layout
+
+\begin_layout Quotation
+>> sudo gedit /etc/ssh/sshd_config 
+\end_layout
+
+\begin_layout Standard
+A continuación cambiamos parámetros de este archivo.
+ Si alguno de los parámetros no estan añadirlos 
+\end_layout
+
+\begin_layout Section
+Cambiar el puerto 
+\end_layout
+
+\begin_layout Quotation
+Port 4022 
+\end_layout
+
+\begin_layout Section
+Protocolo 
+\end_layout
+
+\begin_layout Quotation
+Protocol 2 
+\end_layout
+
+\begin_layout Section
+Tiempo de Login 
+\end_layout
+
+\begin_layout Quotation
+LoginGraceTime 30 
+\end_layout
+
+\begin_layout Section
+No permitir Login como uruario root 
+\end_layout
+
+\begin_layout Quotation
+PermitRootLogin no 
+\end_layout
+
+\begin_layout Section
+Número de intentos de Login 
+\end_layout
+
+\begin_layout Quotation
+MaxAuthTries 5 
+\end_layout
+
+\begin_layout Section
+Número máximo de usuarios conectados al mismo tiempo 
+\end_layout
+
+\begin_layout Quotation
+MaxStartups 2 
+\end_layout
+
+\begin_layout Section
+Cambiar el mensaje de bienvenida 
+\end_layout
+
+\begin_layout Standard
+Editar el archivo /var/run/motd escribiedo en la terminal 
+\end_layout
+
+\begin_layout Quotation
+>> sudo gedit /var/run/motd
+\end_layout
+
+\begin_layout Part
+Crear cuenta dirección no-ip
+\end_layout
+
+\begin_layout Standard
+Entrar en página www.noip.com y crear una cuenta gratuita.
+ No se explica como se hace ya que la página puede cambiar
+\end_layout
+
+\begin_layout Part
+Instalar Cliente No-IP en Raspberry Pi 
+\end_layout
+
+\begin_layout Section
+Crear el directorio donde se va a guardar no-ip 
+\end_layout
+
+\begin_layout Quotation
+>> mkdir /home/pi/noip 
+\end_layout
+
+\begin_layout Quotation
+>> cd /home/pi/noip 
+\end_layout
+
+\begin_layout Section
+Descargar e instalar no-ip 
+\end_layout
+
+\begin_layout Quotation
+>> wget http://www.no-ip.com/client/linux/noip-duc-linux.tar.gz 
+\end_layout
+
+\begin_layout Quotation
+>> tar -zxvf noip-duc-linux.tar.gz 
+\end_layout
+
+\begin_layout Quotation
+>> cd noip-2.1.9-1/ 
+\end_layout
+
+\begin_layout Quotation
+>> make 
+\end_layout
+
+\begin_layout Quotation
+>> sudo make install 
+\end_layout
+
+\begin_layout Standard
+Durante la instalación nos preguntará por nuestro nombre de usuario (correo)
+ y contraseña.
+ Los introducimos y si todo ha ido bien nos informará de que ha detectado
+ el dominio anteriormente creado y que si queremos usar ese, le indicamos
+ que sí.
+ Nos preguntará además por el periodo de actualización que por defecto vienen
+ 30 aunque podemos cambiarlo, y por otro lado nos pregunta también si deseamos
+ que ejecute algo después de realizar una actualización de forma correcta.
+ Le indicamos que no y ya lo tenemos todo listo.
+\end_layout
+
+\begin_layout Section
+Iniciar no-ip 
+\end_layout
+
+\begin_layout Quotation
+>> sudo /usr/local/bin/noip2 
+\end_layout
+
+\begin_layout Section
+Crear un script de arranque para que se inicie al arrancar 
+\end_layout
+
+\begin_layout Quotation
+>> sudo nano /etc/init.d/noip2 
+\end_layout
+
+\begin_layout Standard
+Agregar lo siguiente: 
+\end_layout
+
+\begin_layout Quotation
+#! /bin/bash 
+\end_layout
+
+\begin_layout Quotation
+### BEGIN INIT INFO 
+\end_layout
+
+\begin_layout Quotation
+# Provides: blabla 
+\end_layout
+
+\begin_layout Quotation
+# Required-Start: $syslog 
+\end_layout
+
+\begin_layout Quotation
+# Required-Stop: $syslog 
+\end_layout
+
+\begin_layout Quotation
+# Default-Start: 2 3 4 5 
+\end_layout
+
+\begin_layout Quotation
+# Default-Stop: 0 1 6 
+\end_layout
+
+\begin_layout Quotation
+# Short-Description: blabla 
+\end_layout
+
+\begin_layout Quotation
+# Description: 
+\end_layout
+
+\begin_layout Quotation
+# ### END INIT INFO 
+\end_layout
+
+\begin_layout Quotation
+sudo /usr/local/bin/noip2 
+\end_layout
+
+\begin_layout Standard
+Guardar los cambios del archivo 
+\end_layout
+
+\begin_layout Standard
+Dar permisos de ejecución al archivo que se acaba de crear: 
+\end_layout
+
+\begin_layout Quotation
+>> sudo chmod +x /etc/init.d/noip2 
+\end_layout
+
+\begin_layout Standard
+Agregarlo a los inicios 
+\end_layout
+
+\begin_layout Quotation
+>> sudo update-rc.d noip2 defaults
+\end_layout
+
+\begin_layout Part
+Conectar por ssh con Wall-e 
+\end_layout
+
+\begin_layout Section
+Conectar 
+\end_layout
+
+\begin_layout Quotation
+>> ssh -p 4022 pi@openwall-e.no-ip.biz 
+\end_layout
+
+\begin_layout Section
+Copiar a Wall-e 
+\end_layout
+
+\begin_layout Quotation
+>> scp -P 4022 ruta/archivo @openwall-e.no-ip.biz:ruta/fichero 
+\end_layout
+
+\begin_layout Section
+Copiar de Wall-e 
+\end_layout
+
+\begin_layout Quotation
+>> scp -P 4022 @openwall-e.no-ip.biz:ruta/fichero ruta/archivo
+\end_layout
+
+\begin_layout Part
+SSH en Nautilus
+\end_layout
+
+\begin_layout Section
+Conectar con servidor
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Conectar con el servidor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Conectar com el servidor.png
+	height 7cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Escribir la dirección y el puerto
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Escribir la dirección y el puerto
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Introducir IP y Puerto.png
+	height 7cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Escribir la contraseña 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Escribir la contraseña
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Escribir contraseña.png
+	height 7cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

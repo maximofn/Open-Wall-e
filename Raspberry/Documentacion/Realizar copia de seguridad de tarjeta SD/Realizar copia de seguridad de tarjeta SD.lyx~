@@ -1,0 +1,209 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Realizar copia de seguridad de tarjeta SD de Raspberry PI
+\end_layout
+
+\begin_layout Author
+Máximo Férnandez Núñez
+\end_layout
+
+\begin_layout Date
+21 Septiembre 2013
+\end_layout
+
+\begin_layout Section
+Identificar la tarjeta SD en nuestro sistema
+\end_layout
+
+\begin_layout Standard
+Para ello escribir el siguiente comando en la terminal
+\end_layout
+
+\begin_layout LyX-Code
+$ df -h
+\end_layout
+
+\begin_layout Standard
+Nos deberá aparecer una lista como la siguiente
+\end_layout
+
+\begin_layout LyX-Code
+S.ficheros      Tamaño  Usados  Disp  Uso%  Montado en 
+\end_layout
+
+\begin_layout LyX-Code
+/dev/sda6         273G    187G   73G   72%  /
+\end_layout
+
+\begin_layout LyX-Code
+udev              958M    4,0K  958M    1%  /dev
+\end_layout
+
+\begin_layout LyX-Code
+tmpfs             387M    928K  386M    1%  /run
+\end_layout
+
+\begin_layout LyX-Code
+none              5,0M       0  5,0M    0%  /run/lock
+\end_layout
+
+\begin_layout LyX-Code
+none              967M    508K  966M    1%  /run/shm
+\end_layout
+
+\begin_layout LyX-Code
+/dev/sdb1          56M     19M   38M   33%  /media/boot 
+\end_layout
+
+\begin_layout LyX-Code
+/dev/sdb2         7,4G    1,8G  5,3G   25%  /media/41cd5baa-7a62-4706-b8e8-02c43
+ccee8d9
+\end_layout
+
+\begin_layout Standard
+En este caso la tarjeta SD corresponde a los directorios /dev/sdb1 y /dev/sdb2,
+ esto es porque la tarjeta tiene dos particiones
+\end_layout
+
+\begin_layout Section
+Desmontar las particiones
+\end_layout
+
+\begin_layout Standard
+Hay que desmontar las particiones que tenga la tarjeta antes de hacer la
+ copia de seguridad.
+ Siguiendo los resultados que han salido antes, escribir en la terminal
+\end_layout
+
+\begin_layout LyX-Code
+$ umount /dev/sdb1
+\end_layout
+
+\begin_layout LyX-Code
+$ umount /dev/sdb2
+\end_layout
+
+\begin_layout Standard
+ó
+\end_layout
+
+\begin_layout LyX-Code
+$ umount /dev/mmcblk0p1
+\end_layout
+
+\begin_layout LyX-Code
+$ umount /dev/mmcblk0p2
+\end_layout
+
+\begin_layout Standard
+Con esto las dos particiones estarán desmontadas
+\end_layout
+
+\begin_layout Section
+Realizar la copia de seguridad
+\end_layout
+
+\begin_layout Standard
+Una vez identificada la tarjeta y desmontada se realiza la copia de seguridad
+ escribiendo lo siguiente en la terminal
+\end_layout
+
+\begin_layout LyX-Code
+$ sudo dd if=/dev/sdb of=RaspberryPI_backup_DD-MM-AAAA.img bs=4M
+\end_layout
+
+\begin_layout Standard
+ó
+\end_layout
+
+\begin_layout LyX-Code
+$ sudo dd if=/dev/mmcblk0 of=RaspberryPI_backup_DD-MM-AAAA.img bs=4M
+\end_layout
+
+\begin_layout Standard
+Donde
+\end_layout
+
+\begin_layout Itemize
+if es el directorio de origen
+\end_layout
+
+\begin_layout Itemize
+of el directorio de destino
+\end_layout
+
+\begin_layout Itemize
+bs es la velocidad de transferencia (Bytes/s)
+\end_layout
+
+\end_body
+\end_document

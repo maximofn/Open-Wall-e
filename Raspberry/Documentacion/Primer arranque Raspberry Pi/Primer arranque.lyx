@@ -1,0 +1,1343 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 1cm
+\rightmargin 1.5cm
+\bottommargin 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Primer arranque Raspberry Pi
+\end_layout
+
+\begin_layout Author
+Máximo Férnandez Núñez
+\end_layout
+
+\begin_layout Date
+20 Septiembre 2014
+\end_layout
+
+\begin_layout Part
+Raspi-config
+\end_layout
+
+\begin_layout Standard
+Cuando se enciende por primera vez la Raspberry aparece el menú de configuración
+ 
+\begin_inset Quotes eld
+\end_inset
+
+raspi-config
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Imágenes/Raspi-config.png
+	width 10cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Raspi-config
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Configurar arranque
+\end_layout
+
+\begin_layout Standard
+Configurar que el arranque sea sin interfaz gráfoca, para ello elegir la
+ opción 3 
+\begin_inset Quotes eld
+\end_inset
+
+Enable Boot to Desktop/Scratch
+\begin_inset Quotes erd
+\end_inset
+
+.
+ A continuación elegir 
+\begin_inset Quotes eld
+\end_inset
+
+Console Text console, requiring login (default)
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Imágenes/Boot_options.png
+	width 10cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Console boot
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Opciones internacionales
+\end_layout
+
+\begin_layout Standard
+En el menú principal de raspi-config legir la opción 4 
+\begin_inset Quotes eld
+\end_inset
+
+Internationalstation Options
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Imágenes/Internationalstation_options.png
+	width 10cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Internationalstation options
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Cambio de localización
+\end_layout
+
+\begin_layout Standard
+En el menú de opciones internacionales elegir la opción I1 
+\begin_inset Quotes eld
+\end_inset
+
+Change Locate
+\begin_inset Quotes erd
+\end_inset
+
+ y a continuación elegir 
+\begin_inset Quotes eld
+\end_inset
+
+es_ES.UTF-8 UTF-8
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Imágenes/es_ES.png
+	width 10cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Change Locate
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Después elegír la configuración 
+\begin_inset Quotes eld
+\end_inset
+
+es_ES.UTF-8 UTF-8
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Imágenes/es_ES_2.png
+	width 10cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+es_ES.UTF-8 UTF-8
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Cambio de zona horaria
+\end_layout
+
+\begin_layout Standard
+En el menú de opciones internacionales elegir la opción I2 
+\begin_inset Quotes eld
+\end_inset
+
+Change Timezone
+\begin_inset Quotes erd
+\end_inset
+
+ y a continuación elegir 
+\begin_inset Quotes eld
+\end_inset
+
+Europe
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Imágenes/Timezone_Europe.png
+	width 10cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Timezone - Europe
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Después elegir Madrid
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Imágenes/Timezone_Madrir.png
+	width 10cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Timezone - Madrid
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Opciones de teclado
+\end_layout
+
+\begin_layout Standard
+En el menú de opciones internacionales elegir la opción I3 
+\begin_inset Quotes eld
+\end_inset
+
+Change Keyboard Layout
+\begin_inset Quotes erd
+\end_inset
+
+ y a continuación elegir 
+\begin_inset Quotes eld
+\end_inset
+
+Generic 105-key (Intl) PC
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Imágenes/Generic 105-key (Intl) PC.jpg
+	width 10cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Generic 105-key (Intl) PC
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para poder seleccionar un teclado que no sea ingles elegir 
+\begin_inset Quotes eld
+\end_inset
+
+Other
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Imágenes/Other.jpg
+	width 10cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Keyboard options
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Buscar y elegir 
+\begin_inset Quotes eld
+\end_inset
+
+Spanihs
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Imágenes/Spanish1.jpg
+	width 10cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Keyboard Spanish
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Volver a elegir 
+\begin_inset Quotes eld
+\end_inset
+
+Spanish
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Imágenes/Spanish2.jpg
+	width 10cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Keyboard Spanihs
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dejar la configuración por defecto
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Imágenes/Default Keyboard Layout.jpg
+	width 10cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Configuración por defecto
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Seleccionar 
+\begin_inset Quotes eld
+\end_inset
+
+No compose key
+\begin_inset Quotes erd
+\end_inset
+
+ ya que no se tiene esa tecla
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Imágenes/No compose key.jpg
+	width 10cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+No compose key
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por último seleccionar 
+\begin_inset Quotes eld
+\end_inset
+
+Yes
+\begin_inset Quotes erd
+\end_inset
+
+ para salir del entorno gráfico (X server) mediante la combinación de teclas
+ Control+Alt+Backspace
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Imágenes/Terminate X server.jpg
+	width 10cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+X server
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Habilitar cámara
+\end_layout
+
+\begin_layout Standard
+Para habilitar la cámara elegir la opción 5 
+\begin_inset Quotes eld
+\end_inset
+
+Enable Camera
+\begin_inset Quotes erd
+\end_inset
+
+.
+ A continuación elegir 
+\begin_inset Quotes eld
+\end_inset
+
+Enable
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Imágenes/Enable_camera.png
+	width 10cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Enable Camera
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Opciones avanzadas
+\end_layout
+
+\begin_layout Standard
+En el menú principal de raspi-config legir la opción 8 
+\begin_inset Quotes eld
+\end_inset
+
+Advanced Options
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Imágenes/Advanced_options.png
+	width 10cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Advanced Options
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+SSH
+\end_layout
+
+\begin_layout Standard
+En el menú de opciones avanzadas elegir la opción A4 
+\begin_inset Quotes eld
+\end_inset
+
+SSH
+\begin_inset Quotes erd
+\end_inset
+
+, a continuación elegir 
+\begin_inset Quotes eld
+\end_inset
+
+Enable
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Imágenes/SSH.png
+	width 10cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+SSH
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+SPI
+\end_layout
+
+\begin_layout Standard
+En el menú de opciones avanzadas elegir la opción A5 
+\begin_inset Quotes eld
+\end_inset
+
+SSH
+\begin_inset Quotes erd
+\end_inset
+
+, a continuación elegir 
+\begin_inset Quotes eld
+\end_inset
+
+Si
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Imágenes/SPI.png
+	width 10cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+SSH
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+I2C
+\end_layout
+
+\begin_layout Standard
+En el menú de opciones avanzadas elegir la opción A6 
+\begin_inset Quotes eld
+\end_inset
+
+I2C
+\begin_inset Quotes erd
+\end_inset
+
+, a continuación elegir 
+\begin_inset Quotes eld
+\end_inset
+
+Si
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Imágenes/I2C.png
+	width 10cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+SSH
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Serial
+\end_layout
+
+\begin_layout Standard
+En el menú de opciones avanzadas elegir la opción A7 
+\begin_inset Quotes eld
+\end_inset
+
+Serial
+\begin_inset Quotes erd
+\end_inset
+
+, a continuación elegir 
+\begin_inset Quotes eld
+\end_inset
+
+Si
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Imágenes/Serie.png
+	width 10cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+SSH
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Audio
+\end_layout
+
+\begin_layout Standard
+En el menú de opciones avanzadas elegir la opción A8 
+\begin_inset Quotes eld
+\end_inset
+
+Audio
+\begin_inset Quotes erd
+\end_inset
+
+, a continuación elegir 
+\begin_inset Quotes eld
+\end_inset
+
+Force 3.5mm ('headphone') jack
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Imágenes/Audio.png
+	width 10cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+SSH
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Instalar paquetes necesarios
+\end_layout
+
+\begin_layout Section
+IP estática
+\end_layout
+
+\begin_layout Standard
+Ir al directorio de redes
+\end_layout
+
+\begin_layout LyX-Code
+sudo cd /etc/network/
+\end_layout
+
+\begin_layout Standard
+Copiar el archivo interfaces por seguridad
+\end_layout
+
+\begin_layout LyX-Code
+sudo cp interfaces interfaces_old
+\end_layout
+
+\begin_layout Standard
+Abrir el archivo interfaces con el editor de textos nano
+\end_layout
+
+\begin_layout LyX-Code
+sudo nano -w /etc/network/interfaces
+\end_layout
+
+\begin_layout Standard
+Editar la interfaz ETH_0, sustituir la linea
+\end_layout
+
+\begin_layout LyX-Code
+iface eth0 inet dhcp
+\end_layout
+
+\begin_layout Standard
+Por lo siguiente, donde <IP> es la dirección IP que se quiere fijar, por
+ ejemplo 192.168.1.200
+\end_layout
+
+\begin_layout LyX-Code
+iface eth0 inet static
+\end_layout
+
+\begin_layout LyX-Code
+address <IP>
+\end_layout
+
+\begin_layout LyX-Code
+netmask 255.255.255.0
+\end_layout
+
+\begin_layout LyX-Code
+gateway 192.168.1.1
+\end_layout
+
+\begin_layout Standard
+Pulsar 
+\begin_inset Quotes eld
+\end_inset
+
+Ctrl+o
+\begin_inset Quotes erd
+\end_inset
+
+ para guardarPulsar 
+\begin_inset Quotes eld
+\end_inset
+
+Ctrl+x
+\begin_inset Quotes erd
+\end_inset
+
+ para salir
+\end_layout
+
+\begin_layout Standard
+Preguntará si se quiere salvar los cambios, decir Sí escribiendo una S y
+ pulsar Enter
+\end_layout
+
+\begin_layout Standard
+Preguntará el nombre del fichero, que debe ser el mismo, por lo que ¡sin
+ cambiarlo! volver a pulsar Enter
+\end_layout
+
+\begin_layout Standard
+Reiniciar la Raspberry escribiendo
+\end_layout
+
+\begin_layout LyX-Code
+sudo reboot
+\end_layout
+
+\begin_layout Section
+Habilitar escritorio remoto
+\end_layout
+
+\begin_layout Standard
+Instalar el servidor de escritorio remoto en la raspberry tecleando
+\end_layout
+
+\begin_layout LyX-Code
+sudo apt-get install xrdp
+\end_layout
+
+\begin_layout Standard
+Conectarse remotamente a la Raspberry mediante Remina o programa similar
+ de la siguiente manera
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Imágenes/Remina.png
+	width 10cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Escritorio remoto
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conectarse a red WIFI
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document
