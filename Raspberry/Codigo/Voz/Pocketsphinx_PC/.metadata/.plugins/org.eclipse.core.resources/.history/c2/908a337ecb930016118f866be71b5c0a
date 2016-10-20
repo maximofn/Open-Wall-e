@@ -1,0 +1,80 @@
+/*
+ * Resources.h
+ *
+ *  Created on: 16/10/2016
+ *      Author: maximofn
+ */
+
+#ifndef RESOURCES_H_
+#define RESOURCES_H_
+
+/******************************************************************************/
+/*                            ARCHIVOS IMPORTADOS                             */
+/******************************************************************************/
+
+#include "../Resources/Defines.h"
+
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include "time.h"
+#include <unistd.h>
+#include <stdio.h>
+#include <errno.h>
+using namespace std;
+
+/******************************************************************************/
+/*                           DEFINICIONES Y MACROS                            */
+/******************************************************************************/
+static cmd_ln_t *config;
+static ps_decoder_t *ps;
+static FILE *rawfd;
+
+/******************************************************************************/
+/*                        ESTRUCTURAS Y TIPOS DEFINIDOS                       */
+/******************************************************************************/
+
+/******************************************************************************/
+/*                             VARIABLES GLOBALES                             */
+/******************************************************************************/
+
+/******************************************************************************/
+/*                                 FUNCIONES                                  */
+/******************************************************************************/
+
+/*----------------------------------------------------------------------------*/
+/* NOMBRE: get_csvFileDirectory                                               */
+/* ARGUMENTOS ENTRADA: N/A                                                    */
+/* ARGUMENTOS SALIDA: N/A                                                     */
+/* VALOR DEVUELTO:                                                            */
+/*    string: directorio del archivo csv                                      */
+/* DESCRIPCION: Funcion que devuelve el directorio del archivo csv            */
+/*----------------------------------------------------------------------------*/
+string get_csvFileDirectory();
+
+/*
+ * Main utterance processing loop:
+ *     for (;;) {
+ *        start utterance and wait for speech to process
+ *        decoding till end-of-utterance silence will be detected
+ *        print utterance result;
+ *     }
+ */
+static void recognize_from_microphone();
+
+/* Sleep for specified msec */
+static void sleep_msec(int32 ms);
+
+/*
+ * Continuous recognition from a file
+ */
+static void recognize_from_file();
+
+static int check_wav_header(char *header, int expected_sr);
+
+static void print_word_times();
+
+
+
+
+#endif /* RESOURCES_H_ */

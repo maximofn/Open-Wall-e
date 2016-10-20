@@ -1,0 +1,41 @@
+20:18:21 **** Incremental Build of configuration Debug for project Reconocimiento_voz ****
+make all 
+Building file: ../src/Reconocimiento_voz.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/sphinxbase -I/usr/local/include/pocketsphinx -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Reconocimiento_voz.d" -MT"src/Reconocimiento_voz.d" -o "src/Reconocimiento_voz.o" "../src/Reconocimiento_voz.cpp"
+Finished building: ../src/Reconocimiento_voz.cpp
+ 
+Building file: ../src/Utilities.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/sphinxbase -I/usr/local/include/pocketsphinx -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Utilities.d" -MT"src/Utilities.d" -o "src/Utilities.o" "../src/Utilities.cpp"
+../src/Utilities.cpp: In function ‘std::__cxx11::string print_time(double)’:
+../src/Utilities.cpp:22:6: warning: variable ‘us’ set but not used [-Wunused-but-set-variable]
+  int us;
+      ^
+In file included from ../src/Utilities.h:23:0,
+                 from ../src/Utilities.cpp:8:
+../src/../Resources/Resources.h: At global scope:
+../src/../Resources/Resources.h:30:18: warning: ‘config’ defined but not used [-Wunused-variable]
+ static cmd_ln_t *config;
+                  ^
+../src/../Resources/Resources.h:31:22: warning: ‘ps’ defined but not used [-Wunused-variable]
+ static ps_decoder_t *ps;
+                      ^
+../src/../Resources/Resources.h:32:14: warning: ‘rawfd’ defined but not used [-Wunused-variable]
+ static FILE *rawfd;
+              ^
+Finished building: ../src/Utilities.cpp
+ 
+Building file: ../Resources/Resources.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/sphinxbase -I/usr/local/include/pocketsphinx -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Resources/Resources.d" -MT"Resources/Resources.d" -o "Resources/Resources.o" "../Resources/Resources.cpp"
+Finished building: ../Resources/Resources.cpp
+ 
+Building target: Reconocimiento_voz
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "Reconocimiento_voz"  ./src/Reconocimiento_voz.o ./src/Utilities.o  ./Resources/Resources.o   -lpocketsphinx -lsphinxbase -lsphinxad -lpulse -lpulse-simple -lpthread -lm
+Finished building target: Reconocimiento_voz
+ 
+
+20:18:22 Build Finished (took 631ms)
+
