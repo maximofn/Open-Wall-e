@@ -721,3 +721,28 @@ Invoking: GCC C++ Linker
 g++ -L/usr/local/lib -o "Reconocimiento_voz"  ./src/Reconocimiento_voz.o ./src/Utilities.o  ./Resources/Resources.o   -lpocketsphinx -lsphinxbase -lsphinxad -lpulse -lpulse-simple -lpthread -lm
 Finished building target: Reconocimiento_voz
  
+23:07:16 **** Build of configuration Debug for project Hello_world_eclipse ****
+make all 
+Building file: ../src/Hello_world.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/sphinxbase -I/usr/local/include/pocketsphinx -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Hello_world.d" -MT"src/Hello_world.d" -o "src/Hello_world.o" "../src/Hello_world.cpp"
+../src/Hello_world.cpp: In function ‘int main(int, char**)’:
+../src/Hello_world.cpp:16:23: warning: unused variable ‘ps’ [-Wunused-variable]
+         ps_decoder_t *ps = NULL;
+                       ^
+../src/Hello_world.cpp:17:19: warning: variable ‘config’ set but not used [-Wunused-but-set-variable]
+         cmd_ln_t *config = NULL;
+                   ^
+Finished building: ../src/Hello_world.cpp
+ 
+Building target: Hello_world_eclipse
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "Hello_world_eclipse"  ./src/Hello_world.o   -lpocketsphinx -lm -lpthread -lpulse-simple -lpulse -lsphinxad -lsphinxbase
+Finished building target: Hello_world_eclipse
+ 
+23:07:16 **** Incremental Build of configuration Debug for project Reconocimiento_voz ****
+make all 
+make: No se hace nada para 'all'.
+23:07:19 **** Incremental Build of configuration Debug for project Hello_world_eclipse ****
+make all 
+make: No se hace nada para 'all'.
