@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( Hello_world )
+#find_package( sphinxbase pocketsphinx REQUIRED )
+find_package( pocketsphinx REQUIRED )
+add_executable( Hello_world Hello_world.cpp )
+target_link_libraries( Hello_world ${sphinxbase_LIBS} ${pocketsphinx_LIBS})
