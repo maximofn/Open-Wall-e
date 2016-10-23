@@ -52,6 +52,8 @@ int main(int argc, char *argv[])
 	bool cfg_inmic;
 	char sTmp[255];
 
+    sprintf(sTmp, "\n\r %s COMPILED ON: %s, AT: %s", argv[0], __DATE__, __TIME__);
+    trace (sTmp);
 	sprintf(sTmp,"\n\r (Reconocimiento Voz) !!!Reconocimiento de voz con pocketsphinx!!!");
 	trace (sTmp);
 	sprintf(sTmp,"\n\r (Reconocimiento Voz) Directorio de ejecucion del programa: ");
@@ -74,9 +76,9 @@ int main(int argc, char *argv[])
     if (config == NULL || (cfg_infile == NULL && cfg_inmic == FALSE)) {
     	E_INFO("Specify '-infile <file.wav>' to recognize from file "
     			"or '-inmic yes' to recognize from microphone.\n");
-    	trace ("\n\r");
-    	trace ("\n\r");
         cmd_ln_free_r(config);
+    	trace ("\n\r");
+    	trace ("\n\r");
         return 1;
     }
 
@@ -84,10 +86,12 @@ int main(int argc, char *argv[])
     ps = ps_init(config);
     if (ps == NULL) {
         cmd_ln_free_r(config);
+        trace ("\n\r");
+		trace ("\n\r");
         return 1;
     }
 
-    E_INFO("%s COMPILED ON: %s, AT: %s\n\n", argv[0], __DATE__, __TIME__);
+//    E_INFO("%s COMPILED ON: %s, AT: %s", argv[0], __DATE__, __TIME__);
 
     if (cmd_ln_str_r(config, "-infile") != NULL) {
         recognize_from_file();
@@ -114,11 +118,10 @@ static void recognize_from_microphone()
 
     if ((ad = ad_open_dev(cmd_ln_str_r(config, "-adcdev"),
                           (int) cmd_ln_float32_r(config,
-                                                 "-samprate"))) == NULL)
+                          "-samprate"))) == NULL)
         E_FATAL("Failed to open audio device\n");
     if (ad_start_rec(ad) < 0)
         E_FATAL("Failed to start recording\n");
-
     if (ps_start_utt(ps) < 0)
         E_FATAL("Failed to start utterance\n");
     utt_started = FALSE;
