@@ -4,5 +4,5 @@
 
 USER_OBJS :=
 
-LIBS := -lpocketsphinx -lm -lpthread -lpulse-simple -lpulse -lsphinxad -lsphinxbase
+LIBS := -lpocketsphinx -lpulse-simple -lpulse -lm -lpthread -lsphinxad -lsphinxbase
 
