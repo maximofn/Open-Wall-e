@@ -1,6 +1,15 @@
-23:07:16 **** Incremental Build of configuration Debug for project Reconocimiento_voz ****
+20:07:29 **** Incremental Build of configuration Debug for project Reconocimiento_voz ****
 make all 
-make: No se hace nada para 'all'.
+Building file: ../src/Reconocimiento_voz.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/sphinxbase -I/usr/local/include/pocketsphinx -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Reconocimiento_voz.d" -MT"src/Reconocimiento_voz.d" -o "src/Reconocimiento_voz.o" "../src/Reconocimiento_voz.cpp"
+Finished building: ../src/Reconocimiento_voz.cpp
+ 
+Building target: Reconocimiento_voz
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "Reconocimiento_voz"  ./src/Reconocimiento_voz.o ./src/Utilities.o  ./Resources/Resources.o   -lpocketsphinx -lsphinxbase -lsphinxad -lpulse -lpulse-simple -lpthread -lm
+Finished building target: Reconocimiento_voz
+ 
 
-23:07:16 Build Finished (took 83ms)
+20:07:29 Build Finished (took 377ms)
 
