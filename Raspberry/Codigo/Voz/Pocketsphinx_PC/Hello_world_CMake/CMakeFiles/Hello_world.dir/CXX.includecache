@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Pocketsphinx_PC/Hello_world_CMake/Hello_world.cpp
+iostream
+-
+pocketsphinx
+-
+

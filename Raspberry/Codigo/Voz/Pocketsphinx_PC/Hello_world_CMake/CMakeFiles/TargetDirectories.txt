@@ -1,0 +1,3 @@
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Pocketsphinx_PC/Hello_world_CMake/CMakeFiles/edit_cache.dir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Pocketsphinx_PC/Hello_world_CMake/CMakeFiles/rebuild_cache.dir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Pocketsphinx_PC/Hello_world_CMake/CMakeFiles/Hello_world.dir

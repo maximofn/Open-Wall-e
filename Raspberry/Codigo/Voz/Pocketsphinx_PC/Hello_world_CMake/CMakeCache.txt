@@ -171,9 +171,6 @@ Hello_world_BINARY_DIR:STATIC=/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/
 //Value Computed by CMake
 Hello_world_SOURCE_DIR:STATIC=/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Pocketsphinx_PC/Hello_world_CMake
 
-//The directory containing a CMake configuration file for pocketsphinx.
-pocketsphinx_DIR:PATH=pocketsphinx_DIR-NOTFOUND
-
 
 ########################
 # INTERNAL cache entries
