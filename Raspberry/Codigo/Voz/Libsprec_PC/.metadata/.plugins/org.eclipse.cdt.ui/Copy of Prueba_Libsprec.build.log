@@ -1,0 +1,84 @@
+00:12:20 **** Incremental Build of configuration Debug for project Copy of Prueba_Libsprec ****
+make all 
+Building file: ../src/simple.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/simple.d" -MT"src/simple.d" -o "src/simple.o" "../src/simple.c"
+../src/simple.c: In function ‘main’:
+../src/simple.c:22:2: warning: ‘apikey’ is used uninitialized in this function [-Wuninitialized]
+  sprec_recognize_sync(apikey, lang, dur_s);
+  ^
+../src/simple.c:22:2: warning: ‘lang’ is used uninitialized in this function [-Wuninitialized]
+Finished building: ../src/simple.c
+ 
+Building target: Copy of Prueba_Libsprec
+Invoking: GCC C++ Linker
+g++  -o "Copy of Prueba_Libsprec"  ./src/flac_encoder.o ./src/recognize.o ./src/simple.o ./src/wav.o ./src/web_client.o   
+./src/recognize.o: En la función `sprec_recognize_sync':
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/recognize.c:38: aviso: the use of `tmpnam' is dangerous, better use `mkstemp'
+./src/flac_encoder.o: En la función `sprec_flac_encode':
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/flac_encoder.c:129: referencia a `FLAC__stream_encoder_new' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/flac_encoder.c:136: referencia a `FLAC__stream_encoder_set_verify' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/flac_encoder.c:137: referencia a `FLAC__stream_encoder_set_compression_level' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/flac_encoder.c:138: referencia a `FLAC__stream_encoder_set_channels' sin definir
+makefile:45: fallo en las instrucciones para el objetivo 'Copy of Prueba_Libsprec'
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/flac_encoder.c:139: referencia a `FLAC__stream_encoder_set_bits_per_sample' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/flac_encoder.c:140: referencia a `FLAC__stream_encoder_set_sample_rate' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/flac_encoder.c:141: referencia a `FLAC__stream_encoder_set_total_samples_estimate' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/flac_encoder.c:148: referencia a `FLAC__stream_encoder_init_stream' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/flac_encoder.c:161: referencia a `FLAC__stream_encoder_delete' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/flac_encoder.c:196: referencia a `FLAC__stream_encoder_process_interleaved' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/flac_encoder.c:200: referencia a `FLAC__stream_encoder_delete' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/flac_encoder.c:211: referencia a `FLAC__stream_encoder_finish' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/flac_encoder.c:216: referencia a `FLAC__stream_encoder_delete' sin definir
+./src/recognize.o: En la función `sprec_recognize_async':
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/recognize.c:141: referencia a `pthread_create' sin definir
+./src/wav.o: En la función `sprec_record_wav':
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/wav.c:266: referencia a `snd_pcm_open' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/wav.c:274: referencia a `snd_pcm_open_ALSA' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/wav.c:282: referencia a `snd_pcm_hw_params_sizeof' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/wav.c:282: referencia a `snd_pcm_hw_params_sizeof' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/wav.c:288: referencia a `snd_pcm_hw_params_any' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/wav.c:290: referencia a `snd_pcm_hw_params_set_access' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/wav.c:292: referencia a `snd_pcm_close' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/wav.c:297: referencia a `snd_pcm_hw_params_set_format' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/wav.c:299: referencia a `snd_pcm_hw_params_set_format' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/wav.c:302: referencia a `snd_pcm_hw_params_set_channels' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/wav.c:304: referencia a `snd_pcm_close' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/wav.c:309: referencia a `snd_pcm_hw_params_set_rate_near' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/wav.c:311: referencia a `snd_pcm_close' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/wav.c:321: referencia a `snd_pcm_hw_params_set_period_size_near' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/wav.c:323: referencia a `snd_pcm_close' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/wav.c:330: referencia a `snd_pcm_hw_params' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/wav.c:332: referencia a `snd_pcm_close' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/wav.c:336: referencia a `snd_pcm_hw_params_get_period_size' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/wav.c:338: referencia a `snd_pcm_close' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/wav.c:349: referencia a `snd_pcm_close' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/wav.c:357: referencia a `snd_pcm_hw_params_get_period_time' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/wav.c:359: referencia a `snd_pcm_close' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/wav.c:373: referencia a `snd_pcm_close' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/wav.c:381: referencia a `snd_pcm_close' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/wav.c:388: referencia a `snd_pcm_readi' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/wav.c:393: referencia a `snd_pcm_recover' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/wav.c:398: referencia a `snd_pcm_close' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/wav.c:411: referencia a `snd_pcm_drain' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/wav.c:412: referencia a `snd_pcm_close' sin definir
+./src/web_client.o: En la función `sprec_send_audio_data':
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/web_client.c:61: referencia a `curl_easy_init' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/web_client.c:76: referencia a `curl_slist_append' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/web_client.c:78: referencia a `curl_formadd' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/web_client.c:93: referencia a `curl_easy_setopt' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/web_client.c:94: referencia a `curl_easy_setopt' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/web_client.c:95: referencia a `curl_easy_setopt' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/web_client.c:96: referencia a `curl_easy_setopt' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/web_client.c:97: referencia a `curl_easy_setopt' sin definir
+./src/web_client.o:/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/web_client.c:103: más referencias a `curl_easy_setopt' sin definir a continuación
+./src/web_client.o: En la función `sprec_send_audio_data':
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/web_client.c:108: referencia a `curl_easy_perform' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/web_client.c:113: referencia a `curl_formfree' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/web_client.c:114: referencia a `curl_slist_free_all' sin definir
+/home/maximofn/Documentos/Wall-e/Raspberry/Codigo/Voz/Libsprec_PC/Copy of Prueba_Libsprec/Debug/../src/web_client.c:115: referencia a `curl_easy_cleanup' sin definir
+collect2: error: ld returned 1 exit status
+make: *** [Copy of Prueba_Libsprec] Error 1
+
+00:12:20 Build Finished (took 184ms)
+

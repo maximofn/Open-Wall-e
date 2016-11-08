@@ -1,0 +1,8 @@
+28/10/2016
+$ gcc -Wall simple.c /usr/lib/libsprec.so -o simple
+
+/usr/lib/libsprec.so: referencia a `alloca' sin definir
+collect2: error: ld returned 1 exit status
+
+
+29/10/2016

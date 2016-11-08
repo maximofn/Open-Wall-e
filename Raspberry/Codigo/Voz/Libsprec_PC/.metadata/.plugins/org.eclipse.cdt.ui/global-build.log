@@ -1,0 +1,4 @@
+20:10:52 **** Clean-only build of configuration Debug for project Google_speech ****
+make clean 
+rm -rf  ./src/Google_speech.o  ./src/Google_speech.d  Google_speech
+ 

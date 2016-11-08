@@ -1,0 +1,68 @@
+/*
+ * simple.c
+ * libsprec
+ *
+ * Created by Árpád Goretity (H2CO3)
+ * on Sun 20/05/2012.
+ */
+
+
+#include <sprec/sprec.h>
+
+#define SYNCHRONOUS
+#ifdef SYNCHRONOUS
+
+int main(int argc, char *argv[])
+{
+	char *apikey = "AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw&client=Mozilla/5.0";
+	char *lang = "es";
+	double dur_s = 3;
+	char *res = "FIN";
+	char *run = "";
+
+	char *recordHW = "pulse";
+
+	printf ("\n");
+	printf ("arecord -D %s -t wav --duration %i -r 16000 /home/maximofn/Escritorio/prueba.wav", recordHW, (int)dur_s);
+	sprintf(run,
+//			sizeof run,
+			"arecord -D %s -t wav --duration %i -r 16000 /home/maximofn/Escritorio/prueba.wav", recordHW, (int)dur_s);
+	printf ("\n__ %s", run);
+	return 0;
+//	if(nullout)
+//		run += " 1>>/dev/shm/voice.log 2>>/dev/shm/voice.log";
+//	system(run.c_str());
+//	cmd = popen("sox /dev/shm/noise.wav -n stats -s 16 2>&1 | awk '/^Max\\ level/ {print $3}'","r");
+//	fscanf(cmd,"%f",&vol);
+//	fclose(cmd);
+
+	printf("\n Comienza simple");
+//	char *res = sprec_recognize_sync(argv[1], argv[2], strtod(argv[3], NULL));
+	res = sprec_recognize_sync(apikey, lang, dur_s);
+
+	printf("\n FIN");
+	printf("\n %s\n", res);
+	free(res);
+	return 0;
+}
+
+#else
+
+static void callback(const char *res, void *data)
+{
+	printf("Thread: %lld\n", (long long)pthread_self());
+	printf("%s\n", res);
+}
+
+int main(int argc, char *argv[])
+{
+	pthread_t pid;
+	void *retval;
+
+	pid = sprec_recognize_async(argv[1], argv[2], strtod(argv[3], NULL), callback, NULL);
+	printf("Thread: %lld\n", (long long)pthread_self());
+	pthread_join(pid, &retval);
+	return 0;
+}
+
+#endif
