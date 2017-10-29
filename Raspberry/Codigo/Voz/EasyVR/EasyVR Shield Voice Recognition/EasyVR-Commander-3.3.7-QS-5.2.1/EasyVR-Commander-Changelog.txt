@@ -1,0 +1,25 @@
+v3.3.7 - May 24 2012
+- fixed regression on detection of RoboNova controller
+- added EasyVR routines to generated RoboBASIC template code
+- code refactoring for better Arduino detection
+
+v3.2.5 - Feb 28 2012
+- added support for Arduino Mega in bridge mode
+- added uninstaller to Control Panel
+- added support for auto-removal of old versions
+- fixed voice test function incorrectly enabled on soundtable group
+- fixed bug with empty soundtable selection freezing the application
+
+v3.1.3 - Feb 16 2012
+- added support for EasyVR DevKit
+- added connection status to main frame window
+- added warning message for QS5 on Vista/7 on install
+- changed device detection order to speed up connection
+- changed timestamp build error to warning with optional continue
+- updated Arduino support for new bridge mode (library v1.1)
+- fixed template sketch for Arduino 1.0 compatibility
+- fixed Windows Installer version check
+- fixed start menu folder removal on uninstall
+
+v3.0.1 – Jan 1 2012
+- Initial release with Arduino support
