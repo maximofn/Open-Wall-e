@@ -1,0 +1,16 @@
+<INPUT_FILE>
+inp.sp.all.o
+<OUTPUT_FILE>
+out.sp.debug.o
+<STAGE1_SCOFN>
+sco/stage1/bkf.sp
+<STAGE1_NGRAM>
+2
+<STAGE2_SCOFN>
+sco/stage2/bkf.sst5.hasVowel
+<STAGE2_NGRAM>
+5
+<CHUNK_DIC>
+sco/chunk_dic_new.txt
+<CHUNK_SCO>
+sco/chunk_score_new.txt

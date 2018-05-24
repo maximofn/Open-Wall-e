@@ -1,0 +1,12 @@
+0x1 hello
+0x2 nice-to-meet-you
+0x3 it-is-not-fare
+0x4 I-am-tired
+0x5 go-to-bed
+0x6 anybody-here
+0x15 what-is-your-name
+0x16 would-you-please
+0x17 it-is-not-right
+0x18 what-are-you-doing
+0x19 come-on
+0x20 is-that-your-dog
