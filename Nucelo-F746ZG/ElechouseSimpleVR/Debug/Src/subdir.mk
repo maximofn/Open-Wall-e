@@ -4,6 +4,7 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../Src/elechouse_simpleVR.c \
 ../Src/gpio.c \
 ../Src/main.c \
 ../Src/stm32f7xx_hal_msp.c \
@@ -12,6 +13,7 @@ C_SRCS += \
 ../Src/usart.c 
 
 OBJS += \
+./Src/elechouse_simpleVR.o \
 ./Src/gpio.o \
 ./Src/main.o \
 ./Src/stm32f7xx_hal_msp.o \
@@ -20,6 +22,7 @@ OBJS += \
 ./Src/usart.o 
 
 C_DEPS += \
+./Src/elechouse_simpleVR.d \
 ./Src/gpio.d \
 ./Src/main.d \
 ./Src/stm32f7xx_hal_msp.d \
@@ -33,7 +36,7 @@ Src/%.o: ../Src/%.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo $(PWD)
-	arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F746xx -I"C:/Users/mfnunez/Documents/Wall-e/trunk/Nucelo-F746ZG/ElechouseSimpleVR/Inc" -I"C:/Users/mfnunez/Documents/Wall-e/trunk/Nucelo-F746ZG/ElechouseSimpleVR/Drivers/STM32F7xx_HAL_Driver/Inc" -I"C:/Users/mfnunez/Documents/Wall-e/trunk/Nucelo-F746ZG/ElechouseSimpleVR/Drivers/STM32F7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/mfnunez/Documents/Wall-e/trunk/Nucelo-F746ZG/ElechouseSimpleVR/Drivers/CMSIS/Device/ST/STM32F7xx/Include" -I"C:/Users/mfnunez/Documents/Wall-e/trunk/Nucelo-F746ZG/ElechouseSimpleVR/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F746xx -I"C:/Users/mfnunez/Documents/Wall-e/SVN/trunk/Nucelo-F746ZG/ElechouseSimpleVR/Inc" -I"C:/Users/mfnunez/Documents/Wall-e/SVN/trunk/Nucelo-F746ZG/ElechouseSimpleVR/Drivers/STM32F7xx_HAL_Driver/Inc" -I"C:/Users/mfnunez/Documents/Wall-e/SVN/trunk/Nucelo-F746ZG/ElechouseSimpleVR/Drivers/STM32F7xx_HAL_Driver/Inc/Legacy" -I"C:/Users/mfnunez/Documents/Wall-e/SVN/trunk/Nucelo-F746ZG/ElechouseSimpleVR/Drivers/CMSIS/Device/ST/STM32F7xx/Include" -I"C:/Users/mfnunez/Documents/Wall-e/SVN/trunk/Nucelo-F746ZG/ElechouseSimpleVR/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

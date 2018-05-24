@@ -1,5 +1,5 @@
-Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.o: \
- ../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.c \
+Src/elechouse_simpleVR.o: ../Src/elechouse_simpleVR.c \
+ C:/Users/mfnunez/Documents/Wall-e/SVN/trunk/Nucelo-F746ZG/ElechouseSimpleVR/Inc/elechouse_simpleVR.h \
  C:/Users/mfnunez/Documents/Wall-e/SVN/trunk/Nucelo-F746ZG/ElechouseSimpleVR/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h \
  C:/Users/mfnunez/Documents/Wall-e/SVN/trunk/Nucelo-F746ZG/ElechouseSimpleVR/Inc/stm32f7xx_hal_conf.h \
  C:/Users/mfnunez/Documents/Wall-e/SVN/trunk/Nucelo-F746ZG/ElechouseSimpleVR/Inc/main.h \
@@ -27,7 +27,10 @@ Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.o: \
  C:/Users/mfnunez/Documents/Wall-e/SVN/trunk/Nucelo-F746ZG/ElechouseSimpleVR/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr.h \
  C:/Users/mfnunez/Documents/Wall-e/SVN/trunk/Nucelo-F746ZG/ElechouseSimpleVR/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr_ex.h \
  C:/Users/mfnunez/Documents/Wall-e/SVN/trunk/Nucelo-F746ZG/ElechouseSimpleVR/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h \
- C:/Users/mfnunez/Documents/Wall-e/SVN/trunk/Nucelo-F746ZG/ElechouseSimpleVR/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h
+ C:/Users/mfnunez/Documents/Wall-e/SVN/trunk/Nucelo-F746ZG/ElechouseSimpleVR/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h \
+ C:/Users/mfnunez/Documents/Wall-e/SVN/trunk/Nucelo-F746ZG/ElechouseSimpleVR/Inc/usart.h
+
+C:/Users/mfnunez/Documents/Wall-e/SVN/trunk/Nucelo-F746ZG/ElechouseSimpleVR/Inc/elechouse_simpleVR.h:
 
 C:/Users/mfnunez/Documents/Wall-e/SVN/trunk/Nucelo-F746ZG/ElechouseSimpleVR/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:
 
@@ -84,3 +87,5 @@ C:/Users/mfnunez/Documents/Wall-e/SVN/trunk/Nucelo-F746ZG/ElechouseSimpleVR/Driv
 C:/Users/mfnunez/Documents/Wall-e/SVN/trunk/Nucelo-F746ZG/ElechouseSimpleVR/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:
 
 C:/Users/mfnunez/Documents/Wall-e/SVN/trunk/Nucelo-F746ZG/ElechouseSimpleVR/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h:
+
+C:/Users/mfnunez/Documents/Wall-e/SVN/trunk/Nucelo-F746ZG/ElechouseSimpleVR/Inc/usart.h:

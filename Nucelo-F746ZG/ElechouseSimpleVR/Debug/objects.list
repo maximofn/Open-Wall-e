@@ -14,6 +14,7 @@
 "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.o"
 "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.o"
 "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.o"
+"Src/elechouse_simpleVR.o"
 "Src/gpio.o"
 "Src/main.o"
 "Src/stm32f7xx_hal_msp.o"
