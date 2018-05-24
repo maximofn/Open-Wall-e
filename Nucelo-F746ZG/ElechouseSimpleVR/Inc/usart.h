@@ -89,6 +89,9 @@ typedef struct
 static volatile T_UART_ERROR_REGISTER UART_debug_ERROR_REGISTER_;
 static volatile T_UART_ERROR_REGISTER UART_VR_ERROR_REGISTER_;
 
+
+T_Ring_Buffer Ring_Buffer_UART_VR;
+
 /* USER CODE END Private defines */
 
 extern void _Error_Handler(char *, int);

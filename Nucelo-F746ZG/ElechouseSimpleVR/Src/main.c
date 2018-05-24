@@ -43,6 +43,8 @@
 
 /* USER CODE BEGIN Includes */
 
+#include "elechouse_simpleVR.h"
+
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -100,6 +102,57 @@ int main(void)
   UART_Error_Registers_init();
   UART_Ring_Buffer_init();
 
+  traza("\n\r\n\r\n\r Inicio");
+
+  /*traza("\n\r elechouse_restore_system_settings: \t\t");
+  if (elechouse_restore_system_settings())	traza("FAIL");
+  else										traza("OK");*/
+
+  traza("\n\r elechouse_enable_recognition: \t\t\t");
+  if (elechouse_enable_recognition())	traza("FAIL");
+  else									traza("OK");
+
+  /*traza("\n\r elechouse_disable_recognition: \t\t");
+  if (elechouse_disable_recognition())	traza("FAIL");
+  else									traza("OK");*/
+
+  uint8_t group = 1;
+  traza("\n\r elechouse_group_select: \t\t\t");
+  if (elechouse_group_select(group))	traza("FAIL");
+  else									traza("OK");
+
+  /*traza("\n\r elechouse_enable_or_disable_startup_info: \t");
+  if (elechouse_enable_or_disable_startup_info(ELECHOUSE__ENABLE_DISABLE_STARTUP_INFO__DISABLE))	traza("FAIL");
+  else																								traza("OK");*/
+
+  uint8_t recognition_state, current_group, threshold;
+  traza("\n\r elechouse_check_system_state: \t\t\t");
+  if (elechouse_check_system_state (&recognition_state, &current_group, &threshold))	traza("FAIL");
+  else
+  {
+	  traza("OK");
+	  if (recognition_state == ELECHOUSE__RECOGNITION_STATE__ENABLE)	traza("\n\r\t recognition_state: enable");
+	  else																traza("\n\r\t recognition_state: disable");
+	  traza(", group = %i, threshold = 0x%X", current_group, threshold);
+  }
+
+  /*traza("\n\r elechouse_set_threshold_value: \t\t");
+  if (elechouse_set_threshold_value(threshold))	traza("FAIL");
+  else									traza("OK");*/
+
+  uint16_t SW_version, HW_version;
+  uint8_t SW_patch;
+  traza("\n\r elechouse_check_version: \t\t\t");
+  if (elechouse_check_version (&SW_version, &SW_patch, &HW_version))	traza("FAIL");
+  else
+  {
+	  traza("OK");
+	  traza("\n\r\t SW_version = 0x%X, SW_patch = 0x%X, HW_version = 0x%X", SW_version, SW_patch, HW_version);
+  }
+
+  uint16_t index;
+  uint8_t score_of_recognition;
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -110,7 +163,11 @@ int main(void)
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */
-	  traza ("\n\r Hola");
+	  if (!elechouse_voice_recognized (&index, &current_group, &score_of_recognition))
+	  {
+		  traza("\n\r\t index = 0x%X, current_group = 0x%X, score_of_recognition = 0x%X", index, current_group, score_of_recognition);
+	  }
+
 	  HAL_Delay(100);
 
   }

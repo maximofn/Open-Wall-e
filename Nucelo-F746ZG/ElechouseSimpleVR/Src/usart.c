@@ -55,7 +55,6 @@
 uint8_t debug_bufferRX[2];
 
 T_Ring_Buffer Ring_Buffer_UART_debug;
-T_Ring_Buffer Ring_Buffer_UART_VR;
 
 //uint8_t external_debug = 0;
 uint8_t parar_programa = 0;
@@ -65,6 +64,9 @@ uint8_t parar_programa = 0;
 #else
 	uint8_external_debug = 0
 #endif
+
+
+char bufferTX [255];
 
 /* USER CODE END 0 */
 
@@ -98,7 +100,7 @@ void MX_USART6_UART_Init(void)
 {
 
   huart6.Instance = USART6;
-  huart6.Init.BaudRate = 115200;
+  huart6.Init.BaudRate = 9600;
   huart6.Init.WordLength = UART_WORDLENGTH_8B;
   huart6.Init.StopBits = UART_STOPBITS_1;
   huart6.Init.Parity = UART_PARITY_NONE;
@@ -332,7 +334,7 @@ void HAL_UART_RxCpltCallback (UART_HandleTypeDef *huart)
 
 		UART_Ring_Buffer_WR(&Ring_Buffer_UART_debug, Ring_Buffer_UART_debug.Byte_Recv);
 
-		//sprintf(bufferTX, " Ring_Buffer_UART_debug.Byte_Recv = %X\n\r", Ring_Buffer_UART_debug.Byte_Recv); imprimir  (bufferTX, QUIET, CODIGO_ANSI_NORMAL);
+		//traza ("\n\r Ring_Buffer_UART_debug.Byte_Recv = %X", Ring_Buffer_UART_debug.Byte_Recv);
 
 		__HAL_UNLOCK(Ring_Buffer_UART_debug.huart);
 
@@ -399,7 +401,7 @@ void HAL_UART_RxCpltCallback (UART_HandleTypeDef *huart)
 
 		UART_Ring_Buffer_WR(&Ring_Buffer_UART_VR, Ring_Buffer_UART_VR.Byte_Recv);
 
-		//sprintf(bufferTX, " Ring_Buffer_UART_VR.Byte_Recv = %X\n\r", Ring_Buffer_UART_VR.Byte_Recv); imprimir  (bufferTX, QUIET, CODIGO_ANSI_NORMAL);
+		//traza ("\n\r Ring_Buffer_UART_VR.Byte_Recv = %X", Ring_Buffer_UART_VR.Byte_Recv);
 
 		__HAL_UNLOCK(Ring_Buffer_UART_VR.huart);
 
